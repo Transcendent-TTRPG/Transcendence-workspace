@@ -26,6 +26,10 @@ Skills are not Claude Code slash commands — they are documented workflows. Fol
 - Avoid every pattern listed in `style-guide.md §AI-patterns-to-avoid`
 - Do not introduce new canonical terms without first checking `glossary.md`
 - Prose must be in the correct language (ES / EN) — do not mix
+- Each narrative paragraph must be anchored in one primary sensory channel — do not distribute attention across unrelated inputs
+- Every narrative paragraph must present a perceivable anomaly; do not describe causes or explanations
+- Narrative and rules text must be separated explicitly — rules first, then example or flavor text; do not blend them
+- When writing rules text, introduce mechanical concepts by contrast ("not X, but Y") followed by a consequence chain; close with a short declarative statement of the trade-off
 
 ### How to invoke
 
