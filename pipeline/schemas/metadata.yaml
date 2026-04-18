@@ -1,0 +1,98 @@
+# Frontmatter schema for all .md files in Transcendence-publications
+#
+# Add this block at the top of every content file between --- delimiters.
+# The index.py script can add it automatically with --fix flag.
+#
+# Example usage:
+#   python3 pipeline/scripts/index.py --repo-path Transcendence-publications --fix
+
+# ---
+# title: "ATB: Línea de Tiempo de Combate"
+# type: corebook
+# language: es
+# chapter: 10
+# section: atb
+# status: draft
+# canonical: false
+# tags: [combat, atb, timing, rhythm]
+# related:
+#   - core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md
+#   - core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md
+# ---
+
+fields:
+
+  title:
+    type: string
+    required: true
+    description: >
+      Human-readable title of the file. Matches the H1 heading of the document.
+
+  type:
+    type: enum
+    required: true
+    values:
+      - corebook     # Chapter content of the TTRPG corebook
+      - light-novel  # Fiction set in the Transcendence universe
+      - canon        # Style guide, glossary, world-facts (locked once approved)
+      - template     # Reusable file templates
+      - admin        # Project admin, READMEs, non-content files
+      - design       # Design docs that live in publications (rare)
+
+  language:
+    type: enum
+    required: true
+    values:
+      - es    # Spanish only
+      - en    # English only
+      - both  # Language-neutral (canon files, templates)
+
+  chapter:
+    type: integer
+    required: false
+    description: >
+      Chapter number for corebook files. Matches the directory prefix (e.g., 10 for 10-conflict-and-combat).
+
+  section:
+    type: string
+    required: false
+    description: >
+      Short identifier for the section within a chapter.
+      Examples: atb, endurance, rest, character-creation
+
+  status:
+    type: enum
+    required: true
+    default: draft
+    values:
+      - draft    # Work in progress — may change freely
+      - review   # Ready for editorial review — needs human sign-off
+      - final    # Content locked — only corrections allowed, no rewrites
+      - locked   # Canon-locked — changes require an explicit design decision
+
+  canonical:
+    type: boolean
+    required: true
+    default: false
+    description: >
+      true = this file's content is treated as an immutable world or system fact.
+      Only files in canon/ should normally be canonical: true.
+
+  tags:
+    type: list[string]
+    required: false
+    description: >
+      Keywords for search and context retrieval.
+      Use consistent terms across files. Examples:
+        combat, atb, timing, rhythm, fatigue, endurance, attrition,
+        character-creation, species, background, rest, vital-points,
+        champion, elite, common-enemy, readability, narrative, lore
+
+  related:
+    type: list[path]
+    required: false
+    description: >
+      Relative paths (from publications root) to closely related files.
+      Used by index.py to boost search relevance and by SKILLS.md workflows
+      to determine what context to load when editing this file.
+      Always include the bilingual pair if it exists.
