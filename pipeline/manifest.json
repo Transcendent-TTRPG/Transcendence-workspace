@@ -1,0 +1,1126 @@
+{
+  "generated": "2026-04-21",
+  "files": [
+    {
+      "path": "canon/corebook-writing-checklist.md",
+      "title": "Corebook Writing Checklist",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "corebook-writing-checklist",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "corebook",
+        "writing",
+        "checklist",
+        "rules",
+        "editorial"
+      ],
+      "related": [
+        "canon/style-guide.md",
+        "canon/text-modes.md",
+        "canon/voice-samples.md",
+        "canon/glossary.md",
+        "canon/world-facts.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/fiction-guide.md",
+      "title": "Fiction Guide",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "fiction-guide",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "fiction",
+        "narrative",
+        "novel",
+        "scenes",
+        "dialogue",
+        "editorial"
+      ],
+      "related": [
+        "canon/text-modes.md",
+        "canon/style-guide.md",
+        "canon/voice-samples.md",
+        "canon/world-facts.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/glossary.md",
+      "title": "Transcendence Glossary",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "glossary",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "glossary",
+        "terminology",
+        "canon"
+      ],
+      "related": [
+        "canon/style-guide.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/style-guide.md",
+      "title": "Transcendence Style Guide",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "style-guide",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "style",
+        "voice",
+        "editorial",
+        "prose"
+      ],
+      "related": [],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/text-modes.md",
+      "title": "Text Modes",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "text-modes",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "writing",
+        "prose",
+        "narrative",
+        "rules",
+        "examples",
+        "editorial"
+      ],
+      "related": [
+        "canon/style-guide.md",
+        "canon/voice-samples.md",
+        "canon/glossary.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/voice-samples.md",
+      "title": "Voice Samples",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "voice-samples",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "style",
+        "voice",
+        "samples",
+        "editorial"
+      ],
+      "related": [
+        "canon/style-guide.md",
+        "canon/glossary.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "canon/world-facts.md",
+      "title": "World Facts",
+      "type": "canon",
+      "language": "both",
+      "chapter": null,
+      "section": "world-facts",
+      "status": "draft",
+      "canonical": true,
+      "tags": [
+        "canon",
+        "worldbuilding",
+        "continuity",
+        "lore",
+        "setting"
+      ],
+      "related": [
+        "canon/glossary.md",
+        "canon/style-guide.md",
+        "canon/text-modes.md"
+      ],
+      "authority_refs": [],
+      "content_kind": null,
+      "writing_mode": null,
+      "section_modes": []
+    },
+    {
+      "path": "core-books/transcendence-corebook/02-introduction/en/introduction.md",
+      "title": "Introduction",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 2,
+      "section": "introduction",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "introduction",
+        "overview",
+        "limbo",
+        "setting",
+        "getting-started"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/02-introduction/es/introduction.md",
+        "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [],
+      "content_kind": "introduction",
+      "writing_mode": "description",
+      "section_modes": []
+    },
+    {
+      "path": "core-books/transcendence-corebook/02-introduction/es/introduction.md",
+      "title": "Introducción",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 2,
+      "section": "introduction",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "introduction",
+        "overview",
+        "limbo",
+        "setting",
+        "getting-started"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/02-introduction/en/introduction.md",
+        "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [],
+      "content_kind": "introduction",
+      "writing_mode": "description",
+      "section_modes": []
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md",
+      "title": "General Rules",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 3,
+      "section": "01-general-rules",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "general-rules",
+        "dice",
+        "narrator",
+        "adventure-cycle",
+        "rounding",
+        "specificity"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/general-rules.md"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
+      "title": "Rolling System and Competencies",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 3,
+      "section": "02-rolling-system-and-competencies",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "rolling-system",
+        "competencies",
+        "attack",
+        "defense",
+        "impact",
+        "resistance",
+        "specialization",
+        "nr",
+        "reference-level",
+        "evolutionary-advantage"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/en/03-environmental-conditions.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/roll-types.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/difficulty-thresholds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/data/system/roll-types.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/difficulty-thresholds.yaml",
+        "Transcendence-design/data/system/characteristics.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/en/03-environmental-conditions.md",
+      "title": "Environmental Conditions",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 3,
+      "section": "03-environmental-conditions",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "environmental-conditions",
+        "difficulty",
+        "narrator",
+        "rules",
+        "natural",
+        "extranatural",
+        "limbo",
+        "tauma"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/es/03-environmental-conditions.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/environmental-conditions.md",
+        "Transcendence-design/docs/system/difficulty-thresholds.md",
+        "Transcendence-design/docs/system/limbo-manifestations.md",
+        "Transcendence-design/data/system/environmental-conditions.yaml",
+        "Transcendence-design/data/system/difficulty-thresholds.yaml",
+        "Transcendence-design/data/system/limbo-manifestations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Two types of condition",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md",
+      "title": "Reglas Generales",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 3,
+      "section": "01-general-rules",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "general-rules",
+        "dice",
+        "narrator",
+        "adventure-cycle",
+        "rounding",
+        "specificity"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/general-rules.md"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
+      "title": "Sistema de Tiradas y Competencias",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 3,
+      "section": "02-rolling-system-and-competencies",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "rolling-system",
+        "competencies",
+        "attack",
+        "defense",
+        "impact",
+        "resistance",
+        "specialization",
+        "nr",
+        "reference-level",
+        "evolutionary-advantage"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md",
+        "core-books/transcendence-corebook/03-core-rules/es/03-environmental-conditions.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/roll-types.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/difficulty-thresholds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/data/system/roll-types.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/difficulty-thresholds.yaml",
+        "Transcendence-design/data/system/characteristics.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/03-core-rules/es/03-environmental-conditions.md",
+      "title": "Condiciones del Entorno",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 3,
+      "section": "03-environmental-conditions",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "environmental-conditions",
+        "difficulty",
+        "narrator",
+        "rules",
+        "natural",
+        "extranatural",
+        "limbo",
+        "tauma"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/03-core-rules/en/03-environmental-conditions.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/environmental-conditions.md",
+        "Transcendence-design/docs/system/difficulty-thresholds.md",
+        "Transcendence-design/docs/system/limbo-manifestations.md",
+        "Transcendence-design/data/system/environmental-conditions.yaml",
+        "Transcendence-design/data/system/difficulty-thresholds.yaml",
+        "Transcendence-design/data/system/limbo-manifestations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Dos tipos de condición",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
+      "title": "Character Creation",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 4,
+      "section": "character-creation",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "character-creation",
+        "species",
+        "background",
+        "specializations",
+        "synapsis",
+        "attributes",
+        "personality-traits",
+        "derived-attributes"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/backgrounds.yaml",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Brief Example",
+          "writing_mode": "example"
+        },
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
+      "title": "Creación de Personaje",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 4,
+      "section": "character-creation",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "character-creation",
+        "species",
+        "background",
+        "specializations",
+        "synapsis",
+        "attributes",
+        "personality-traits",
+        "derived-attributes"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/backgrounds.yaml",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo breve",
+          "writing_mode": "example"
+        },
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md",
+      "title": "Specializations",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 8,
+      "section": "specializations",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "progression",
+        "synapsis",
+        "competencies",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md",
+        "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/backgrounds.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md",
+      "title": "Especializaciones",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 8,
+      "section": "especializaciones",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "progression",
+        "synapsis",
+        "competencies",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md",
+        "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/backgrounds.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+      "title": "Actions",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 10,
+      "section": "actions",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "actions",
+        "combat",
+        "atb",
+        "active-actions",
+        "reactions",
+        "free-actions",
+        "movement",
+        "attack",
+        "techniques",
+        "attrition"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/atb-reference.md",
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/adr/combat-atb-rhythm-costs.md",
+        "Transcendence-design/docs/adr/combat-atb-timeline.md",
+        "Transcendence-design/data/system/atb-combat.yaml",
+        "Transcendence-design/data/system/attrition-fatigue.yaml",
+        "Transcendence-design/data/system/specializations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Two-Handed Weapon",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Two Weapons",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Interact",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Specialization",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Techniques",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Drop",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Speak",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
+      "title": "ATB: The Combat Timeline",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 10,
+      "section": "atb-combat-timeline",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "atb",
+        "combat",
+        "timeline",
+        "rhythm",
+        "initiative",
+        "actions",
+        "rhythm-cost",
+        "opening"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/atb-reference.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/docs/adr/combat-atb-timeline.md",
+        "Transcendence-design/docs/adr/combat-atb-rhythm-costs.md",
+        "Transcendence-design/data/system/atb-combat.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md",
+      "title": "Attrition, Endurance, and Fatigue",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 10,
+      "section": "attrition-endurance-fatigue",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "attrition",
+        "endurance",
+        "fatigue",
+        "vigor",
+        "combat",
+        "strain",
+        "fatigue-thresholds"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/data/system/attrition-fatigue.yaml",
+        "Transcendence-design/data/system/specializations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        },
+        {
+          "heading": "Example of thresholds",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
+      "title": "Rest",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 10,
+      "section": "rest",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "rest",
+        "short-rest",
+        "full-rest",
+        "attrition",
+        "recovery",
+        "afflictions",
+        "maintenance"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/data/system/attrition-fatigue.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+      "title": "Acciones",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 10,
+      "section": "acciones",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "actions",
+        "combat",
+        "atb",
+        "active-actions",
+        "reactions",
+        "free-actions",
+        "movement",
+        "attack",
+        "techniques",
+        "attrition"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/atb-reference.md",
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/adr/combat-atb-rhythm-costs.md",
+        "Transcendence-design/docs/adr/combat-atb-timeline.md",
+        "Transcendence-design/data/system/atb-combat.yaml",
+        "Transcendence-design/data/system/attrition-fatigue.yaml",
+        "Transcendence-design/data/system/specializations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Atacar",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Interactuar",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Especialización",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Técnicas",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Soltar",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Hablar",
+          "writing_mode": "flavor"
+        },
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
+      "title": "ATB: Línea de Tiempo de Combate",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 10,
+      "section": "atb-linea-de-tiempo",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "atb",
+        "combat",
+        "timeline",
+        "rhythm",
+        "initiative",
+        "actions",
+        "rhythm-cost",
+        "opening"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/atb-reference.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/docs/adr/combat-atb-timeline.md",
+        "Transcendence-design/docs/adr/combat-atb-rhythm-costs.md",
+        "Transcendence-design/data/system/atb-combat.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
+      "title": "Descanso",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 10,
+      "section": "descanso",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "rest",
+        "short-rest",
+        "full-rest",
+        "attrition",
+        "recovery",
+        "afflictions",
+        "maintenance"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/data/system/attrition-fatigue.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md",
+      "title": "Desgaste, Aguante y Fatiga",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 10,
+      "section": "desgaste-aguante-fatiga",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "attrition",
+        "endurance",
+        "fatigue",
+        "vigor",
+        "combat",
+        "strain",
+        "fatigue-thresholds"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
+        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/attrition-fatigue.md",
+        "Transcendence-design/docs/system/mechanics-overview.md",
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/data/system/attrition-fatigue.yaml",
+        "Transcendence-design/data/system/specializations.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        },
+        {
+          "heading": "Ejemplo de umbrales",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "templates/chapter-template.md",
+      "title": "Chapter Template",
+      "type": "template",
+      "language": "both",
+      "chapter": null,
+      "section": "chapter-template",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "template",
+        "chapter",
+        "editorial"
+      ],
+      "related": [],
+      "authority_refs": [],
+      "content_kind": "template",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
+      "path": "templates/manuscript-template.md",
+      "title": "Manuscript Template",
+      "type": "template",
+      "language": "both",
+      "chapter": null,
+      "section": "manuscript-template",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "template",
+        "manuscript",
+        "editorial"
+      ],
+      "related": [],
+      "authority_refs": [],
+      "content_kind": "template",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
+      "path": "templates/scene-template.md",
+      "title": "Scene Template",
+      "type": "template",
+      "language": "both",
+      "chapter": null,
+      "section": "scene-template",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "template",
+        "scene",
+        "editorial"
+      ],
+      "related": [],
+      "authority_refs": [],
+      "content_kind": "template",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
+      "path": "templates/supplement-template.md",
+      "title": "Supplement Template",
+      "type": "template",
+      "language": "both",
+      "chapter": null,
+      "section": "supplement-template",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "template",
+        "supplement",
+        "editorial"
+      ],
+      "related": [],
+      "authority_refs": [],
+      "content_kind": "template",
+      "writing_mode": "reference",
+      "section_modes": []
+    }
+  ],
+  "missing_frontmatter": [],
+  "validation_errors": [],
+  "warnings": []
+}

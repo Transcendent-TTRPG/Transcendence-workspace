@@ -9,6 +9,8 @@
 # ---
 # title: "ATB: Línea de Tiempo de Combate"
 # type: corebook
+# content_kind: rules
+# writing_mode: rules
 # language: es
 # chapter: 10
 # section: atb
@@ -33,11 +35,59 @@ fields:
     required: true
     values:
       - corebook     # Chapter content of the TTRPG corebook
-      - light-novel  # Fiction set in the Transcendence universe
+      - novel        # Fiction set in the Transcendence universe
+      - supplement   # Standalone or support publication
       - canon        # Style guide, glossary, world-facts (locked once approved)
       - template     # Reusable file templates
       - admin        # Project admin, READMEs, non-content files
       - design       # Design docs that live in publications (rare)
+
+  content_kind:
+    type: enum
+    required: false
+    values:
+      - introduction
+      - rules
+      - lore
+      - narrative
+      - reference
+      - template
+      - admin
+    description: >
+      Editorial class of the file inside its parent publication.
+      Use this to distinguish sections such as introduction, rules, lore, or reference
+      without overloading the top-level `type` field.
+
+  writing_mode:
+    type: enum
+    required: false
+    values:
+      - rules
+      - example
+      - description
+      - narrative
+      - flavor
+      - reference
+    description: >
+      Explicit declaration of the dominant writing mode for the file.
+      Required for corebook files.
+      This is the primary mode of the document, not necessarily the only mode present.
+
+  section_modes:
+    type: list
+    required: false
+    items:
+      type: object
+      required_keys: [heading, writing_mode]
+    description: >
+      Optional section-level overrides for mixed documents.
+      Use when a file is dominated by one mode but contains specific sections that
+      intentionally operate in another mode.
+      Example:
+        - heading: "Two-Handed Weapon"
+          writing_mode: flavor
+        - heading: "Example"
+          writing_mode: example
 
   language:
     type: enum
@@ -79,7 +129,9 @@ fields:
       Only files in canon/ should normally be canonical: true.
 
   tags:
-    type: list[string]
+    type: list
+    items:
+      type: string
     required: false
     description: >
       Keywords for search and context retrieval.
@@ -89,10 +141,23 @@ fields:
         champion, elite, common-enemy, readability, narrative, lore
 
   related:
-    type: list[path]
+    type: list
+    items:
+      type: path
     required: false
     description: >
       Relative paths (from publications root) to closely related files.
       Used by index.py to boost search relevance and by SKILLS.md workflows
       to determine what context to load when editing this file.
       Always include the bilingual pair if it exists.
+
+  authority_refs:
+    type: list
+    items:
+      type: path
+    required: false
+    description: >
+      Relative or workspace-level paths to the design authority that justifies this file.
+      Use for rules-facing or canon-sensitive files.
+      Typical values point into `Transcendence-design/docs/adr/`,
+      `Transcendence-design/docs/system/`, or `Transcendence-design/data/system/`.

@@ -16,20 +16,25 @@ Skills are not Claude Code slash commands — they are documented workflows. Fol
 1. `Transcendence-publications/canon/style-guide.md`
 2. `Transcendence-publications/canon/glossary.md`
 3. `Transcendence-publications/canon/voice-samples.md`
-4. The target file
-5. 2–5 related files (use `pipeline/scripts/index.py --search` to find them)
+4. `Transcendence-publications/canon/text-modes.md`
+5. `Transcendence-publications/canon/corebook-writing-checklist.md` when working on corebook files
+6. The target file
+7. 2–5 related files (use `pipeline/scripts/index.py --search` to find them)
 
 ### Constraints
 
 - Match the rhythm and vocabulary documented in `style-guide.md`
+- Choose the passage mode explicitly using `canon/text-modes.md` before drafting
 - Use only terminology from `glossary.md` for system concepts
 - Avoid every pattern listed in `style-guide.md §AI-patterns-to-avoid`
 - Do not introduce new canonical terms without first checking `glossary.md`
 - Prose must be in the correct language (ES / EN) — do not mix
 - Each narrative paragraph must be anchored in one primary sensory channel — do not distribute attention across unrelated inputs
-- Every narrative paragraph must present a perceivable anomaly; do not describe causes or explanations
+- In horror-facing or Limbo-facing passages, every narrative paragraph must present a perceivable anomaly; do not describe causes or explanations
+- In ordinary fiction passages, every narrative paragraph must still carry a perceivable point of tension, change, pressure, or consequence
 - Narrative and rules text must be separated explicitly — rules first, then example or flavor text; do not blend them
 - When writing rules text, introduce mechanical concepts by contrast ("not X, but Y") followed by a consequence chain; close with a short declarative statement of the trade-off
+- Corebook files should not advance past `review` unless `canon/corebook-writing-checklist.md` passes
 
 ### How to invoke
 
@@ -97,6 +102,72 @@ python3 pipeline/scripts/index.py \
 - [ ] Bilingual pair (ES/EN) is consistent with each other
 - [ ] Tags in frontmatter are accurate and complete
 - [ ] `related` field in frontmatter lists the actual related files
+
+### World-facts checks
+
+Run these checks explicitly whenever the file touches setting, atmosphere, cosmology, extranatural phenomena, religion, or in-world explanation:
+
+- [ ] The text does not treat **the Limbo** and **the Void** as synonyms
+- [ ] Neutral narration does not present theological interpretation as mechanical certainty
+- [ ] Ordinary viewpoints do not perceive the Limbo directly unless the file establishes a valid reason
+- [ ] **Tauma** is not described as creating phenomena from nothing; it transforms, modifies, or amplifies what exists
+- [ ] Extranatural conditions are described by origin, not merely by intensity or spectacle
+- [ ] Subtle extranatural effects are allowed; visible contradiction is not treated as mandatory in every case
+
+### Reviewer prompts
+
+Ask these before marking a lore-facing file complete:
+
+1. Is this sentence stating a world fact, reporting a character belief, or expressing doctrine?
+2. Could the viewpoint actually know or perceive what the sentence claims?
+3. Does the passage accidentally collapse theology, cosmology, and mechanics into one voice?
+4. If the passage explains a phenomenon, is that explanation already locked by `world-facts.md` or still open design?
+
+---
+
+## fiction-writer
+
+**Purpose:** Write or revise sustained fiction for light novels, narrative supplements, or long-form in-world scenes without collapsing into exposition, sourcebook prose, or generic dramatic writing.
+**When to use:** Any time the task is primarily story-facing rather than rule-facing.
+
+### Mandatory context (load before starting)
+
+1. `Transcendence-publications/canon/fiction-guide.md`
+2. `Transcendence-publications/canon/text-modes.md`
+3. `Transcendence-publications/canon/style-guide.md`
+4. `Transcendence-publications/canon/voice-samples.md`
+5. `Transcendence-publications/canon/glossary.md`
+6. `Transcendence-publications/canon/world-facts.md`
+7. The target file
+8. 2–5 related files from the manifest
+
+### Constraints
+
+- Name the primary text mode before drafting; fiction defaults to `narrative` or `description`
+- Maintain a constrained viewpoint unless omniscience is explicitly intended
+- Do not use fiction to define mechanics directly
+- Lore must emerge through perception, belief, pressure, dialogue, or consequence
+- Dialogue must change the scene, not simply explain the setting to the reader
+- If a passage touches the Limbo or extranatural phenomena, preserve the distinction between observable effect, interpretation, and world fact
+- Do not let character belief silently redefine canon
+- Every scene must end with change: discovery, escalation, cost, misreading, reversal, or consequence
+
+### Scene checklist
+
+- [ ] The viewpoint is clear
+- [ ] The scene has an active pressure line
+- [ ] Description serves action, tension, or consequence
+- [ ] Dialogue changes the scene
+- [ ] Lore is revealed indirectly unless explicit exposition is structurally justified
+- [ ] The ending changes the reader's understanding or the character's situation
+
+### Long-form checklist
+
+- [ ] Scene order reflects escalation or recontextualization, not repetition
+- [ ] Exposition is distributed rather than dumped
+- [ ] Canon facts remain consistent with `world-facts.md`
+- [ ] Terms remain consistent with `glossary.md`
+- [ ] If bilingual versions exist, they preserve the same scene logic and canon payload
 
 ---
 
