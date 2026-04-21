@@ -1040,6 +1040,30 @@
       ]
     },
     {
+      "path": "core-books/transcendence-corebook/migration-plan.md",
+      "title": "Corebook Migration Plan",
+      "type": "admin",
+      "language": "en",
+      "chapter": 0,
+      "section": "migration-plan",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "migration",
+        "restructuring",
+        "editorial",
+        "corebook",
+        "chapter-order"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/README.md"
+      ],
+      "authority_refs": [],
+      "content_kind": "reference",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
       "path": "templates/chapter-template.md",
       "title": "Chapter Template",
       "type": "template",
