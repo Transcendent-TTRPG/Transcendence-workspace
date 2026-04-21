@@ -287,7 +287,7 @@
         "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
         "core-books/transcendence-corebook/03-core-rules/en/01-general-rules.md",
         "core-books/transcendence-corebook/03-core-rules/en/03-environmental-conditions.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/roll-types.md",
@@ -411,7 +411,7 @@
         "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
         "core-books/transcendence-corebook/03-core-rules/es/01-general-rules.md",
         "core-books/transcendence-corebook/03-core-rules/es/03-environmental-conditions.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/roll-types.md",
@@ -478,11 +478,95 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
-      "title": "Character Creation",
+      "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md",
+      "title": "Specializations",
       "type": "corebook",
       "language": "en",
       "chapter": 4,
+      "section": "specializations",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "progression",
+        "synapsis",
+        "competencies",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md",
+        "core-books/transcendence-corebook/05-character-creation/en/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/backgrounds.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Example",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md",
+      "title": "Especializaciones",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 4,
+      "section": "especializaciones",
+      "status": "review",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "progression",
+        "synapsis",
+        "competencies",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md",
+        "core-books/transcendence-corebook/05-character-creation/es/character-creation.md",
+        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/docs/system/competencies.md",
+        "Transcendence-design/docs/system/backgrounds.md",
+        "Transcendence-design/docs/system/characteristics.md",
+        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
+        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
+        "Transcendence-design/data/system/specializations.yaml",
+        "Transcendence-design/data/system/specializations-catalog.yaml",
+        "Transcendence-design/data/system/competencies.yaml",
+        "Transcendence-design/data/system/backgrounds.yaml"
+      ],
+      "content_kind": "rules",
+      "writing_mode": "rules",
+      "section_modes": [
+        {
+          "heading": "Ejemplo",
+          "writing_mode": "example"
+        }
+      ]
+    },
+    {
+      "path": "core-books/transcendence-corebook/05-character-creation/en/character-creation.md",
+      "title": "Character Creation",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 5,
       "section": "character-creation",
       "status": "review",
       "canonical": false,
@@ -497,9 +581,9 @@
         "derived-attributes"
       ],
       "related": [
-        "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
+        "core-books/transcendence-corebook/05-character-creation/es/character-creation.md",
         "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/backgrounds.md",
@@ -526,11 +610,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
+      "path": "core-books/transcendence-corebook/05-character-creation/es/character-creation.md",
       "title": "Creación de Personaje",
       "type": "corebook",
       "language": "es",
-      "chapter": 4,
+      "chapter": 5,
       "section": "character-creation",
       "status": "review",
       "canonical": false,
@@ -545,9 +629,9 @@
         "derived-attributes"
       ],
       "related": [
-        "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
+        "core-books/transcendence-corebook/05-character-creation/en/character-creation.md",
         "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/backgrounds.md",
@@ -574,95 +658,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md",
-      "title": "Specializations",
-      "type": "corebook",
-      "language": "en",
-      "chapter": 8,
-      "section": "specializations",
-      "status": "review",
-      "canonical": false,
-      "tags": [
-        "specializations",
-        "progression",
-        "synapsis",
-        "competencies",
-        "character-development"
-      ],
-      "related": [
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md",
-        "core-books/transcendence-corebook/04-character-creation/en/character-creation.md",
-        "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
-      ],
-      "authority_refs": [
-        "Transcendence-design/docs/system/specializations.md",
-        "Transcendence-design/docs/system/competencies.md",
-        "Transcendence-design/docs/system/backgrounds.md",
-        "Transcendence-design/docs/system/characteristics.md",
-        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
-        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
-        "Transcendence-design/data/system/specializations.yaml",
-        "Transcendence-design/data/system/specializations-catalog.yaml",
-        "Transcendence-design/data/system/competencies.yaml",
-        "Transcendence-design/data/system/backgrounds.yaml"
-      ],
-      "content_kind": "rules",
-      "writing_mode": "rules",
-      "section_modes": [
-        {
-          "heading": "Example",
-          "writing_mode": "example"
-        }
-      ]
-    },
-    {
-      "path": "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md",
-      "title": "Especializaciones",
-      "type": "corebook",
-      "language": "es",
-      "chapter": 8,
-      "section": "especializaciones",
-      "status": "review",
-      "canonical": false,
-      "tags": [
-        "specializations",
-        "progression",
-        "synapsis",
-        "competencies",
-        "character-development"
-      ],
-      "related": [
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md",
-        "core-books/transcendence-corebook/04-character-creation/es/character-creation.md",
-        "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
-      ],
-      "authority_refs": [
-        "Transcendence-design/docs/system/specializations.md",
-        "Transcendence-design/docs/system/competencies.md",
-        "Transcendence-design/docs/system/backgrounds.md",
-        "Transcendence-design/docs/system/characteristics.md",
-        "Transcendence-design/docs/adr/system-abilities-and-specializations.md",
-        "Transcendence-design/docs/adr/system-specialization-rank-restructure.md",
-        "Transcendence-design/data/system/specializations.yaml",
-        "Transcendence-design/data/system/specializations-catalog.yaml",
-        "Transcendence-design/data/system/competencies.yaml",
-        "Transcendence-design/data/system/backgrounds.yaml"
-      ],
-      "content_kind": "rules",
-      "writing_mode": "rules",
-      "section_modes": [
-        {
-          "heading": "Ejemplo",
-          "writing_mode": "example"
-        }
-      ]
-    },
-    {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/en/actions.md",
       "title": "Actions",
       "type": "corebook",
       "language": "en",
-      "chapter": 10,
+      "chapter": 8,
       "section": "actions",
       "status": "draft",
       "canonical": false,
@@ -679,9 +679,9 @@
         "attrition"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/atb-combat-timeline.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/attrition-endurance-fatigue.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/atb-reference.md",
@@ -731,11 +731,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/en/atb-combat-timeline.md",
       "title": "ATB: The Combat Timeline",
       "type": "corebook",
       "language": "en",
-      "chapter": 10,
+      "chapter": 8,
       "section": "atb-combat-timeline",
       "status": "draft",
       "canonical": false,
@@ -750,8 +750,8 @@
         "opening"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/atb-linea-de-tiempo.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/actions.md",
         "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
       ],
       "authority_refs": [
@@ -771,11 +771,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/en/attrition-endurance-fatigue.md",
       "title": "Attrition, Endurance, and Fatigue",
       "type": "corebook",
       "language": "en",
-      "chapter": 10,
+      "chapter": 8,
       "section": "attrition-endurance-fatigue",
       "status": "draft",
       "canonical": false,
@@ -789,10 +789,10 @@
         "fatigue-thresholds"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/en/specializations.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/desgaste-aguante-fatiga.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/rest.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/attrition-fatigue.md",
@@ -815,11 +815,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/en/rest.md",
       "title": "Rest",
       "type": "corebook",
       "language": "en",
-      "chapter": 10,
+      "chapter": 8,
       "section": "rest",
       "status": "draft",
       "canonical": false,
@@ -833,8 +833,8 @@
         "maintenance"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/descanso.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/attrition-endurance-fatigue.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/attrition-fatigue.md",
@@ -851,11 +851,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/es/acciones.md",
       "title": "Acciones",
       "type": "corebook",
       "language": "es",
-      "chapter": 10,
+      "chapter": 8,
       "section": "acciones",
       "status": "draft",
       "canonical": false,
@@ -872,9 +872,9 @@
         "attrition"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/actions.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/actions.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/atb-linea-de-tiempo.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/desgaste-aguante-fatiga.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/atb-reference.md",
@@ -920,11 +920,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/atb-linea-de-tiempo.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/es/atb-linea-de-tiempo.md",
       "title": "ATB: Línea de Tiempo de Combate",
       "type": "corebook",
       "language": "es",
-      "chapter": 10,
+      "chapter": 8,
       "section": "atb-linea-de-tiempo",
       "status": "draft",
       "canonical": false,
@@ -939,8 +939,8 @@
         "opening"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/atb-combat-timeline.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/acciones.md",
         "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
       ],
       "authority_refs": [
@@ -960,11 +960,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/es/descanso.md",
       "title": "Descanso",
       "type": "corebook",
       "language": "es",
-      "chapter": 10,
+      "chapter": 8,
       "section": "descanso",
       "status": "draft",
       "canonical": false,
@@ -978,8 +978,8 @@
         "maintenance"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/rest.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/rest.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/desgaste-aguante-fatiga.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/attrition-fatigue.md",
@@ -996,11 +996,11 @@
       ]
     },
     {
-      "path": "core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md",
+      "path": "core-books/transcendence-corebook/08-conflict-and-combat/es/desgaste-aguante-fatiga.md",
       "title": "Desgaste, Aguante y Fatiga",
       "type": "corebook",
       "language": "es",
-      "chapter": 10,
+      "chapter": 8,
       "section": "desgaste-aguante-fatiga",
       "status": "draft",
       "canonical": false,
@@ -1014,10 +1014,10 @@
         "fatigue-thresholds"
       ],
       "related": [
-        "core-books/transcendence-corebook/10-conflict-and-combat/en/attrition-endurance-fatigue.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/descanso.md",
-        "core-books/transcendence-corebook/10-conflict-and-combat/es/acciones.md",
-        "core-books/transcendence-corebook/08-skills-and-proficiencies/es/especializaciones.md"
+        "core-books/transcendence-corebook/08-conflict-and-combat/en/attrition-endurance-fatigue.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/descanso.md",
+        "core-books/transcendence-corebook/08-conflict-and-combat/es/acciones.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md"
       ],
       "authority_refs": [
         "Transcendence-design/docs/system/attrition-fatigue.md",

@@ -12,14 +12,14 @@
 # content_kind: rules
 # writing_mode: rules
 # language: es
-# chapter: 10
+# chapter: 8
 # section: atb
 # status: draft
 # canonical: false
 # tags: [combat, atb, timing, rhythm]
 # related:
-#   - core-books/transcendence-corebook/10-conflict-and-combat/es/desgaste-aguante-fatiga.md
-#   - core-books/transcendence-corebook/10-conflict-and-combat/en/atb-combat-timeline.md
+#   - core-books/transcendence-corebook/08-conflict-and-combat/es/desgaste-aguante-fatiga.md
+#   - core-books/transcendence-corebook/08-conflict-and-combat/en/atb-combat-timeline.md
 # ---
 
 fields:
@@ -101,7 +101,7 @@ fields:
     type: integer
     required: false
     description: >
-      Chapter number for corebook files. Matches the directory prefix (e.g., 10 for 10-conflict-and-combat).
+      Chapter number for corebook files. Matches the directory prefix (e.g., 8 for 08-conflict-and-combat).
 
   section:
     type: string
