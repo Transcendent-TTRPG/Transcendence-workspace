@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-21",
+  "generated": "2026-04-22",
   "files": [
     {
       "path": "canon/corebook-writing-checklist.md",
@@ -478,6 +478,34 @@
       ]
     },
     {
+      "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations-catalog.md",
+      "title": "Specializations Catalog",
+      "type": "corebook",
+      "language": "en",
+      "chapter": 4,
+      "section": "specializations-catalog",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "catalog",
+        "player-reference",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/catalogo-de-especializaciones.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md",
+        "core-books/transcendence-corebook/05-character-creation/en/character-creation.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/data/system/specializations-catalog.yaml"
+      ],
+      "content_kind": "reference",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
       "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md",
       "title": "Specializations",
       "type": "corebook",
@@ -495,6 +523,7 @@
       ],
       "related": [
         "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations-catalog.md",
         "core-books/transcendence-corebook/05-character-creation/en/character-creation.md",
         "core-books/transcendence-corebook/03-core-rules/en/02-rolling-system-and-competencies.md"
       ],
@@ -520,6 +549,34 @@
       ]
     },
     {
+      "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/es/catalogo-de-especializaciones.md",
+      "title": "Catálogo de Especializaciones",
+      "type": "corebook",
+      "language": "es",
+      "chapter": 4,
+      "section": "catalogo-de-especializaciones",
+      "status": "draft",
+      "canonical": false,
+      "tags": [
+        "specializations",
+        "catalog",
+        "player-reference",
+        "character-development"
+      ],
+      "related": [
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations-catalog.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md",
+        "core-books/transcendence-corebook/05-character-creation/es/character-creation.md"
+      ],
+      "authority_refs": [
+        "Transcendence-design/docs/system/specializations.md",
+        "Transcendence-design/data/system/specializations-catalog.yaml"
+      ],
+      "content_kind": "reference",
+      "writing_mode": "reference",
+      "section_modes": []
+    },
+    {
       "path": "core-books/transcendence-corebook/04-skills-and-proficiencies/es/especializaciones.md",
       "title": "Especializaciones",
       "type": "corebook",
@@ -537,6 +594,7 @@
       ],
       "related": [
         "core-books/transcendence-corebook/04-skills-and-proficiencies/en/specializations.md",
+        "core-books/transcendence-corebook/04-skills-and-proficiencies/es/catalogo-de-especializaciones.md",
         "core-books/transcendence-corebook/05-character-creation/es/character-creation.md",
         "core-books/transcendence-corebook/03-core-rules/es/02-rolling-system-and-competencies.md"
       ],
@@ -783,7 +841,6 @@
         "attrition",
         "endurance",
         "fatigue",
-        "vigor",
         "combat",
         "strain",
         "fatigue-thresholds"
@@ -1008,7 +1065,6 @@
         "attrition",
         "endurance",
         "fatigue",
-        "vigor",
         "combat",
         "strain",
         "fatigue-thresholds"
