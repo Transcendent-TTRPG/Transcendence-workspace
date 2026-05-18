@@ -1,0 +1,7 @@
+interface:
+  display_name: "Technique Play Surface"
+  short_description: "Technique play-surface workflow"
+  default_prompt: "Use $technique-play-surface to convert an authored Technique into aligned core and card play-facing surfaces using the project workflow and closure discipline."
+
+policy:
+  allow_implicit_invocation: true

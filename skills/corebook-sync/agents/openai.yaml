@@ -1,0 +1,7 @@
+interface:
+  display_name: "Corebook Sync"
+  short_description: "Corebook synchronization flow"
+  default_prompt: "Use $corebook-sync to synchronize authority changes into corebook publication files using the project workflow and closure discipline."
+
+policy:
+  allow_implicit_invocation: true

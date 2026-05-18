@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infection Authoring"
+  short_description: "Infection family authoring flow"
+  default_prompt: "Use $infection-authoring to author or revise infection entries and infection-family doctrine using the project workflow, inheritance rules, and closure discipline."

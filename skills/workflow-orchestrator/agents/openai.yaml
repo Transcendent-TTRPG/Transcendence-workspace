@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workflow Orchestrator"
+  short_description: "Workflow execution orchestrator"
+  default_prompt: "Use $workflow-orchestrator to choose the owning workflow, instantiate the right work card, enforce checkpoints, and route the run across project skills without skipping closure."
+
+policy:
+  allow_implicit_invocation: true

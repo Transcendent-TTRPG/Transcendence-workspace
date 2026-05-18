@@ -1,0 +1,190 @@
+---
+name: "technique-authoring"
+description: "Use when authoring, revising, backfilling, or closing a Technique in project authority. Follow the project workflow, phase checkpoints, dependency review, balance review, simulation framing, and closure discipline instead of editing technique files ad hoc."
+---
+
+# Technique Authoring
+
+Use this skill when the task is to create, revise, backfill, normalize, or close one or more Techniques in project authority.
+
+This skill is for Technique work specifically. It does not replace broader authority revision, status-family work, or simulation-port work. Instead, it anchors the technique run to the correct workflow, makes the required checkpoints explicit, and routes outward when the work crosses into other workflows.
+
+## When to use this skill
+
+Use `$technique-authoring` when the user asks for things like:
+
+- create a new Technique
+- revise an existing Technique in `techniques.md` or `techniques.yaml`
+- backfill older Techniques so they match current doctrine
+- clean wording, mechanics, or taxonomy for one Technique
+- port a Technique through the authoring side before simulation or core sync
+- audit whether a Technique is actually "closed"
+
+Do not use this skill as the primary skill when the true owner is another workflow:
+
+- use `authority-revision-workflow` first when the rule problem is upstream and the Technique is only a symptom
+- use `status-family-workflow` first when the work is really about infections, poisons, elixirs, traps, or another repeated family
+- use `species-audit-workflow` first when the user wants a full species pass rather than one Technique
+- use `simulation-port-workflow` after authoring when the main task becomes simulator coverage
+- use `core-sync-workflow` after authoring when the main task becomes publication synchronization
+
+## Required workflow discipline
+
+This skill does not allow ad hoc Technique editing. Every run must be grounded in the project workflow layer.
+
+Start with these project documents:
+
+- `docs/workflows/workflow-execution.md`
+- `docs/workflows/technique-workflow.md`
+- `docs/workcards/technique-workcard-template.md`
+
+Then read only the additional workflow docs that the run actually needs:
+
+- `docs/workflows/dependency-review-workflow.md`
+- `docs/workflows/balance-review-workflow.md`
+- `docs/workflows/simulation-port-workflow.md`
+- `docs/workflows/core-sync-workflow.md`
+- `docs/workflows/authority-revision-workflow.md`
+
+Use the knowledge layer before relying on long chat history:
+
+- `Transcendence-design/docs/knowledge/`
+- `Transcendence-design/data/knowledge/`
+- `Transcendence-design/knowledge_access/`
+
+## Execution pattern
+
+Treat each Technique task as a run with an owner workflow and explicit checkpoints.
+
+### 1. Claim workflow ownership
+
+Before editing, identify whether `technique-workflow` is truly the owner.
+
+If the request is actually blocked by upstream rule ambiguity, switch ownership to `authority-revision-workflow` or run dependency review before touching authority text.
+
+### 2. Instantiate the work card
+
+Use `docs/workcards/technique-workcard-template.md` as the run structure.
+
+You may instantiate it as:
+
+- an actual work card file for substantial work
+- or a strict internal checklist if the task is small
+
+Do not skip its sections. The work card is what keeps the run from collapsing back into improvisation.
+
+### 3. Advance by phase, not by intuition
+
+Move through the technique workflow in order:
+
+1. Intake
+2. Species Framing
+3. Mechanical Framing
+4. Dependency Framing
+5. Balance Framing
+6. Simulation Framing
+7. Editorial Framing
+8. Integration
+9. Validation
+10. Acceptance Closure
+11. Change Impact Record
+
+Do not jump straight into file edits unless the earlier phases are already stable and recoverable from project state.
+
+### 4. Route when the run crosses boundaries
+
+If the Technique run exposes a real cross-workflow dependency, do not fake completion.
+
+Examples:
+
+- if the Technique depends on unresolved wound-treatment doctrine, route through `dependency-review-workflow`
+- if the Technique needs simulator coverage, route into `simulation-port-workflow`
+- if the Technique changes published explanation, route into `core-sync-workflow`
+- if the Technique reveals an upstream rules contradiction, route into `authority-revision-workflow`
+
+### 5. Close explicitly
+
+A Technique is not "done" because the prose looks better.
+
+Close only when you can state:
+
+- authority status
+- YAML status
+- simulation status or precise gap classification
+- publication sync status
+- pending items, if any
+- change impact
+
+## What to produce in a good Technique run
+
+A strong Technique run should leave behind:
+
+- clean authority text in the right source files
+- synchronized structured data when required
+- explicit dependency and balance notes
+- simulation framing or port status
+- closure state with no vague "almost done"
+
+At minimum, capture:
+
+- fantasy
+- world origin
+- why-not-base-action
+- interaction surfaces
+- trigger
+- requirements
+- target/range/area
+- rhythm/attrition
+- roll model
+- effect model
+- duration / expiry / restrictions
+- dependency map
+- balance sanity check
+- simulation gap classification
+- editorial sync note
+- acceptance status
+- change impact
+
+## Quality rules
+
+- Do not treat conversation memory as the primary authority when project authority exists.
+- Do not rewrite ailments, concealment rules, or other inherited subsystems inside the Technique unless the workflow has established that the Technique must own that logic.
+- Prefer inheritance from existing doctrine over repeating full rule payloads.
+- Separate "Technique not closed because authority is ambiguous" from "Technique not closed because simulation support is missing."
+- If a blocker is upstream, name it explicitly instead of forcing a local patch.
+- If a Technique is ready only in authority but not in simulation, say so precisely using the project runtime-gap language.
+- Keep the user informed in plain language, but do not skip workflow checkpoints internally.
+
+## Runtime gap language
+
+When simulation framing is relevant, classify the gap precisely:
+
+- `data_only`
+- `small_runtime_extension`
+- `new_state_family`
+- `new_subsystem`
+- `authority_blocked`
+
+Do not invent softer labels like "almost simulable" when one of the formal categories fits.
+
+## Suggested file touch order
+
+In many runs, this order works well:
+
+1. read workflow docs and authority sources
+2. inspect knowledge layer and current technique state
+3. resolve dependency and balance framing
+4. edit authority text
+5. edit structured YAML if required
+6. route into simulation or core sync only if needed
+7. validate
+8. record acceptance and impact
+
+## Reference map
+
+Use these local references as your first map:
+
+- `references/workflow-map.md`
+- `references/checkpoints.md`
+
+Then open the actual project workflow docs named there.

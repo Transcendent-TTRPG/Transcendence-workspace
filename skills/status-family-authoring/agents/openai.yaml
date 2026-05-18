@@ -1,0 +1,4 @@
+interface:
+  display_name: "Status Family Authoring"
+  short_description: "Status family authoring flow"
+  default_prompt: "Use $status-family-authoring to author or revise a repeated status family such as infections, poisons, elixirs, or trap packages using the project workflow and closure discipline."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technique Porting to Sim"
+  short_description: "Technique sim port workflow"
+  default_prompt: "Use $technique-porting-to-sim to port an authored Technique into the simulator using the project workflow, runtime-gap classification, and coverage discipline."

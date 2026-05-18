@@ -1,0 +1,7 @@
+interface:
+  display_name: "Technique Authoring"
+  short_description: "Technique authoring workflow"
+  default_prompt: "Use $technique-authoring to author or revise a Technique using the project workflow and closure discipline."
+
+policy:
+  allow_implicit_invocation: true

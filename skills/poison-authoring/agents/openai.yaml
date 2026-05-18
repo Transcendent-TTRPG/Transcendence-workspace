@@ -1,0 +1,4 @@
+interface:
+  display_name: "Poison Authoring"
+  short_description: "Poison family authoring flow"
+  default_prompt: "Use $poison-authoring to author or revise poison entries and poison-family doctrine using the project workflow, inheritance rules, and closure discipline."

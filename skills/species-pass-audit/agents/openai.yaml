@@ -1,0 +1,4 @@
+interface:
+  display_name: "Species Pass Audit"
+  short_description: "Species pass audit workflow"
+  default_prompt: "Use $species-pass-audit to audit a species pass across authority, simulation coverage, identity, and backlog using the project workflow and closure discipline."
