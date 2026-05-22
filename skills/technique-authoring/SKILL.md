@@ -229,12 +229,29 @@ At minimum, capture:
 
 These apply to the HTML card effect section and to publication core entries. They do not apply to YAML or authority docs.
 
+### Setting tone
+
+This is a dark survival game. Players are the weakest actors in an overwhelming world. The setting draws from cosmicism — old, vast, indifferent forces — but the goal is not generic Lovecraft pastiche. The tone earns its darkness through physical precision and concrete detail, not through adjectives or abstraction. Flavor text must reflect this. Effect text must remain clear and functional.
+
+### Two zones
+
+Technique cards have two zones that never mix — treat them like Magic: The Gathering cards:
+
+**Flavor text** — one or two lines in the voice of the world. It evokes the feeling of using the technique from inside the fiction. It never explains the mechanic. It never mentions dice, rolls, bonuses, or conditions.
+
+**Effect text** — the complete rule written in narrative prose, second person, present tense. The card speaks directly to the player: "realizas", "recibes", "el objetivo". It is not an algorithm or a labeled sequence. It is a description of what happens, in the order it happens, with mechanical vocabulary placed in normal sentences. A bonus is written as "un bonificador igual a tu rango de X" — never as "+[rango de X]". An outcome is written as "con éxito, el objetivo..." — never as "Éxito: objetivo → Y".
+
+Specific rules:
+
 - **Second person only.** Write "tú" / "tu" — never "el usuario" or "the user". The card speaks directly to the player.
-- **No "bonus".** Use "bonificador" (ES) or "bonus" only in YAML. In prose always write "bonificador".
+- **No bracket notation.** Never write `+[rango de X]` or `−[rango de X]`. Write "un bonificador igual a tu rango de X" or "una penalización igual a tu rango de X".
+- **No "bonus".** Use "bonificador" in all card prose. "bonus" belongs only in YAML.
 - **No YAML-style labels in prose.** "Éxito:", "Fallo:", "Dispara cuando" are internal authoring shorthand. In the card, the rule must read as continuous prose.
 - **No design-intent explanations.** Never write "esto convierte X en la opción más eficiente" or "esto hace que sea más atractivo atacar al usuario". The rule produces that effect — the card does not explain it.
 - **No docstring tone.** If the effect reads like a function description, rewrite it as a rule a player reads at the table. Short, present tense, no parentheticals explaining why.
 - **Flavor text must be atmospheric, not descriptive.** Flavor explains the fiction, not the mechanic. "El objetivo cambia el peso para irse" is flavor. "Esta técnica dispara cuando el objetivo intenta moverse" is not.
+
+For the full flavor text rules, effect text structure, and canonical language patterns, see `technique-play-surface` Prose rules.
 
 ## Quality rules
 

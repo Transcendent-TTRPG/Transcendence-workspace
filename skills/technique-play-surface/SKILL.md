@@ -111,14 +111,7 @@ For localization specifically:
 - only preserve abbreviations when they are canonical rules notation the player
   is expected to know
 
-For `Flavor Text` specifically:
-
-- treat it like a remembered maxim, field saying, or species-true line
-- prefer one strong image or one strong doctrinal turn
-- prefer short declarative lines over layered metaphor
-- ground the line in physical or tactical imagery when possible
-- avoid paraphrasing the effect in prettier words
-- avoid inflated abstraction or dramatic filler that makes the line sound machine-written
+For `Flavor Text` specifically, apply the full flavor text rules in the Prose rules section below. The essential constraint: one short italic sentence, physical and dark, that evokes the tactical fantasy without explaining the rule.
 
 ### 3. Separate survival fields from authority-only fields
 
@@ -202,6 +195,101 @@ A run closes only when:
 - core matches the final surface
 - card matches the final surface
 - abbreviations do not change meaning
+
+## Prose rules
+
+These apply to all play-facing surfaces — both corebook entries and cards. They do not apply to YAML or authority docs.
+
+### Setting tone
+
+This is a dark survival game. Players are the weakest actors in an overwhelming world — the environment, creatures, and forces around them are old, vast, and indifferent. The setting draws from cosmicism, but the goal is not to sound like generic Lovecraft pastiche. The tone earns its darkness through physical precision and concrete detail, not through adjectives or abstraction.
+
+This tone shapes flavor text. Effect text must remain clear and functional. But flavor text must reflect the world the technique lives in.
+
+### Two zones
+
+Technique surfaces have two zones that never mix — treat them like Magic: The Gathering cards:
+
+**Flavor text** — one short italic sentence in the voice of the world. It evokes the technique's tactical fantasy without explaining the rule. It sounds physical, precise, and dark. It prefers concrete images over abstract concepts. It suggests tension, timing, consequence, body movement, material failure, perception, or intent — not the mechanic itself.
+
+**Effect text** — the complete rule written in narrative prose, second person, present tense. The surface speaks directly to the player: "realizas", "recibes", "el objetivo". It is not an algorithm or a labeled sequence. It defines what happens, in the order it happens, with mechanical vocabulary placed in normal sentences.
+
+The core and card share the same prose register. The difference is density only:
+
+- **Core:** one extra sentence is allowed to clarify an edge case, spell out a timing nuance, or resolve a condition the card compresses. The standard does not change.
+- **Card:** compresses where meaning survives intact. Does not change the rule — only removes what the player can infer.
+
+### Flavor text rules
+
+Do:
+
+- One short italic sentence. If it needs two, cut one.
+- Evoke the tactical fantasy without explaining the rule.
+- Sound physical, precise, and dark.
+- Prefer concrete images over abstract concepts.
+- Suggest tension, timing, consequence, body movement, material failure, perception, or intent.
+- Match the technique's specialization indirectly — through its transferable logic, not through literal explanation.
+- Write for a world where the players are the weakest thing in it.
+
+Do not:
+
+- Mention the character, player, mechanic, roll, bonus, condition, range, or action cost.
+- Explain why the specialization applies.
+- Use "el usuario", "el practicante", "la técnica permite", or similar phrases.
+- Use generic epic fantasy language.
+- Use motivational phrases.
+- Over-explain.
+- Make the sentence longer than needed.
+- Repeat the technique name unless it creates strong rhythm.
+- Use direct imperatives unless the technique's style strongly benefits from it.
+
+Style target: short, sharp, concrete, suggestive. More like a blade mark than a paragraph.
+
+### Effect text rules
+
+Structure — in this order when applicable:
+
+1. Trigger, if any — state as prose, not as a labeled field.
+2. The roll — "Realiza una..."
+3. Failure — "Si fallas..."
+4. Success — "Con éxito..." or "Si tienes éxito..."
+5. Duration or end condition if the effect persists — "La técnica termina si..."
+
+Canonical language patterns:
+
+- `Realiza una T.E. (X) contra...`
+- `Si fallas, no ocurre nada.`
+- `Con éxito, el objetivo...`
+- `Este bonificador se aplica una sola vez.`
+- `La técnica termina si te desplazas.`
+
+Do:
+
+- Be clear enough to play without asking the Narrator.
+- Use "tú" when referring to the character.
+- Define the trigger first, if any.
+- Keep one rule idea per sentence whenever possible.
+- Use consistent language across all techniques.
+
+Do not:
+
+- Change the mechanic unless explicitly asked.
+- Add restrictions unless needed to prevent ambiguity.
+- Explain design intent.
+- Use programming-style language: "dispara cuando", "trigger", "fijo", "escala", "evento".
+- Use "usuario" when "tú" is clearer.
+- Use "bonus" — use "bonificador".
+- Hide important limits in flavor text.
+- Mix rule and designer commentary.
+
+### Format rules
+
+- **Second person only.** Write "tú" / "tu" — never "el usuario". Both surfaces speak directly to the player.
+- **No bracket notation.** Never write `+[rango de X]` or `−[rango de X]`. Write "un bonificador igual a tu rango de X" or "una penalización igual a tu rango de X". For dice expressions, write "un número de dados d2 igual a tu rango de X" — not `[rango de X]d2`.
+- **No "bonus".** Use "bonificador" in all play-facing prose. "bonus" belongs only in YAML.
+- **No YAML-style labels in prose.** "Éxito:", "Fallo:", "Dispara cuando" are internal authoring shorthand. In the surface, the rule must read as continuous prose.
+- **No design-intent explanations.** Never write "esto convierte X en la opción más eficiente". The rule produces that effect — the surface does not explain it.
+- **No docstring tone.** If the effect reads like a function description, rewrite it as a rule a player reads at the table. Short, present tense, no parentheticals explaining why.
 
 ## Quality rules
 
