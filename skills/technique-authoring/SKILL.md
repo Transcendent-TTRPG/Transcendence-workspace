@@ -225,6 +225,17 @@ At minimum, capture:
 - acceptance status
 - change impact
 
+## Card prose rules
+
+These apply to the HTML card effect section and to publication core entries. They do not apply to YAML or authority docs.
+
+- **Second person only.** Write "tú" / "tu" — never "el usuario" or "the user". The card speaks directly to the player.
+- **No "bonus".** Use "bonificador" (ES) or "bonus" only in YAML. In prose always write "bonificador".
+- **No YAML-style labels in prose.** "Éxito:", "Fallo:", "Dispara cuando" are internal authoring shorthand. In the card, the rule must read as continuous prose.
+- **No design-intent explanations.** Never write "esto convierte X en la opción más eficiente" or "esto hace que sea más atractivo atacar al usuario". The rule produces that effect — the card does not explain it.
+- **No docstring tone.** If the effect reads like a function description, rewrite it as a rule a player reads at the table. Short, present tense, no parentheticals explaining why.
+- **Flavor text must be atmospheric, not descriptive.** Flavor explains the fiction, not the mechanic. "El objetivo cambia el peso para irse" is flavor. "Esta técnica dispara cuando el objetivo intenta moverse" is not.
+
 ## Quality rules
 
 - Do not treat conversation memory as the primary authority when project authority exists.

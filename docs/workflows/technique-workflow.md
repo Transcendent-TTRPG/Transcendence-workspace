@@ -467,6 +467,14 @@ Check when relevant:
 - publication surfaces reflect the same final payload
 - no drift exists between authority, core, and card after the pass
 
+Card prose check (apply to every HTML card and ES core entry):
+
+- effect section uses second person ("tú") — never "el usuario"
+- no "bonus" in prose — always "bonificador"
+- no YAML-style labels ("Éxito:", "Fallo:", "Dispara cuando") in card text
+- no design-intent sentences ("esto convierte X en la opción más eficiente")
+- no docstring or function-description tone — the card is a rule a player reads at the table
+
 Output:
 - either the Technique closes for this pass
 - or it exits with an explicit pending list
