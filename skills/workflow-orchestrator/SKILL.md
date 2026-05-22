@@ -143,6 +143,12 @@ If no current artifact skill cleanly fits:
 - record the missing skill or missing specialization
 - continue using the workflow docs directly
 
+When the owner is `technique-workflow`, do not let orchestration begin from
+"what current mechanics already support." The orchestrated run should preserve
+the technique fantasy first, then let dependency and simulation framing decide
+whether the system already supports it, needs bounded reusable expansion, or
+must stop with an explicit gap classification.
+
 ### 5. Advance by checkpoints
 
 The orchestrator should not let the run skip from:
@@ -160,10 +166,27 @@ Examples:
 - dependency map
 - balance framing
 - runtime-gap classification
+- runtime gate result
 - publication section mapping
 - audit inventory
 
 If a checkpoint is missing, either produce it or explicitly record why the run is intentionally narrow.
+
+When a run includes simulation coverage, do not allow the work to be spoken of
+as fully integrated unless the runtime gate is explicit:
+
+- `runtime_supported`
+- `runtime_partial`
+- or `runtime_blocked`
+
+If the run stops before `runtime_supported`, any balance conclusion should be
+recorded as provisional rather than final.
+
+And even after `runtime_supported`, do not let the run speak as if the
+Technique were fully validated unless it also has:
+
+- a saved minimum cost question for `Rhythm` / `Attrition`
+- and any obviously necessary derived question for its main secondary surface
 
 ### 6. Route when boundaries are crossed
 

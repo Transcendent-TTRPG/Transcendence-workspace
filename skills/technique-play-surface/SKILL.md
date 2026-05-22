@@ -99,6 +99,27 @@ Shape the Technique into the canonical play-facing structure:
 
 Do not allow authoring scaffolding to leak through unchanged.
 
+For localization specifically:
+
+- fully localize the surface to the publication language
+- do not leave authority-side English profile or competency labels on Spanish
+  player-facing surfaces
+- map internal labels into the published language without changing the mechanic
+- do not preserve authority-side roll abbreviations automatically if the
+  publication surface uses localized player-facing roll names instead
+- prefer complete ordinary player-facing words over layout abbreviations
+- only preserve abbreviations when they are canonical rules notation the player
+  is expected to know
+
+For `Flavor Text` specifically:
+
+- treat it like a remembered maxim, field saying, or species-true line
+- prefer one strong image or one strong doctrinal turn
+- prefer short declarative lines over layered metaphor
+- ground the line in physical or tactical imagery when possible
+- avoid paraphrasing the effect in prettier words
+- avoid inflated abstraction or dramatic filler that makes the line sound machine-written
+
 ### 3. Separate survival fields from authority-only fields
 
 Keep only what players need in play.
@@ -126,6 +147,9 @@ For `Active` Techniques specifically:
 - keep `Requirements` for real access or rules gates
 - leave contextual use logic in trigger understanding or effect wording unless
   the system truly tracks it as a requirement
+- surface named kit families explicitly when they are real game gates
+- make the cleanup path explicit when the technique creates a mark, residue,
+  snag, foul, or similar state that existing rules can clear
 
 ### 4. Produce both surfaces from the same semantic payload
 
@@ -155,6 +179,8 @@ Compression should not:
 - change target scope
 - erase meaningful timing
 - turn an exact rule into an approximate one
+- leave internal-language labels on a player-facing surface just because they
+  are shorter
 
 If authority is exact, the final surface must stay exact.
 
@@ -186,6 +212,11 @@ A run closes only when:
 - Do not repeat top-line fields as keywords unless the keyword adds new system information.
 - Do not let core and card diverge semantically.
 - Do not add approximation language where authority is exact.
+- Do not let flavor text drift into generic fantasy filler or AI-sounding abstraction.
+- Do make flavor text feel like it belongs to the owning species, school, or living tradition.
+- Do not leak English-facing profile, competency, or rules labels into Spanish publication surfaces.
+- Do not preserve internal shorthand automatically if the publication surface uses a different player-facing notation standard.
+- Do not leave `A.R.`, `I.R.`, or similar internal abbreviations on a Spanish-facing surface if the book's own standard spells or names them differently.
 - Use final play-facing language, not pipeline language, in publication artifacts.
 
 ## Typical outputs

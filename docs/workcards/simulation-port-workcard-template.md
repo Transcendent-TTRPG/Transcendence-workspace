@@ -15,6 +15,7 @@
 - `goal`:
 - `current_porting_state`:
 - `out_of_scope`:
+- `publication_artifacts_in_scope`: no — if corebook entry or technique card are needed, use technique-workflow as owner instead
 
 ## Mandatory sources
 
@@ -64,6 +65,10 @@
 
 ### Phase 8. Question Definition
 - `question_ready`:
+- `minimum_cost_question`:
+- `cost_question_reference`:
+- `derived_question_triggers`:
+- `derived_questions`:
 - `question_id_or_gap`:
 
 ## Integration

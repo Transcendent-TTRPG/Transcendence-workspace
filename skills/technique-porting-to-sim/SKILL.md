@@ -150,6 +150,15 @@ You must leave behind explicit statements of:
 
 If one or more are false, record the exact gap instead of implying completeness.
 
+For `question_ready`, the minimum honest expectation is usually:
+
+- one saved question about whether the current `Rhythm` / `Attrition` pair is
+  justified
+
+And when the Technique leans on a clear secondary surface, also:
+
+- one derived question for that surface or an explicit recorded gap
+
 ## Runtime gap language
 
 Use only the formal simulator gap classes:
@@ -183,6 +192,8 @@ At minimum, capture:
 - policy coverage status
 - scenario coverage status
 - question coverage status
+- minimum cost question
+- derived question set
 - validation status
 - impact on coverage trackers
 
@@ -194,6 +205,11 @@ At minimum, capture:
 - Keep declarative data and runtime semantics aligned; do not hide missing runtime in YAML.
 - If a port is blocked by authority, record `authority_blocked` instead of patching around the ambiguity.
 - If a Technique is data-defined but not policy- or scenario-exercisable, say that explicitly.
+- Do not call a Technique fully validated if it has runtime support but no
+  saved cost question yet.
+- If the Technique's value depends on ailments, concealment, procedural states,
+  reactions, geometry, breakage, kits, or residues, inspect whether that
+  surface also deserves its own question.
 - Extend runtime narrowly; do not perform opportunistic subsystem redesigns during a local Technique port unless the workflow has explicitly shifted.
 
 ## Suggested port sequence
@@ -205,7 +221,7 @@ In many runs, this order works well:
 3. classify the runtime gap
 4. update simulator data definitions
 5. extend runtime only if required
-6. update policies, scenarios, and questions if needed
+6. update policies, scenarios, and questions
 7. validate loaders, runtime, and coverage
 8. record acceptance and impact
 

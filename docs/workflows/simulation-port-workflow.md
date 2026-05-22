@@ -11,6 +11,14 @@ The purpose of this workflow is not just to create `sim/data` entries. Its
 purpose is to make simulation coverage explicit, classify runtime gaps
 correctly, and keep simulator work aligned with authority and doctrine.
 
+It should also make one thing operationally explicit:
+
+- `sim_defined` is not enough for serious balance review
+- a Technique should normally reach `runtime_supported` before it is treated as
+  a complete balance subject rather than a doctrinal estimate
+- a Technique should normally define at least one saved balance question before
+  it is treated as fully validated rather than merely executable
+
 ## Purpose
 
 Use this workflow when:
@@ -19,6 +27,11 @@ Use this workflow when:
 - extending runtime to support a currently-authored effect
 - moving a Technique from `authored` toward `question_ready`
 - auditing whether current simulator coverage is honest
+
+Do NOT use this workflow as owner when the run must also produce publication
+artifacts (corebook entry, technique card). In that case use
+`technique-workflow` as owner with `simulation-port-workflow` linked.
+This workflow is sim-only. Publication is out of its scope.
 
 ## Relationship to authority
 
@@ -94,6 +107,20 @@ Every authored Technique should move through these states explicitly:
 
 These are not vibes. They are coverage claims and should only be asserted when
 true.
+
+## Runtime support as a gate
+
+For workflow purposes, `runtime_supported` is a real gate, not a soft note.
+
+That means:
+
+- `sim_defined` means the Technique exists in simulation-facing data
+- `runtime_supported` means the engine can resolve its core behavior honestly
+- strong balance review should normally happen **after** `runtime_supported`
+- before that point, only provisional doctrinal cost review is safe
+
+This keeps the project from balancing imagined behavior instead of implemented
+behavior.
 
 ## Runtime gap classifications
 
@@ -269,6 +296,47 @@ Outputs:
 - runtime support implementation
 - updated runtime status
 
+### Runtime support criteria
+
+Do not mark a Technique as `runtime_supported` unless all of these are true:
+
+- its core roll path resolves in engine
+- its primary effect path resolves in engine
+- its expiry / cleanup / consumption path is honest enough for the authored behavior
+- the implementation is not a knowingly distorting placeholder
+- at least one focused runtime or loader validation exists for the ported behavior
+
+If these are not true, keep the state at:
+
+- `sim_defined`
+
+and keep the gap explicit.
+
+### Runtime support outcome
+
+Phase 5 should end in exactly one of these states:
+
+- `runtime_supported`
+- `runtime_partial`
+- `runtime_blocked`
+
+#### `runtime_supported`
+
+The engine resolves the Technique honestly enough for downstream scenario and
+balance work.
+
+#### `runtime_partial`
+
+Part of the Technique is real in runtime, but a meaningful portion is still
+missing, distorted, or manually assumed.
+
+This is still **not** `runtime_supported`.
+
+#### `runtime_blocked`
+
+The runtime gap is still too large or upstream-dependent to implement in this
+run.
+
 ## Phase 6. Policy Exercise
 
 Questions:
@@ -301,6 +369,8 @@ Outputs:
 
 Questions:
 - What repeatable design question does this port unlock?
+- What is the **minimum cost question** this Technique must answer about
+  `Rhythm` and `Attrition`?
 - Is it already useful for:
   - probability
   - tempo
@@ -308,9 +378,46 @@ Questions:
   - survivability
   - counterplay
   - comparative species testing
+- Does the Technique justify additional derived questions because of its effect
+  family?
+
+Minimum rule:
+
+- every Technique should normally leave this phase with at least one saved
+  question about whether its current `Rhythm` / `Attrition` pair is justified
+  relative to a meaningful reference
+
+Typical references:
+
+- base action baseline
+- sibling Technique in the same origin
+- next lighter / next heavier step in the same ladder
+- a direct alternative that trades damage for control, geometry, or persistence
+
+### Derived question triggers
+
+If the Technique uses one of these surfaces, create or queue at least one
+derived question for that surface:
+
+- `ailments`
+  - persistence, cleanup/recovery burden, activation pressure
+- `concealment`
+  - gain rate, detection rate, crossing success
+- `procedural states`
+  - persistence, cleanup path, effective burden frequency
+- `reactions`
+  - trigger frequency, opportunity rate, cost efficiency
+- `positioning` or `geometry`
+  - meter/angle swing, line recovery, path denial
+- `breaking`, `zones`, or `parts`
+  - disable rate, downstream tactical consequence, swinginess
+- `kits`, `residues`, or consumable setup`
+  - whether access friction or cleanup burden already constrains value enough
 
 Outputs:
 - `question_ready` true or false
+- minimum cost question
+- derived question set
 - question seed or question gap
 
 ## Phase 9. Validation
@@ -318,6 +425,42 @@ Outputs:
 Validation may include:
 - loader tests
 - runtime tests
+
+Questions:
+- Does the loader read the data definition correctly?
+- Does the runtime behavior actually resolve as authored?
+- If the Technique is still not `runtime_supported`, is that limitation stated
+  explicitly?
+- Does the Technique now have at least one saved cost question?
+- If it opens a clearly distinct effect surface, does it also have the right
+  derived question or an explicit pending gap?
+
+Outputs:
+- validation status
+- runtime gate result confirmed or denied
+
+## Phase 10. Balance Handoff
+
+Questions:
+- Has this Technique reached `runtime_supported`?
+- If yes, is it ready for serious balance review?
+- If not, is the next cost discussion only doctrinal / provisional?
+- Does the `cost_note` in `techniques.yaml` match the structured `rhythm_cost` / `attrition_cost` fields?
+
+Outputs:
+- `ready_for_balance_review`
+- or `doctrinal_only_until_runtime_supported`
+
+Rule:
+
+Do not treat a Technique as fully balance-review-ready just because it is
+`sim_defined`.
+
+Cost arbitration rule: when simulation validates or changes a cost, the
+structured `rhythm_cost` / `attrition_cost` fields are the binding record.
+The `cost_note` must be updated to match before the port is considered closed.
+A `cost_note` that states a different cost than the structured fields is a
+documentation error, not a design ambiguity.
 - exchange tests
 - policy tests
 - scenario tests

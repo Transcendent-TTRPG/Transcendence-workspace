@@ -9,6 +9,49 @@ Use this skill when the task is to create, revise, backfill, normalize, or close
 
 This skill is for Technique work specifically. It does not replace broader authority revision, status-family work, or simulation-port work. Instead, it anchors the technique run to the correct workflow, makes the required checkpoints explicit, and routes outward when the work crosses into other workflows.
 
+## Authoring stance
+
+This skill is **fantasy-first** and **combat-first**.
+
+Do not begin new Technique work by shrinking the idea to whatever the current
+mechanics or simulator already support.
+
+Begin by preserving:
+
+- the species-true fantasy
+- the concrete tactical moment **in ATB combat** — this is the primary design target
+- the held identity of the move
+
+**Combat-first rule:** Every new Technique must be designed for ATB combat use
+as its primary case. Exploration or investigation utility is a valid secondary
+benefit but is not a sufficient primary use on its own. If a Technique works
+only outside combat, the run must explicitly document why that is the correct
+design before proceeding — it is not a default.
+
+Then use the workflow to ground that fantasy in the system.
+
+The right order is:
+
+1. fantasy
+2. authority
+3. dependency check
+4. bounded system expansion if justified
+5. simulation / publication surfaces
+
+Reasonable bounded expansions opened by a Technique may include:
+
+- kit families
+- ailment-family extensions
+- grievance or burden surfaces
+- procedural states
+- cleanup / treatment paths
+- other reusable subsystem pieces of similar scale
+
+Do **not** treat one Technique as automatic justification for inventing an
+entire large mechanic family or macro-system. If the needed support is too
+large, record that explicitly instead of mutilating the fantasy or pretending
+the support already exists.
+
 ## When to use this skill
 
 Use `$technique-authoring` when the user asks for things like:
@@ -91,6 +134,9 @@ Move through the technique workflow in order:
 
 Do not jump straight into file edits unless the earlier phases are already stable and recoverable from project state.
 
+For new Technique creation, make sure the early phases preserve the original
+fantasy before dependency or simulation pressure starts trimming it.
+
 ### 4. Route when the run crosses boundaries
 
 If the Technique run exposes a real cross-workflow dependency, do not fake completion.
@@ -115,6 +161,36 @@ Close only when you can state:
 - pending items, if any
 - change impact
 
+### 6. Treat validation as a formal check battery
+
+Do not let validation collapse into "the agent thinks it looks correct."
+
+Run validation as explicit check families and record each as:
+
+- `pass`
+- `fail`
+- `not_applicable`
+- `blocked`
+
+Minimum families to consider:
+
+- `roll_integrity`
+- `surface_integrity`
+- `exchange_integrity`
+- `ailment_integrity`
+- `critical_break_integrity`
+- `atb_integrity`
+- `dependency_integrity`
+- `simulation_integrity`
+- `balance_sanity`
+- `loader_validation`
+- `scenario_validation`
+- `question_validation`
+- `publication_consistency`
+
+Not every Technique will use every family, but the run should explicitly mark
+which ones were applicable and what their result was.
+
 ## What to produce in a good Technique run
 
 A strong Technique run should leave behind:
@@ -128,6 +204,7 @@ A strong Technique run should leave behind:
 At minimum, capture:
 
 - fantasy
+- irreducible fantasy statement
 - world origin
 - why-not-base-action
 - interaction surfaces
@@ -139,8 +216,11 @@ At minimum, capture:
 - effect model
 - duration / expiry / restrictions
 - dependency map
+- bounded-expansion decision
 - balance sanity check
 - simulation gap classification
+- minimum cost question requirement
+- derived question triggers if applicable
 - editorial sync note
 - acceptance status
 - change impact
@@ -153,7 +233,13 @@ At minimum, capture:
 - Separate "Technique not closed because authority is ambiguous" from "Technique not closed because simulation support is missing."
 - If a blocker is upstream, name it explicitly instead of forcing a local patch.
 - If a Technique is ready only in authority but not in simulation, say so precisely using the project runtime-gap language.
+- Do not treat a Technique as strongly validated if it still lacks its saved
+  minimum cost question.
+- If the Technique's value depends on ailments, concealment, procedural states,
+  reactions, geometry, breakage, kits, or residues, make sure the run names the
+  derived question family that should eventually test that surface.
 - Keep the user informed in plain language, but do not skip workflow checkpoints internally.
+- Do not summarize validation as a vibe check; validation must be recorded as explicit system checks.
 
 ## Runtime gap language
 
@@ -177,7 +263,7 @@ In many runs, this order works well:
 4. edit authority text
 5. edit structured YAML if required
 6. route into simulation or core sync only if needed
-7. validate
+7. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
 8. record acceptance and impact
 
 ## Reference map

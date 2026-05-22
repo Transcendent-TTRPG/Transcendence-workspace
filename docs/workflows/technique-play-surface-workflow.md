@@ -73,6 +73,12 @@ Key references:
 
 ## Core lenses
 
+### `species_lens`
+Checks:
+- whether the flavor line sounds like the species or tradition that owns the Technique
+- whether the voice feels remembered, practiced, or taught instead of generically dramatic
+- whether the line carries one strong image rather than diffuse abstraction
+
 ### `system_lens`
 Checks:
 - whether the play-facing block still states the mechanic honestly
@@ -85,6 +91,9 @@ Checks:
 - compression quality
 - player-facing clarity
 - whether flavor text, requirements, and effect are legible at a glance
+- whether publication language is fully localized instead of leaking authority-side English labels
+- whether roll and payload notation follows the player-facing standard of the publication language
+- whether ordinary player-facing words remain complete instead of being shortened for layout
 
 ### `continuity_lens`
 Checks:
@@ -178,17 +187,28 @@ Outputs:
 
 Primary lenses:
 
+- `species_lens`
 - `system_lens`
 - `editorial_lens`
 
 Questions:
 
 - What should the top-line classification be in final play?
+- Does the flavor text sound like a line the owning species or tradition would actually say?
+- Is the flavor text carrying one strong image or one strong maxim instead of paraphrasing the effect?
+- Does the flavor text avoid inflated or generic AI-sounding abstraction?
+- Is the flavor text short, declarative, and physically or tactically grounded enough to be memorable at a glance?
 - Which requirements are true game mechanisms and which are only authoring or common-sense constraints?
 - For an `Active` Technique, is any listed requirement actually only tactical context rather than a formal gate?
+- Does the Technique depend on a named kit family that must appear explicitly on the final surface?
 - Which keywords add real information rather than repeating existing fields?
 - Does the effect text say only what players need to resolve the Technique?
 - Does the wording remain mechanically exact, without adding approximation that authority does not contain?
+- Do all player-facing labels match the language of the publication surface instead of reusing internal authority terms?
+- Are roll names and payload labels localized to the publication standard instead of copied from authority shorthand?
+- Are ordinary player-facing words kept complete instead of being shortened for layout?
+- If something remains abbreviated, is it canonical rules notation rather than ad hoc compression?
+- If the Technique creates a mark, residue, snag, foul, or similar clearable state, is the cleanup path explicit and tied to `Interactuar`, `Usar Especialización`, or another real subsystem response?
 
 Outputs:
 
@@ -208,6 +228,10 @@ Non-negotiable rule:
 - compression may shorten wording
 - compression may not weaken exactness
 - if authority says `1 meter`, the final surface must not say `approximately 1 meter`
+- flavor text may be compressed, but should not lose species voice or collapse into generic dramatic filler
+- short, concrete doctrine lines are preferred over ornate metaphor
+- localization may map authority labels into the publication language, but should not change the underlying mechanic
+- notation may change from internal shorthand to player-facing naming, but should not change the underlying mechanic
 
 ## Phase 3. Core Surface Integration
 
@@ -259,6 +283,8 @@ Questions:
 - Do authority, core, and card still say the same Technique?
 - Did compression change the mechanic?
 - Did category, requirements, or keywords drift from the agreed final surface rules?
+- Did any English authority labels leak into a Spanish-facing surface, or vice versa?
+- Did internal roll abbreviations leak into a surface that should use localized player-facing notation?
 
 Outputs:
 

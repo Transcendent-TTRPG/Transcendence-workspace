@@ -77,11 +77,19 @@
 
 ## Validation
 
-- `doctrinal_review_done`:
-- `loader_validation_done`:
-- `runtime_validation_done`:
-- `scenario_test_done`:
-- `question_test_done`:
+- `roll_integrity`:
+- `surface_integrity`:
+- `exchange_integrity`:
+- `ailment_integrity`:
+- `critical_break_integrity`:
+- `atb_integrity`:
+- `dependency_integrity`:
+- `simulation_integrity`:
+- `balance_sanity`:
+- `loader_validation`:
+- `scenario_validation`:
+- `question_validation`:
+- `publication_consistency`:
 
 ## Acceptance closure
 

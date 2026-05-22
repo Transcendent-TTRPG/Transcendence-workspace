@@ -46,10 +46,16 @@ Before editing files, identify the primary workflow.
 
 Examples:
 - new or revised Technique -> `technique-workflow`
-- sim backfill -> `simulation-port-workflow`
+- full Technique backfill (sim + corebook entry + technique card) -> `technique-workflow` with `simulation-port-workflow` linked
+- sim-only backfill (no publication artifacts needed) -> `simulation-port-workflow`
 - publication divergence -> `core-sync-workflow`
 - taxonomy contradiction -> `authority-revision-workflow`
 - broad retroactive cleanup -> `batch-refactor-workflow`
+
+Important: use `simulation-port-workflow` as owner only when publication
+artifacts (corebook entry, technique card) are explicitly out of scope. If the
+run must also produce a corebook entry or technique card, `technique-workflow`
+is the correct owner.
 
 If the task seems to need more than one workflow:
 - choose one owner
@@ -83,6 +89,7 @@ Examples:
 - intake complete
 - dependency map recorded
 - runtime gap classified
+- runtime gate resolved
 - publication scope mapped
 - evidence inventory recorded
 

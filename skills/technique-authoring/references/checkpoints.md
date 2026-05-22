@@ -9,10 +9,12 @@ Every Technique run should be recoverable from these checkpoints.
 - objective of the run stated
 - current authority / simulation / publication state identified
 - mandatory sources listed
+- run classified as fantasy-led authoring, revision, or backfill
 
 ## Species framing
 
 - species fit stated
+- irreducible fantasy stated before mechanical trimming
 - world origin stated
 - non-goals stated when relevant
 - primary and secondary interaction surfaces named
@@ -32,6 +34,7 @@ Every Technique run should be recoverable from these checkpoints.
 - downstream dependencies mapped
 - linked files identified
 - blocker status identified
+- bounded-expansion decision recorded
 
 ## Balance framing
 
@@ -57,6 +60,33 @@ Every Technique run should be recoverable from these checkpoints.
 - structured data updated when required
 - simulator/core updates routed if needed
 - validation performed or explicitly deferred with reason
+
+### Validation discipline
+
+Validation is not a freeform opinion pass.
+
+Mark each relevant family as one of:
+
+- `pass`
+- `fail`
+- `not_applicable`
+- `blocked`
+
+Core families:
+
+- `roll_integrity`
+- `surface_integrity`
+- `exchange_integrity`
+- `ailment_integrity`
+- `critical_break_integrity`
+- `atb_integrity`
+- `dependency_integrity`
+- `simulation_integrity`
+- `balance_sanity`
+- `loader_validation`
+- `scenario_validation`
+- `question_validation`
+- `publication_consistency`
 
 ## Closure
 

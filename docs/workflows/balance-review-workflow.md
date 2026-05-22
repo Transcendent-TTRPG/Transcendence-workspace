@@ -38,6 +38,26 @@ Instead:
 - simulation gives repeatable evidence under explicit assumptions
 - balance review interprets both together
 
+## Cost arbitration rule
+
+When simulation produces a validated cost that contradicts the prose `cost_note`
+in `techniques.yaml`, the simulation-validated cost wins.
+
+Concretely:
+
+- the structured `rhythm_cost` / `attrition_cost` fields in the YAML are the
+  binding record
+- `cost_note` is explanatory prose and must be updated to match the validated
+  numeric fields after any balance review that changes or confirms a cost
+- do not leave a `cost_note` that states a cost different from the structured
+  fields — that is a documentation error, not a design ambiguity
+
+When a balance review confirms a cost without changing it, the `cost_note`
+should be updated to say the cost was validated by simulation, not just asserted.
+
+When a balance review changes a cost, both the structured field and the
+`cost_note` must be updated together in the same pass.
+
 If a balance question exposes a real contradiction in authority, it should be
 routed into:
 - [Authority Revision Workflow](./authority-revision-workflow.md)
@@ -45,6 +65,10 @@ routed into:
 If the balance question cannot be answered honestly because simulator coverage is
 too thin, it should be routed into:
 - [Simulation Port Workflow](./simulation-port-workflow.md)
+
+If a Technique does not yet have its saved minimum cost question, the review
+should normally stay preliminary and route toward question authoring instead of
+pretending full balance validation already exists.
 
 ## Required layers
 
@@ -54,6 +78,20 @@ Every balance review should rely on:
 - relevant sibling artifacts for comparison
 - simulator evidence if available
 - explicit assumptions
+- and, for Technique-level closure, the saved minimum cost question when it
+  exists
+
+For `Rhythm` and `Attrition` specifically, the review should anchor itself to:
+
+- [ADR — ATB Base Rhythm Costs](../../Transcendence-design/docs/adr/combat-atb-rhythm-costs.md)
+
+The review must distinguish clearly between:
+
+- the **canonical system spectrum**
+- and the **currently observed simulator cluster**
+
+It should not treat a temporary cluster of ported Techniques as if it were the
+entire system's true baseline.
 
 ## Core lenses
 
@@ -65,6 +103,8 @@ Checks:
 - boundedness
 - counterplay
 - payoff relative to setup
+- whether the artifact belongs in a broader canonical cost band even if the
+  current simulator subset clusters elsewhere
 
 ### `system_lens`
 Checks:
@@ -132,6 +172,11 @@ Examples:
 The question is real, but the project does not yet have enough authority
 clarity, simulator coverage, or scenario evidence to answer it responsibly.
 
+This should also be the normal outcome when:
+
+- the Technique still lacks its minimum saved cost question
+- or a clearly necessary derived question is still missing
+
 ## Evidence classes
 
 Balance review should distinguish evidence sources clearly.
@@ -191,11 +236,18 @@ Questions:
   - counterplay
   - species identity distortion
 - What would count as evidence either way?
+- Is the concern about a true mismatch against the canonical cost spectrum, or
+  only against the currently ported sample?
+- Does the Technique already have its minimum saved cost question?
+- Does it also need a derived question because its value depends on a special
+  surface such as ailments, concealment, procedural states, reactions,
+  geometry, breakage, kits, or residues?
 
 Outputs:
 - framed balance question
 - explicit concern type
 - evaluation criteria
+- question sufficiency note
 
 ## Phase 2. Doctrinal Baseline
 
@@ -209,11 +261,14 @@ Questions:
 - What niche is it supposed to occupy?
 - What should it not be better than?
 - What sibling or comparable artifacts form the correct comparison set?
+- Which canonical `Rhythm` band and `Attrition` band should this artifact be
+  compared against first?
 
 Outputs:
 - doctrinal baseline
 - comparison set
 - intended niche summary
+- canonical cost-band target
 
 ## Phase 3. Evidence Inventory
 
