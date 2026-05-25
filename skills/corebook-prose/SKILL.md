@@ -91,7 +91,8 @@ Identify any canonical terms the passage must use. Cross-reference against `glos
 
 **For rules text:**
 - declarative sentences; one mechanism per sentence
-- third person ("the target", "a creature", "the effect")
+- **table entries in catalog files use second person (tú implied):** "debes superar", "si fallas", "no puedes", "quedas", "pierdes" — the reader is the character
+- third person ("el objetivo", "la fuente", "la acción") is reserved for references where a specific game element is the subject, not the player character
 - use canonical system terms exactly as they appear in `glossary.md`
 - no emotional framing; no atmospheric language
 - formulas: write `1d10 + Characteristic + competency level + additional bonuses`, never shorthand placeholders
@@ -143,9 +144,9 @@ These are destinations, not templates. Do not try to match their structure — f
 | ES | EN | Condition |
 | --- | --- | --- |
 | *El cuerpo aguanta. El aire, menos cada vez.* | *(pending)* | Asfixiado |
-| *El cuerpo ya decidió. La voluntad llegó después.* | *(pending)* | Aterrorizado |
-| *El mundo vuelve antes que el cuerpo.* | *(pending)* | Atrapado |
-| *La siguiente acción quedó sin dueño.* | *(pending)* | Aturdido |
+| *El cuerpo ya sucumbió. La voluntad llegó tarde.* | *(pending)* | Aterrorizado |
+| *El espacio sigue. El cuerpo encontró su límite.* | *(pending)* | Atrapado |
+| *El mundo vuelve antes que el cuerpo.* | *(pending)* | Aturdido |
 | *La amenaza sigue ahí. El mundo solo dejó de señalarla.* | *The threat is still there. The world just stopped pointing at it.* | Cegado |
 | *Las diferencias siguen ahí. El juicio ya no sabe cuáles importan.* | *(pending)* | Confundido |
 | *El frío no avisa. Para cuando el cuerpo reacciona, ya está adentro.* | *(pending)* | Congelado |
