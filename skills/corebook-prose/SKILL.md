@@ -111,54 +111,41 @@ If it sounds robotic, it is not done. If it sounds abstract, it is not done. If 
 
 These apply specifically to the short italic flavor lines that open each entry in ailment, condition, and technique catalog entries.
 
-### Voice pattern established for Alterations
+### Hard constraints
 
-The confirmed voice for Alteración/Alteration flavor lines:
+These are non-negotiable regardless of how the line is found:
 
 - **1–2 sentences, no more**
-- **Body-first:** the body, a specific muscle group, a limb, a sense, or a physical process is the subject — not "the target"
-- **Physical or sensorial:** what the body registers, fails, delays, or loses — not what it "experiences" abstractly
-- **Contrasting or sequential:** two facts in tension ("X arrived. Y did not follow."), or a causal chain ("X happened. The body does Y.")
-- **No hollow adjectives:** not "unbearable", "horrifying", "overwhelming" — find the physical fact instead
-- **No game language:** no rolls, no penalties, no conditions named
+- **No game language:** no rolls, no penalties, no conditions named, no system terms
+- **No hollow adjectives:** not "insoportable", "aterrador", "aplastante" — find the physical fact, not the label
+- **No "el objetivo" or "the target" as subject** when the body, a part of it, or the world itself can be
 
-### The reframe technique
+### Finding the line
 
-The strongest flavor lines do not describe the condition — they describe what changed in the **relationship between the character and the world**.
+A flavor line is not assembled — it is found. The technique is in the search, not in the construction.
 
-Instead of asking "what does the body fail to do?", ask:
-- What did the world stop communicating?
-- What is still real and present, but now unreachable?
-- What expected channel closed?
+**Start with the specific truth of this condition.** Not what conditions in general do, not what this category of condition does — what *this* condition and no other does to the body, to the senses, or to the relationship between the character and the world.
 
-The threat is still there. The signal is still sent. Only the access broke.
+Ask: could this line appear in any other entry? If yes, it has not found the specific truth yet.
 
-This produces lines with asymmetry: one thing continues, another stopped. The condition lives in that gap — not in the body's failure alone.
+**Do not write the observation you expect.** The expected line for Paralizado is "el cuerpo no puede moverse". The found line is *La señal llega. El cuerpo no la ejecuta.* — the will is intact, only the execution is broken. That asymmetry is specific. It could only be Paralizado.
 
-Pattern: **what persists / what broke**.
+**Look for what continues when the expected thing breaks.** Something is still real, still present, still trying — but something else in the chain broke. The condition lives in that gap. This is not a formula; it is a way of seeing. Sometimes the gap is in the body. Sometimes it is in the world. Sometimes it is in time. Let the condition itself show where it is.
 
-Examples of this operating:
-- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* — the danger is real; only the signal is gone (Cegado)
-- *La señal llega. El cuerpo no la ejecuta.* — the will is intact; only the execution is broken (Paralizado)
-- *La descarga pasó. Los músculos no terminan de creérselo.* — the cause is gone; the body hasn't caught up (Electrizado)
-- *El cuerpo tiene límites. Algo los encontró primero.* — the limits were always there; something else found them before the character did (Atrapado)
-
-The body-first rule is a floor, not a ceiling. When the reframe angle is stronger, use it.
+**Write it with the simplest words once found.** Short physical verbs. No elaborate constructions. The surprise is already in the observation — do not embellish it. If you can see how the line was built, it is not done.
 
 ### Confirmed samples (ES → EN)
 
-- *Los músculos responden con retraso. El frío ya lleva ventaja.* → *The muscles respond late. The cold already has the lead.*
-- *El golpe llegó. La claridad tardará en volver.* → *The hit landed. Clarity will take a while to return.*
+These are destinations, not templates. Do not try to match their structure — find the truth the way they did.
+
 - *La postura cede. El suelo gana.* → *Posture gives. The ground wins.*
 - *La descarga pasó. Los músculos no terminan de creérselo.* → *The discharge passed. The muscles have not finished believing it.*
 - *Moverse cuesta. La herida recuerda exactamente cuánto.* → *Moving costs. The wound remembers exactly how much.*
 - *La señal llega. El cuerpo no la ejecuta.* → *The signal arrives. The body does not execute it.*
-- *Demasiado a la vez. El sistema no encuentra por dónde salir.* → *Too much at once. The system cannot find a way out.*
-- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* → *(EN pending)*
-- *El cuerpo tiene límites. Algo los encontró primero.* → *(EN pending)*
-- *El juicio ya no discrimina bien. Actuar cuesta más de lo que debería.* → *(EN pending)*
+- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* → *The threat is still there. The world just stopped pointing at it.*
+- *El cuerpo tiene límites. Algo los encontró primero.* → *The body has limits. Something found them first.*
 
-Use these as calibration for all future flavor lines in ailment and condition entries.
+Use these as calibration for rhythm and economy — not as structural models to replicate.
 
 ## Quality rules
 
@@ -172,6 +159,8 @@ Use these as calibration for all future flavor lines in ailment and condition en
 - If a rules line sounds atmospheric or evocative, move that content to flavor text or cut it.
 - Prefer two short sentences over one long compound sentence with conjunctions stacked.
 - Do not add flavor where none existed unless the task explicitly requests it.
+- **Specificity test:** if this flavor line could appear in any other entry unchanged, it has not found the specific truth yet — discard and search again.
+- **Construction test:** if you can see how the line was assembled, it is not done — the technique should be invisible in the result.
 
 ## Reference map
 
