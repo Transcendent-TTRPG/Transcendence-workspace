@@ -49,6 +49,8 @@ Use these first for the current production loop around Techniques.
   - primary skill for synchronizing authority changes into publication surfaces
 - [corebook-prose](./corebook-prose/SKILL.md)
   - primary skill for writing or revising prose in corebook publication files — flavor text, rules text, voice passes, bilingual alignment
+- [corebook-description](./corebook-description/SKILL.md)
+  - primary skill for writing or revising description-mode content — species, creatures, equipment, world/faction passages, cosmic horror ambiance
 - [species-pass-audit](./species-pass-audit/SKILL.md)
   - primary skill for species-wide inventory, identity, coverage, and backlog review
 
