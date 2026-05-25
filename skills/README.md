@@ -47,6 +47,8 @@ Use these first for the current production loop around Techniques.
   - primary skill for translating authored Techniques into simulator coverage
 - [corebook-sync](./corebook-sync/SKILL.md)
   - primary skill for synchronizing authority changes into publication surfaces
+- [corebook-prose](./corebook-prose/SKILL.md)
+  - primary skill for writing or revising prose in corebook publication files — flavor text, rules text, voice passes, bilingual alignment
 - [species-pass-audit](./species-pass-audit/SKILL.md)
   - primary skill for species-wide inventory, identity, coverage, and backlog review
 
