@@ -122,7 +122,31 @@ The confirmed voice for Alteración/Alteration flavor lines:
 - **No hollow adjectives:** not "unbearable", "horrifying", "overwhelming" — find the physical fact instead
 - **No game language:** no rolls, no penalties, no conditions named
 
-Confirmed samples (ES → EN):
+### The reframe technique
+
+The strongest flavor lines do not describe the condition — they describe what changed in the **relationship between the character and the world**.
+
+Instead of asking "what does the body fail to do?", ask:
+- What did the world stop communicating?
+- What is still real and present, but now unreachable?
+- What expected channel closed?
+
+The threat is still there. The signal is still sent. Only the access broke.
+
+This produces lines with asymmetry: one thing continues, another stopped. The condition lives in that gap — not in the body's failure alone.
+
+Pattern: **what persists / what broke**.
+
+Examples of this operating:
+- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* — the danger is real; only the signal is gone (Cegado)
+- *La señal llega. El cuerpo no la ejecuta.* — the will is intact; only the execution is broken (Paralizado)
+- *La descarga pasó. Los músculos no terminan de creérselo.* — the cause is gone; the body hasn't caught up (Electrizado)
+- *El cuerpo tiene límites. Algo los encontró primero.* — the limits were always there; something else found them before the character did (Atrapado)
+
+The body-first rule is a floor, not a ceiling. When the reframe angle is stronger, use it.
+
+### Confirmed samples (ES → EN)
+
 - *Los músculos responden con retraso. El frío ya lleva ventaja.* → *The muscles respond late. The cold already has the lead.*
 - *El golpe llegó. La claridad tardará en volver.* → *The hit landed. Clarity will take a while to return.*
 - *La postura cede. El suelo gana.* → *Posture gives. The ground wins.*
@@ -130,6 +154,9 @@ Confirmed samples (ES → EN):
 - *Moverse cuesta. La herida recuerda exactamente cuánto.* → *Moving costs. The wound remembers exactly how much.*
 - *La señal llega. El cuerpo no la ejecuta.* → *The signal arrives. The body does not execute it.*
 - *Demasiado a la vez. El sistema no encuentra por dónde salir.* → *Too much at once. The system cannot find a way out.*
+- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* → *(EN pending)*
+- *El cuerpo tiene límites. Algo los encontró primero.* → *(EN pending)*
+- *El juicio ya no discrimina bien. Actuar cuesta más de lo que debería.* → *(EN pending)*
 
 Use these as calibration for all future flavor lines in ailment and condition entries.
 
