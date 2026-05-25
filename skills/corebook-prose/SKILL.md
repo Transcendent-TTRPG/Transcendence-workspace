@@ -138,12 +138,27 @@ Ask: could this line appear in any other entry? If yes, it has not found the spe
 
 These are destinations, not templates. Do not try to match their structure — find the truth the way they did.
 
-- *La postura cede. El suelo gana.* → *Posture gives. The ground wins.*
-- *La descarga pasó. Los músculos no terminan de creérselo.* → *The discharge passed. The muscles have not finished believing it.*
-- *Moverse cuesta. La herida recuerda exactamente cuánto.* → *Moving costs. The wound remembers exactly how much.*
-- *La señal llega. El cuerpo no la ejecuta.* → *The signal arrives. The body does not execute it.*
-- *La amenaza sigue ahí. El mundo solo dejó de señalarla.* → *The threat is still there. The world just stopped pointing at it.*
-- *El cuerpo tiene límites. Algo los encontró primero.* → *The body has limits. Something found them first.*
+**Alterations catalog — full confirmed set:**
+
+| ES | EN | Condition |
+| --- | --- | --- |
+| *El cuerpo aguanta. El aire, menos cada vez.* | *(pending)* | Asfixiado |
+| *El cuerpo ya decidió. La voluntad llegó después.* | *(pending)* | Aterrorizado |
+| *El mundo vuelve antes que el cuerpo.* | *(pending)* | Atrapado |
+| *La siguiente acción quedó sin dueño.* | *(pending)* | Aturdido |
+| *La amenaza sigue ahí. El mundo solo dejó de señalarla.* | *The threat is still there. The world just stopped pointing at it.* | Cegado |
+| *Las diferencias siguen ahí. El juicio ya no sabe cuáles importan.* | *(pending)* | Confundido |
+| *El frío no avisa. Para cuando el cuerpo reacciona, ya está adentro.* | *(pending)* | Congelado |
+| *El impacto terminó. La claridad todavía no recibió esa noticia.* | *(pending)* | Conmocionado |
+| *La postura cede. El suelo gana.* | *Posture gives. The ground wins.* | Derribado |
+| *El equilibrio siempre tuvo un precio. Ahora se cobra.* | *(pending)* | Desequilibrado |
+| *El entorno no cambió. El norte sí.* | *(pending)* | Desorientado |
+| *La descarga pasó. Los músculos no terminan de creérselo.* | *The discharge passed. The muscles have not finished believing it.* | Electrizado |
+| *El sonido llegó demasiado fuerte. Ahora no llega.* | *The sound came in too hard. Now it does not come at all.* | Ensordecido |
+| *El arma responde al agarre. No siempre a la intención.* | *(pending)* | Impedido |
+| *Moverse cuesta. La herida recuerda exactamente cuánto.* | *Moving costs. The wound remembers exactly how much.* | Lacerado |
+| *La señal llega. El cuerpo no la ejecuta.* | *The signal arrives. The body does not execute it.* | Paralizado |
+| *Todo llegó a la vez. Nada encontró por dónde salir.* | *(pending)* | Sobrecargado |
 
 Use these as calibration for rhythm and economy — not as structural models to replicate.
 
