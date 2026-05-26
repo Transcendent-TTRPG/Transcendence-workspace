@@ -339,6 +339,18 @@ When a counter-technique denies effects, the denied effects must map to one of:
 
 Do not write "efectos tácticos", "ventaja narrativa", or other vague placeholders. If the denied effect has no concrete system name, the denial is just: the read produces no usable context.
 
+### Opposed roll model
+
+Every T.E. can be contested by an opposing T.E. from the other side. What gets blocked depends on which layer the roll operates in:
+
+- **Initial intent roll** (a creature making a T.E. to gather contextual information): the opposing roll blocks **context only** (narrative). There are exceptions where an initial T.E. interfaces with other systems (e.g., Sigilo, which intersects cover/concealment mechanics).
+- **Technique saving roll** (a T.E. listed in the Salvación field of a technique): the opposing roll blocks **both context and the mechanical effect**. This is the standard technique resolution — the target's Salvación roll negates the technique's outcome entirely on success.
+
+This model is already native to the specialization layer. **Counter-techniques do not invent a new blocking layer — they centralize it.** The primary value of a counter-technique (such as Sellar la Grieta) is that it replaces whatever the natural opposing specialization would be with a single trained specialization. This means:
+
+- Instead of needing Intuición to counter Intuición, or Engaño to counter Engaño, the practitioner uses one specialization they have trained and therefore has a stronger bonus in.
+- The cost and classification of such a technique should reflect this centralization advantage — it is a meaningful mechanical compression, not just a flavor choice.
+
 ## Quality rules
 
 - Do not copy authority text into the core verbatim if it still sounds like design prose.
