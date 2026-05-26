@@ -111,6 +111,18 @@ For localization specifically:
 - only preserve abbreviations when they are canonical rules notation the player
   is expected to know
 
+For the **ES Type - Category field** specifically, only these values are valid on ES publication surfaces:
+
+| Type | When to use |
+| --- | --- |
+| `Activo - Ataque` | Active technique whose primary resolution is a T.A. |
+| `Activo - Utilidad` | Active technique with no attack roll — buffs, stances, declarations |
+| `Activo - Utilidad · Postura` | Active stance that persists until broken |
+| `Reactivo - Ataque` | Reactive technique whose primary resolution is a T.A. (even if the purpose is defensive) |
+| `Reactivo - Utilidad` | Reactive technique that resolves through T.D., T.R., T.E., no roll, or automatic reduction |
+
+**`Reactivo - Defensa` does NOT exist.** If a reactive technique makes a T.A., it is `Reactivo - Ataque`. If it makes a T.D., T.R., T.E., or has no roll, it is `Reactivo - Utilidad`. The defensive purpose of a technique does not create a "Defensa" category — that distinction lives only in authority-side taxonomy.
+
 For the **ES stat block fields** specifically, use only canonical ES values:
 
 | Field | Valid ES values |
