@@ -341,15 +341,19 @@ Do not write "efectos tácticos", "ventaja narrativa", or other vague placeholde
 
 ### Opposed roll model
 
-Every T.E. can be contested by an opposing T.E. from the other side. What gets blocked depends on which layer the roll operates in:
+Every specialization or technique that targets another creature can be contested by an opposing T.E. from the target. If the opposing roll succeeds, it blocks **all context and mechanics** produced by the original action — regardless of whether the original action was a specialization or a technique.
 
-- **Initial intent roll** (a creature making a T.E. to gather contextual information): the opposing roll blocks **context only** (narrative). There are exceptions where an initial T.E. interfaces with other systems (e.g., Sigilo, which intersects cover/concealment mechanics).
-- **Technique saving roll** (a T.E. listed in the Salvación field of a technique): the opposing roll blocks **both context and the mechanical effect**. This is the standard technique resolution — the target's Salvación roll negates the technique's outcome entirely on success.
+In general terms (exceptions exist):
+- Specializations produce **context only** — blocking one denies the narrative basis for further action.
+- Techniques produce **context + a mechanical outcome** — blocking one denies both.
 
-This model is already native to the specialization layer. **Counter-techniques do not invent a new blocking layer — they centralize it.** The primary value of a counter-technique (such as Sellar la Grieta) is that it replaces whatever the natural opposing specialization would be with a single trained specialization. This means:
+Techniques derived from social or mental specializations have wide design space beyond simple blocking. Examples of what such a technique can do:
+- Centralize all opposing reads into one trained specialization (like Sellar la Grieta)
+- Block a specific future specialization or technique from being used against the character
+- Misdirect or redirect an incoming read to produce false context
+- Proactively prevent an effect before it fires
 
-- Instead of needing Intuición to counter Intuición, or Engaño to counter Engaño, the practitioner uses one specialization they have trained and therefore has a stronger bonus in.
-- The cost and classification of such a technique should reflect this centralization advantage — it is a meaningful mechanical compression, not just a flavor choice.
+Do not reduce all social techniques to "counter" mechanics — that is one pattern among many. The design space is as open as the thematic logic of the specialization allows.
 
 ## Quality rules
 
