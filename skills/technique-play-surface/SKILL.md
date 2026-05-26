@@ -118,10 +118,12 @@ For the **ES Type - Category field** specifically, only these values are valid o
 | `Activo - Ataque` | Active technique whose primary resolution is a T.A. |
 | `Activo - Utilidad` | Active technique with no attack roll — buffs, stances, declarations |
 | `Activo - Utilidad · Postura` | Active stance that persists until broken |
-| `Reactivo - Ataque` | Reactive technique whose primary resolution is a T.A. (even if the purpose is defensive) |
-| `Reactivo - Utilidad` | Reactive technique that resolves through T.D., T.R., T.E., no roll, or automatic reduction |
+| `Reactivo - Ataque` | Reactive technique whose primary PURPOSE is to attack and potentially deal damage — resolves through T.A. |
+| `Reactivo - Utilidad` | Reactive technique whose primary PURPOSE is control, movement-denial, or utility — may still use T.A. if weapon-profile based |
 
-**`Reactivo - Defensa` does NOT exist.** If a reactive technique makes a T.A., it is `Reactivo - Ataque`. If it makes a T.D., T.R., T.E., or has no roll, it is `Reactivo - Utilidad`. The defensive purpose of a technique does not create a "Defensa" category — that distinction lives only in authority-side taxonomy.
+**`Reactivo - Defensa` does NOT exist.** The Type - Category distinction is about **purpose**, not about which roll is made. A weapon-profile reactive technique that controls movement (no damage) is `Reactivo - Utilidad` even though its Tirada is `T.A.`. The defensive purpose of a technique does not create a "Defensa" category — that distinction lives only in authority-side taxonomy.
+
+**Weapon-profile techniques always use `T.A.` in the Tirada field**, even when the technique does not deal damage. The absence of damage is shown by `Impacto: —`, not by changing Tirada to `T.E.`. Do not use `T.E.` for a weapon-profile Technique just because it lacks a damage payload.
 
 For the **ES stat block fields** specifically, use only canonical ES values:
 
@@ -135,6 +137,8 @@ For the **ES stat block fields** specifically, use only canonical ES values:
 | `Impacto` | `T.I.` only when damage exists, otherwise `—` |
 
 Key rules: `Alcance del arma` belongs in **Rango** not in **Área**. Área for a single-target weapon technique is `1 Criatura`. Sustained stances and lasting effects are `Permanente` — end conditions go in the effect text, not in Duración.
+
+**No abbreviated stat values on player-facing surfaces.** Salvación must always be written in full — `T.R. (Alteraciones)` is required; `T.R. (Alt.)` is invalid. This is a new game: players need complete terms to understand every field without inference.
 
 For `Flavor Text` specifically, apply the full flavor text rules in the Prose rules section below. The essential constraint: one short italic sentence, physical and dark, that evokes the tactical fantasy without explaining the rule.
 
