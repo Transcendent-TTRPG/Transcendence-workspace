@@ -111,6 +111,19 @@ For localization specifically:
 - only preserve abbreviations when they are canonical rules notation the player
   is expected to know
 
+For the **ES stat block fields** specifically, use only canonical ES values:
+
+| Field | Valid ES values |
+| --- | --- |
+| `Rango` | `Personal` / `Alcance del arma` / `Xm` (e.g., `3m`) / `Rango Visual` |
+| `Área` | `Tú` / `1 Criatura` / `Circular Xm` / `Cono Xm` / `Línea Xm` |
+| `Duración` | **Only** `Instantáneo` or `Permanente` — no other values |
+| `Tirada` | `T.A.` / `T.D.` / `T.I.` / `T.E. (X)` / `T.R. (X)` / `T.C. (X)` / `—` |
+| `Salvación` | Roll that **completely negates** the effect, or `—` |
+| `Impacto` | `T.I.` only when damage exists, otherwise `—` |
+
+Key rules: `Alcance del arma` belongs in **Rango** not in **Área**. Área for a single-target weapon technique is `1 Criatura`. Sustained stances and lasting effects are `Permanente` — end conditions go in the effect text, not in Duración.
+
 For `Flavor Text` specifically, apply the full flavor text rules in the Prose rules section below. The essential constraint: one short italic sentence, physical and dark, that evokes the tactical fantasy without explaining the rule.
 
 ### 3. Separate survival fields from authority-only fields
