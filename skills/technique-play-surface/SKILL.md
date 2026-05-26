@@ -320,6 +320,25 @@ Do not:
 - **No design-intent explanations.** Never write "esto convierte X en la opción más eficiente". The rule produces that effect — the surface does not explain it.
 - **No docstring tone.** If the effect reads like a function description, rewrite it as a rule a player reads at the table. Short, present tense, no parentheticals explaining why.
 
+## Effect anchoring rules
+
+Every mechanical effect on a play-facing surface must be grounded in a concrete system reference. Two distinct categories define how effects are produced:
+
+**Specializations produce narrative effects only.** A successful T.E. (Intuición) gives contextual information the player uses to justify actions — it does not produce a mechanical bonus automatically. No technique effect should describe a specialization roll as producing a bonus, penalty, or condition unless a technique explicitly defines that outcome.
+
+**Techniques produce both narrative context and a defined mechanical outcome.** A technique always uses T.E. of its base specialization. Whether the triggering action is a base specialization use or a technique, the roll form is the same — T.E. (Especialización). Do not distinguish between "base use" and "technique use" in play-facing text; reference only the roll category.
+
+When a technique counters or intercepts another roll, reference the roll category rather than listing every valid specialization:
+
+- `T.E. Mental o Social` — covers all social and mental specialization rolls: Intuición, Percepción, Engaño, Intimidación, Negociación, Liderazgo, Instinto, Resonancia, and others when the narrative context supports it
+- Use specific specialization names only when the technique is narrowly scoped to one
+
+When a counter-technique denies effects, the denied effects must map to one of:
+- The narrative context itself (the read produces no usable information)
+- A named conditional mechanic from a specific technique (e.g., an effect that fires only if the read succeeds)
+
+Do not write "efectos tácticos", "ventaja narrativa", or other vague placeholders. If the denied effect has no concrete system name, the denial is just: the read produces no usable context.
+
 ## Quality rules
 
 - Do not copy authority text into the core verbatim if it still sounds like design prose.
