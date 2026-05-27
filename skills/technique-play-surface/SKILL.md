@@ -77,6 +77,21 @@ in:
 If authority is still ambiguous, stop and route back upstream. Do not finalize
 surface wording around unresolved mechanics.
 
+### 1b. Verify system mechanic dependencies
+
+Before writing effect text, identify every canonical system mechanic the
+technique references or triggers — named states (Agonía, Lacerado), named
+processes (Estabilizar, Tratar, Curar), named mechanics (cobertura types, ATB
+actions, conditions, etc.).
+
+For each one, verify its exact definition in the relevant corebook chapter
+before writing the surface. Do not rely on assumed or partial definitions.
+
+This step catches cross-system dependencies that are not visible in the
+technique's own authority files — and prevents writing an effect that
+contradicts or duplicates what the referenced mechanic already does by
+definition.
+
 ### 2. Build the play-facing payload
 
 Shape the Technique into the canonical play-facing structure:
