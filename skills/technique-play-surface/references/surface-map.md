@@ -22,6 +22,11 @@ Use this file as the first routing layer for final play-surface work.
 - `docs/workflows/dependency-review-workflow.md`
   - when the Technique depends on another unresolved subsystem
 
+## Authority sources required before surfacing
+
+- `Transcendence-design/docs/system/specialization-technique-domains.md`
+  - Defines the authoring boundary for each specialization's derived Techniques. A surface run must verify the technique's effect fits its specialization's valid domain before finalizing. Techniques transfer underlying capabilities — they do not upgrade the base skill, and they do not give bonuses to other specializations without domain justification.
+
 ## Surface targets
 
 - `Transcendence-publications/core-books/transcendence-corebook/09-techniques/`

@@ -239,7 +239,7 @@ Technique cards have two zones that never mix — treat them like Magic: The Gat
 
 **Flavor text** — one or two lines in the voice of the world. It evokes the feeling of using the technique from inside the fiction. It never explains the mechanic. It never mentions dice, rolls, bonuses, or conditions.
 
-**Effect text** — the complete rule written in narrative prose, second person, present tense. The card speaks directly to the player: "realizas", "recibes", "el objetivo". It is not an algorithm or a labeled sequence. It is a description of what happens, in the order it happens, with mechanical vocabulary placed in normal sentences. A bonus is written as "un bonificador igual a tu rango de X" — never as "+[rango de X]". An outcome is written as "con éxito, el objetivo..." — never as "Éxito: objetivo → Y".
+**Effect text** — the complete rule written in narrative prose, second person, present tense. The card speaks directly to the player: "Realiza una T.A.", "recibes", "el objetivo realiza una T.R.". It is not an algorithm or a labeled sequence. It is a description of what happens, in the order it happens, with mechanical vocabulary placed in normal sentences. A bonus is written as "un bonificador igual a tu rango de X" — never as "+[rango de X]". An outcome is written as "con éxito, el objetivo..." — never as "Éxito: objetivo → Y".
 
 Specific rules:
 

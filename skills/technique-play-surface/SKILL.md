@@ -144,14 +144,21 @@ For the **ES stat block fields** specifically, use only canonical ES values:
 
 | Field | Valid ES values |
 | --- | --- |
-| `Rango` | `Personal` / `Alcance del arma` / `Xm` (e.g., `3m`) / `Rango Visual` |
-| `Área` | `Tú` / `1 Criatura` / `Circular Xm` / `Cono Xm` / `Línea Xm` |
+| `Rango` | `Personal` / `Alcance del arma` / `Velocidad de Movimiento` / `Xm` (e.g., `3m`) / `Rango Sensorial` |
+| `Área` | `Tú` / `1 Criatura` / `1 Superficie u Objeto` / `Circular Xm` / `Cono Xm` / `Línea Xm` |
 | `Duración` | **Only** `Instantáneo` or `Permanente` — no other values |
 | `Tirada` | `T.A.` / `T.D.` / `T.I.` / `T.E. (X)` / `T.R. (X)` / `T.C. (X)` / `—` |
 | `Salvación` | Roll that **completely negates** the effect, or `—` |
 | `Impacto` | `T.I.` only when damage exists, otherwise `—` |
 
 Key rules: `Alcance del arma` belongs in **Rango** not in **Área**. Área for a single-target weapon technique is `1 Criatura`. Sustained stances and lasting effects are `Permanente` — end conditions go in the effect text, not in Duración.
+
+**Duration and Impact pairing for attack techniques.** The pairing follows the technique's primary value:
+
+- If the value is **what the hit leaves behind** — a lasting penalty, condition, or state — the technique normally sacrifices damage for that state: **`Permanente` + `—`**. The lasting effect is the payoff; the damage is traded away for it.
+- If the value is **the hit itself** — an immediate effect that amplifies or modifies the attack — damage resolves as part of the same action: **`Instantáneo` + `T.I.`**. The Impact Roll is the payoff.
+
+A technique may carry both damage and a lasting condition (**`Permanente` + `T.I.`**) only when the combination is clearly justified: either the attack's physical nature inherently delivers something that persists (corrosive contact, contamination, a material change), or the Ritmo/Desgaste cost explicitly reflects the greater power of the dual payload. Do not pair these without justification — if both seem desirable, that is a design question, not an automatic yes.
 
 **No abbreviated stat values on player-facing surfaces.** Salvación must always be written in full — `T.R. (Alteraciones)` is required; `T.R. (Alt.)` is invalid. This is a new game: players need complete terms to understand every field without inference.
 
@@ -256,7 +263,7 @@ Technique surfaces have two zones that never mix — treat them like Magic: The 
 
 **Flavor text** — one short italic sentence in the voice of the world. It evokes the technique's tactical fantasy without explaining the rule. It sounds physical, precise, and dark. It prefers concrete images over abstract concepts. It suggests tension, timing, consequence, body movement, material failure, perception, or intent — not the mechanic itself.
 
-**Effect text** — the complete rule written in narrative prose, second person, present tense. The surface speaks directly to the player: "realizas", "recibes", "el objetivo". It is not an algorithm or a labeled sequence. It defines what happens, in the order it happens, with mechanical vocabulary placed in normal sentences.
+**Effect text** — the complete rule written in narrative prose, second person, present tense. The surface speaks directly to the player: "Realiza una T.A.", "recibes", "el objetivo realiza una T.R.". It is not an algorithm or a labeled sequence. It defines what happens, in the order it happens, with mechanical vocabulary placed in normal sentences.
 
 The core and card share the same prose register. The difference is density only:
 
@@ -301,8 +308,14 @@ Structure — in this order when applicable:
 
 Canonical language patterns:
 
+- `Realiza una T.A. con tu perfil de [Perfil].`
+- `Realiza una T.A. (Competencia) contra...`
+- `Realiza una T.D.`
 - `Realiza una T.E. (X) contra...`
+- `Realiza una T.R. (X) contra...`
 - `Si fallas, no ocurre nada.`
+- `Con éxito, resuelve la T.I.` — T.I. always uses "resuelve" (not "realiza") and the definite article "la" (it is the impact roll of this specific attack, not a generic one)
+- `Con éxito, el objetivo realiza una T.R. (X)...`
 - `Con éxito, el objetivo...`
 - `Este bonificador se aplica una sola vez.`
 - `La técnica termina si te desplazas.`
@@ -325,10 +338,13 @@ Do not:
 - Use "bonus" — use "bonificador".
 - Hide important limits in flavor text.
 - Mix rule and designer commentary.
+- **Prescribe the subjective physical form of how an action is performed.** Rules text describes the decision and its outcome, not how it looks or how the body moves to execute it. Writing "redirect an incoming hit" or "observe to determine a factor" is appropriate — these describe a player decision with a real game consequence. Writing about facing directions, body angles, pressure lines, or physical positioning is not — these describe a subjective visual form that every player imagines differently. The game is primarily imaginative; the form of action belongs to the player's mind, not the rulebook.
 
 ### Format rules
 
 - **Second person only.** Write "tú" / "tu" — never "el usuario". Both surfaces speak directly to the player.
+- **Tuteo, never voseo.** Use standard neutral Spanish second person. Never use Argentine voseo forms: "realizás", "recibís", "añadís", "podés", "usás". This is a universal publication, not a regional one.
+- **Imperative for player roll instructions; indicative elsewhere.** When telling the player what roll to make, use the imperative: "Realiza una T.A.", "Resuelve la T.I.", "Realiza una T.E. (X)". When describing what happens to the target or in conditional clauses, use the indicative: "el objetivo realiza una T.R.", "si tienes éxito", "si fallas".
 - **No bracket notation.** Never write `+[rango de X]` or `−[rango de X]`. Write "un bonificador igual a tu rango de X" or "una penalización igual a tu rango de X". For dice expressions, write "un número de dados d2 igual a tu rango de X" — not `[rango de X]d2`.
 - **No "bonus".** Use "bonificador" in all play-facing prose. "bonus" belongs only in YAML.
 - **No YAML-style labels in prose.** "Éxito:", "Fallo:", "Dispara cuando" are internal authoring shorthand. In the surface, the rule must read as continuous prose.
@@ -414,5 +430,9 @@ Use these local references first:
 
 - `references/surface-map.md`
 - `references/surface-checks.md`
+
+For backfill runs, also check:
+
+- `Transcendence-design/docs/canon/species/species-technique-coverage.md` — tracks specialization and weapon profile coverage per species; also tracks backfill progress (corebook entries + cards done per species). Use as context when working within a species pass.
 
 Then open the actual project documents named there.

@@ -28,6 +28,8 @@ Use this file as the short navigation layer for the skill. Open the target proje
 
 - `Transcendence-design/docs/system/`
   - Technique authority and nearby system doctrine
+- `Transcendence-design/docs/system/specialization-technique-domains.md`
+  - **Required before authoring any new Technique.** Defines what each specialization is and is not allowed to produce as Techniques. Techniques transfer the underlying capabilities of their specialization — they do not upgrade the base skill. This document is the design boundary.
 - `Transcendence-design/data/system/`
   - structured system definitions
 - `Transcendence-design/docs/knowledge/`

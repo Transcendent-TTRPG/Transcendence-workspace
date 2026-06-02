@@ -171,6 +171,212 @@ Ask these before marking a lore-facing file complete:
 
 ---
 
+## species-design
+
+**Purpose:** Define a new species in the design repository — write the 10-section narrative design doc, register natural attack forms in the system YAML, and update the index. This is the prerequisite for writing publications prose using the `species-entry` skill.
+**When to use:** When starting a new species from scratch or promoting rough notes to a canonical design doc. Complete this before beginning any publications work.
+
+### What this skill produces
+
+There is no `species.yaml`. The design output is:
+
+1. `Transcendence-design/docs/canon/species/<species>.md` — the 10-section narrative design doc
+2. `Transcendence-design/data/system/natural-attack-forms.yaml` — register the species in each attack form it uses; add a `species_profile_expressions` entry if its expression differs from the generic
+3. `Transcendence-design/docs/canon/species/index.md` — add the species to the roster table
+4. `Transcendence-design/docs/canon/species/species-development-status.md` — add a layer-by-layer assessment
+
+Note: Características, Herencia, and Legado do not have a YAML schema yet. They are defined as candidates in §9 of the design doc and authored as final values directly in the publications file. Do not create a species.yaml.
+
+### Mandatory context (load before starting)
+
+1. `Transcendence-design/docs/canon/species/species-template.md` — the authoring scaffold
+2. `Transcendence-design/docs/canon/species/index.md` — all existing species and world context
+3. All completed `docs/canon/species/*.md` files — tonal and structural reference
+4. `Transcendence-design/data/system/natural-attack-forms.yaml` — check existing forms before adding new ones
+5. `Transcendence-design/data/system/ailments.yaml` — check existing ailments before proposing weapon effects
+6. `Transcendence-design/data/system/specializations-catalog.yaml` — check existing competency names before listing affinities
+7. The rough notes for this species — primary source material
+8. `Transcendence-design/docs/canon/species/species-development-status.md` — understand what "complete" means
+
+### Section structure (mandatory, in order)
+
+The design doc is analytical, not corebook prose. Use lists and concise paragraphs — this is not written for readers, it is written for designers.
+
+1. **Identity** — animal base, cultural analog, cosmicist hook, first impression, civilizational anxiety in one sentence
+2. **Body** — anatomy, locomotion, natural weapons, senses, biological variants, size/weight/lifespan
+3. **Culture** — social structure, authority model, worldview, central civilizational idea, what earns respect
+4. **Theology and Cosmology** — relationship with Tauma and Limbo (or equivalent), sacred history, what they believe happened, what they fear
+5. **Organization and Internal Variation** — community forms, internal roles, stable fault lines
+6. **Daily Life and Survival** — food, childhood learning, daily fears, what old age means, what a non-elite life looks like
+7. **External Relations** — geographic spread, neighbors, how others read them, recurring political position
+8. **Material Expression and Language** — clothing, architecture, tools, naming patterns, ritual objects
+9. **System Connections** — competency affinities, natural attack logic, arsenal fit, candidate Características/Herencia/Legado, Technique implications
+10. **Player Character Hooks and Open Questions** — what a PC knows, departure reasons, what they carry, open design questions
+
+### Horror pressure test (apply before marking complete)
+
+- What is trying to kill, corrupt, starve, isolate, or mislead them?
+- What daily habits exist because safety cannot be assumed?
+- What does this species do because the world is cruel, not because it is elegant?
+- Which belief may be true enough to help them and wrong enough to destroy them?
+
+If any section implicitly assumes ordinary continuity or stable safety without explaining how it is defended or paid for, revise it.
+
+### Registering natural attack forms
+
+For each attack form the species uses:
+
+1. Check if the form already exists in `natural-attack-forms.yaml` (bite, claws, tail, sting, etc.)
+2. If it exists: add the species name to the `species` list
+3. If the species' expression differs from the generic (different profiles, different contact logic): add a `species_profile_expressions` entry under that form
+4. If the form does not exist at all: add a new entry under `forms:` using the template at the top of the file
+
+Do not add new forms just because the attack feels different thematically. Check whether the generic form's `compatible_profiles` already cover the intended mechanics. Only add a new form if the contact logic genuinely cannot map to any existing form.
+
+### §9 System Connections — what to define
+
+This section is the bridge to the publications stat block. It must include:
+
+- **Competency affinities** — which skill trees this species naturally justifies; use names from `specializations-catalog.yaml`
+- **Natural attack logic** — which forms, what combat role, how species-specific expression differs from the generic
+- **Arsenal fit** — likely weapon categories beyond natural attacks
+- **Candidate Características** — which 3 attributes get +1
+- **Candidate Herencia** — the one complex or penalty trait: what condition triggers it, what effect, determined by whom
+- **Candidate Legado** — scaling traits: how many, what they scale with, what skill or roll type
+- **Technique implications** — what the species' Technique body should emphasize and what it should avoid
+
+All values in §9 are candidates. Final stat block values are authored in the publications file.
+
+### Completion checklist
+
+- [ ] All 10 sections present
+- [ ] §9 includes explicit Características/Herencia/Legado candidates
+- [ ] Natural attack forms updated in `natural-attack-forms.yaml`
+- [ ] Species added to `index.md` roster table
+- [ ] Assessment added to `species-development-status.md`
+- [ ] No new ailment names invented without checking `ailments.yaml`
+- [ ] No new competency names invented without checking `specializations-catalog.yaml`
+- [ ] Cosmological claims framed as species doctrine, not neutral world fact
+
+---
+
+## species-entry
+
+**Purpose:** Write a species entry for the corebook following the canonical section structure, prose mode, and stat block format established by Naghii, Sauri, and Zarnag.
+**When to use:** Any time a new species entry needs to be written or an existing one needs structural revision. One skill invocation = one species.
+
+### Mandatory context (load before starting)
+
+1. `Transcendence-publications/canon/style-guide.md`
+2. `Transcendence-publications/canon/text-modes.md`
+3. `Transcendence-publications/canon/voice-samples.md`
+4. `Transcendence-publications/canon/glossary.md`
+5. `Transcendence-publications/canon/world-facts.md`
+6. `Transcendence-design/docs/canon/species/<species>.md` — design doc for this species
+7. All completed species files in `06-species/es/` — structural and tonal reference
+8. `Transcendence-design/data/system/ailments.yaml` — canonical ailment names and entries
+9. `Transcendence-design/data/system/natural-attack-forms.yaml` — Durabilidad/Potencia baselines
+
+### Section structure (mandatory, in this order)
+
+Every species file must have exactly these sections in this order:
+
+```text
+[Opening] — 1–2 paragraphs, no header. Labor/ecological identity. Ends with the species' civilizational axiom (the sentence the culture uses to summarize what they do).
+## El Cuerpo
+## La Cultura
+## Teología y Cosmología
+## Organización e Identidad Interna
+## Vida Cotidiana
+## Relaciones con el Mundo
+## Como Personaje Jugador
+---
+## Estadísticas de Especie
+### Datos Generales
+### Características
+### Herencia
+### Legado
+### Armas Naturales
+```
+
+### Prose constraints (lore sections)
+
+- **Mode:** `description` throughout all lore sections (§1–§7). Description presents a state — not events unfolding, not mechanical explanation.
+- Each paragraph anchors in one primary subject: body, behavior, belief, or social function — not all four at once.
+- Sentence variety is mandatory: mix short declaratives (under 12 words) with longer compound sentences. Do not write paragraphs where every sentence has the same structure or length.
+- **Prohibited qualifiers:** generalmente, naturalmente, frecuentemente, considerablemente, inevitablemente, esencialmente — remove all instances.
+- **Prohibited AI constructions in description mode:** "no X sino Y" as the primary rhetorical pattern; "no solo X, también Y" chains.
+- Lore sections must not contain rules text, mechanical comparisons, or stat references. Move all mechanical discussion to §Como Personaje Jugador.
+
+### World-facts constraints (theology and cosmology)
+
+- Theological claims framed as in-world doctrine or species belief, not neutral narration stating mechanical fact.
+- Do not write "el Limbo hace X" or "el Tauma causa Y" in neutral narration — that is doctrine, not world fact.
+- Limbo and Void are not synonyms. Tauma transforms; it does not create from nothing.
+- Species-specific theological names (gods, afterlife concepts, cosmological terms) must be added to `canon/glossary.md` with a Do-not-translate note before the file is considered complete.
+
+### Stat block format rules
+
+#### Datos Generales table
+
+```text
+| Longevidad | Tamaño | Estatura | Peso | Velocidad |
+```
+
+**Idiomas:** `NombreIdioma (nativo) · Común` — language name must be clearly distinct from the species name.
+
+#### Características
+
+`Los [Especie] obtienen \`+1\` en **X**, **Y** y **Z**.`
+
+#### Herencia, Legado, Armas Naturales
+
+These sections are entirely design-driven. Derive structure, scaling, and effect text from the species' design YAML — do not impose a format template. Existing species files are reference only; each species may differ.
+
+What is consistent across all species:
+
+- The natural weapon **stat block table** always uses: `| T.A. | T.I. | Alcance | Daño | Durabilidad | Potencia |`
+- Principal and Auxiliar labels must match the YAML assignment
+- Verify Dur/Pot values against `natural-attack-forms.yaml` before finalizing
+- Ailment and state names must match `ailments.yaml` exactly
+
+### Audit checklist (run after writing, from evaluator position)
+
+Shift position: do not re-read impressionistically. Work through each check explicitly.
+
+#### Structure
+
+- [ ] All 9 sections present in correct order
+- [ ] No rules text in lore sections §1–§7
+- [ ] Opening ends with a civilizational axiom sentence
+
+#### Prose
+
+- [ ] No filler qualifiers: search `generalmente`, `naturalmente`, `frecuentemente`, `considerablemente`, `inevitablemente`, `esencialmente`
+- [ ] No AI contrast constructions dominating any paragraph
+- [ ] Sentence rhythm varies within each paragraph (not all long, not all short)
+- [ ] Each paragraph has a single primary subject
+
+#### World-facts
+
+- [ ] Theological claims attributed to the species, not stated as neutral world fact
+- [ ] Limbo/Void not conflated
+- [ ] Species-specific cosmological terms added to `glossary.md`
+
+#### Stat block
+
+- [ ] Idiomas language name is distinct from species name
+- [ ] All weapon effects use T.R. + conditional structure
+- [ ] All scaling effects formatted as tables
+- [ ] Ailment/state names verified against `ailments.yaml`
+- [ ] Dur/Pot values verified against `natural-attack-forms.yaml`
+
+### Template
+
+`pipeline/templates/species-entry.md` — copy this file as a starting skeleton.
+
+---
+
 ## mechanic-registrar
 
 **Purpose:** Keep all design and canon files in sync whenever a mechanical concept is defined, changed, or removed.
