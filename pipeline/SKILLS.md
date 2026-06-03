@@ -181,9 +181,10 @@ Ask these before marking a lore-facing file complete:
 There is no `species.yaml`. The design output is:
 
 1. `Transcendence-design/docs/canon/species/<species>.md` — the 10-section narrative design doc
-2. `Transcendence-design/data/system/natural-attack-forms.yaml` — register the species in each attack form it uses; add a `species_profile_expressions` entry if its expression differs from the generic
-3. `Transcendence-design/docs/canon/species/index.md` — add the species to the roster table
-4. `Transcendence-design/docs/canon/species/species-development-status.md` — add a layer-by-layer assessment
+2. `Transcendence-design/docs/canon/species/<species>-technique-seeds.md` (skeleton) — the structural foundation for technique authoring; see §Seeds skeleton below
+3. `Transcendence-design/data/system/natural-attack-forms.yaml` — register the species in each attack form it uses; add a `species_profile_expressions` entry if its expression differs from the generic
+4. `Transcendence-design/docs/canon/species/index.md` — add the species to the roster table
+5. `Transcendence-design/docs/canon/species/species-development-status.md` — add a layer-by-layer assessment
 
 Note: Características, Herencia, and Legado do not have a YAML schema yet. They are defined as candidates in §9 of the design doc and authored as final values directly in the publications file. Do not create a species.yaml.
 
@@ -235,7 +236,7 @@ Do not add new forms just because the attack feels different thematically. Check
 
 ### §9 System Connections — what to define
 
-This section is the bridge to the publications stat block. It must include:
+This section is the bridge to both the publications stat block and the seeds skeleton. It must include:
 
 - **Competency affinities** — which skill trees this species naturally justifies; use names from `specializations-catalog.yaml`
 - **Natural attack logic** — which forms, what combat role, how species-specific expression differs from the generic
@@ -247,10 +248,51 @@ This section is the bridge to the publications stat block. It must include:
 
 All values in §9 are candidates. Final stat block values are authored in the publications file.
 
+### The core design rule: species origin ≠ species restriction
+
+**Techniques are not species-locked.** A technique originates from a species — from their anatomy, culture, practices, and history — but its usability is determined by the weapon profile or specialization required to execute it, not by the character's species.
+
+Any character who wields a weapon with the required profile can execute a technique, regardless of where that technique originated. Any character with a specialization can execute a specialization technique from any species that developed it. The species origin explains *why* the technique exists and gives it its identity and thematic coherence. It does not gate who can use it.
+
+What species origin does determine:
+
+- The narrative and thematic framing of the technique
+- The specific mechanical constraints and design pressure (what problem the technique was developed to solve)
+- Which profiles and specializations are mapped to that species' techniques
+
+What species origin does not determine:
+
+- Who can learn or execute the technique — that is determined by having the required weapon profile or specialization
+
+This is why techniques feel like they belong to the world rather than to a spreadsheet. A non-Zarnag character wielding a weapon with the Corrosion profile can execute a Zarnag-origin technique — the technique carries the Zarnag principle, but the profile is the mechanical key.
+
+The test when authoring a technique: *Could this technique exist without this species?* If yes, the origin is too thin. *Could someone execute it with a different body, tool, or practice?* If no, the origin has become too species-locked. The target is the middle — a technique that carries the species' thought and history into action, but whose mechanical surface is profile- or specialization-based and therefore accessible to any character who meets that requirement.
+
+### Seeds skeleton — what to write
+
+The seeds skeleton is a separate file (`<species>-technique-seeds.md`) that establishes the structural foundation for technique authoring. It is derived directly from §9 of the design doc. Write it after §9 is stable.
+
+**The seeds skeleton contains three things:**
+
+1. **Technique lessons from the species** — a brief overview of natural attack profile mappings and cultural combat surfaces. For each natural attack form: which profiles it maps to and why. For cultural surfaces: which non-natural-weapon competencies or tools are valid expression surfaces.
+
+2. **Initial authoring surfaces table** — a table of every surface (weapon form, natural attack, specialization) with its fit level (Core / Supporting) and a short note on why. This is the palette that technique authors work within — remember that these surfaces are accessible to any character with the right profile or specialization, not only to characters of this species.
+
+3. **Novice pass distribution target** — how many techniques per section (attack/weapons, defense, resistance hybrids, specializations), which specializations are primary (up to 8, each gets one technique in the novice pass), and which are secondary (available for resistance hybrids, swaps, and higher-rank expansion). Include a brief note on what the pass should emphasize and what it should avoid.
+
+**The seeds skeleton does NOT contain:**
+
+- Seed principles (the abstract conceptual seeds with `world_root`, `technique_space`, `authoring_pressure`, etc.) — those are added iteratively with designer review, one at a time, after the skeleton is approved.
+- Finished technique descriptions — those go in `techniques.yaml` and the corebook ES files.
+
+**Format reference:** See `docs/canon/species/zarnag-technique-seeds.md` for a complete example. The skeleton covers the Purpose section, Technique Lessons, and Appendix (Authoring Surfaces + Novice Pass). The numbered Seed Principles section is left empty until the iterative phase.
+
 ### Completion checklist
 
 - [ ] All 10 sections present
-- [ ] §9 includes explicit Características/Herencia/Legado candidates
+- [ ] §9 includes explicit Características/Herencia/Legado candidates and Technique implications
+- [ ] Seeds skeleton file created with: technique lessons, authoring surfaces table, novice pass distribution
+- [ ] Seeds skeleton has no seed principles yet (those are added iteratively)
 - [ ] Natural attack forms updated in `natural-attack-forms.yaml`
 - [ ] Species added to `index.md` roster table
 - [ ] Assessment added to `species-development-status.md`
@@ -298,6 +340,14 @@ Every species file must have exactly these sections in this order:
 ### Legado
 ### Armas Naturales
 ```
+
+### Authoring posture
+
+Write from the perspective of someone describing a people they know — not from the perspective of covering a design document. The design doc is context; the species entry is the result.
+
+Select the 3–4 most distinctive things about the species and build the prose around those. Not every design decision needs to appear. What doesn't make it into the entry is not lost — it lives in the design doc. What does make it should be there because it is concrete, distinctive, and earns its place in the reader's understanding of the species.
+
+The failure mode to avoid: prose that feels like a checklist of decisions made in prior conversations. Each paragraph should read as if the species exists, not as if a meeting was held about the species.
 
 ### Prose constraints (lore sections)
 
@@ -356,6 +406,7 @@ Shift position: do not re-read impressionistically. Work through each check expl
 - [ ] No AI contrast constructions dominating any paragraph
 - [ ] Sentence rhythm varies within each paragraph (not all long, not all short)
 - [ ] Each paragraph has a single primary subject
+- [ ] No stat-block trait names appear in bold in lore prose — mechanical traits are described as behavioral or physical facts, not named as rules constructs
 
 #### World-facts
 
@@ -449,3 +500,94 @@ Checklist:
 - The `canon/glossary.md` is the terminology authority. A term does not exist until it is there.
 - `docs/system/mechanics-overview.md` is the ability design authority. If a surface exists but is not listed there, it will be ignored when designing abilities.
 - Never update only one file. Every change touches at minimum: the authority file + the reference doc + the glossary (if it introduces a term).
+
+---
+
+## technique-author
+
+**Purpose:** Author one technique from conceptual idea to finished entry — iterating from free ideation through mechanical grounding to final writing. One skill invocation = one technique.
+**When to use:** Any time a new technique is being developed. Do not begin with the YAML format. Begin with the idea.
+
+### Phase 1 — Ideation (no context loading required)
+
+The technique begins as a conversation. No mechanical constraints apply yet. The goal of this phase is to arrive at a clear conceptual picture:
+
+- What does this technique want to do? What is the core action or principle it expresses?
+- What species body, practice, or cultural knowledge produced this method?
+- What problem was this developed to solve? What moment in combat or exploration does it resolve?
+- Who should be able to execute it? (Which weapon profile or specialization is the key — remembering that species origin ≠ species restriction)
+
+**Phase 1 ends when:** The idea can be stated as a concrete action with a named origin surface (a weapon profile, a specialization, or a hybrid). If the idea cannot yet be stated this precisely, keep iterating in conversation before loading any files.
+
+### Phase 2 — Grounding (load context here)
+
+**Mandatory context:**
+
+1. `Transcendence-design/data/system/techniques.yaml` — taxonomy, cost model, authoring questions, required fields
+2. `Transcendence-design/docs/system/technique-play-surface.md` — play-facing output format
+3. `Transcendence-design/data/system/ailments.yaml` — if the technique applies any condition or state
+4. `Transcendence-design/docs/system/specialization-technique-domains.md` — if the technique is specialization-rooted
+5. `Transcendence-design/docs/canon/species/<species>.md` — for origin context and thematic coherence
+6. `Transcendence-design/docs/canon/species/<species>-technique-seeds.md` — to confirm the technique fits the seeded surface and novice pass slot
+
+Work through the `authoring_questions` already codified in `techniques.yaml`. The key gates before writing:
+
+- **Competency origin:** What single competency or hybrid makes this executable? State it explicitly.
+- **Non-magical cause:** What trained body control, timing, force transfer, positioning, or practiced perception explains this? (The `spectacle_rule` in techniques.yaml lists the valid sources.)
+- **Mechanical change:** What named mechanic does the effect touch — an existing Ailment, a Fatigue state, a wound grade, a positional state, a cover condition, an information reveal? The effect must be traceable to a named system mechanic. Do not invent freeform effects.
+- **Specialization gate:** If this is a specialization technique — name the extracted trained capability before writing the effect text. If you cannot name it, the technique is not ready.
+- **Information technique gate:** If this is a reading or perception technique — what actionable truth does it reveal? A technique that only grants a passive bonus is not a technique unless it is explicitly a bounded setup technique with a clear target action, narrow trigger, and defined duration.
+- **Cost:** Rhythm (anchors: 0, 3, 5, 7, 9 — intermediates allowed) and Attrition (0–3, higher for exceptional overextension). Calibrate using the cost model bands in `techniques.yaml`. Use the conservative band on first pass.
+
+  **Cost calibration reference: other techniques, not base actions.** The game is built on competency growth. Techniques are always the most efficient expressions of competency — a character who has learned a relevant technique should never find the base action more attractive for that specific situation. Base actions are intentionally inefficient; they are the fallback for when no technique applies, not the benchmark. When evaluating whether a cost is correct, compare against existing techniques of the same type and tier in `techniques.yaml`, not against what a base action costs.
+
+### Mechanic creation rule
+
+If the technique requires a mechanic that does not exist yet:
+
+1. **Check if the concept fits within an existing system.** Existing systems include: Ailments (ailments.yaml), Agravios, learning factors and specialization domains, cost/timing mechanics, Fatigue/wound grade expressions.
+2. **If it fits:** Create the new instance within that system (a new Ailment entry, a new agravio type, etc.) before writing the technique. Then trigger `mechanic-registrar` to propagate it.
+3. **If it requires a new system:** Do not create it inline. Flag it as a design question, note what would be needed, and redesign the technique to use existing mechanics instead. New systems are not created inside technique authoring.
+
+### Phase 3 — Writing
+
+**YAML entry** (`Transcendence-design/data/system/techniques.yaml`):
+
+All required fields: `name`, `origin`, `world_origin`, `category`, `type`, `trigger`, `requirements`, `learning`, `target`, `range`, `area`, `duration`, `cost`, `saving_roll`, `description`, `effect`, `scaling`, `restrictions`, `tags`.
+
+The `world_origin` block requires: `primary_front` (Species / Doctrine / Region), `source`, `seed`, `focus`, `holder`, `transmission`, `availability`.
+
+**Corebook ES entry** (`Transcendence-publications/core-books/transcendence-corebook/09-techniques/es/`):
+
+Follow `technique-play-surface.md` exactly. The play-facing fields in order:
+
+1. `Tipo - Categoría` — valid values: `Activo - Ataque`, `Activo - Utilidad`, `Activo - Utilidad · Postura`, `Reactivo - Ataque`, `Reactivo - Utilidad`
+2. `Nombre`
+3. `Rango de Competencia`
+4. `Texto de Sabor` — one strong image or turn of thought; species-shaped; brief; not a mechanical paraphrase
+5. `Rango` — valid values: `Personal`, `Alcance del arma`, `Xm`, `Rango Visual`
+6. `Área` — valid values: `Tú`, `1 Criatura`, `Circular Xm`, `Cono Xm`, `Línea Xm`
+7. `Duración` — valid values only: `Instantáneo` or `Permanente` (end conditions go in Efecto, not here)
+8. `Tirada Principal` — `T.A.` for weapon-rooted; `T.E.` for specialization-rooted; `—` for passive/no-roll
+9. `Tirada de Salvación` — only if there is a distinct negating roll separate from the primary; omit or `—` otherwise
+10. `Impacto` — only if there is a direct damage payload; omit or `—` otherwise
+11. `Ritmo`
+12. `Desgaste`
+13. `Requisitos` — real game mechanisms only (profile, equipment, tracked state, formal condition); no implied common-sense physical logic
+14. `Palabras Clave`
+15. `Efecto` — the full mechanical effect including end conditions for Permanente effects
+
+### Audit checklist
+
+- [ ] Idea stated as concrete action with named origin surface before writing began
+- [ ] Non-magical cause identifiable in the effect
+- [ ] Effect traces to a named existing system mechanic (Ailment, Fatigue, wound, positional state, information reveal, named bonus)
+- [ ] Specialization gate passed: extracted capability named before effect text
+- [ ] Information gate passed if applicable: actionable truth identified, not passive bonus
+- [ ] Cost calibrated against techniques.yaml cost bands
+- [ ] All required YAML fields present
+- [ ] Play-surface Duración is only Instantáneo or Permanente
+- [ ] Requirements are real game mechanisms, not implied physical logic
+- [ ] Profile/specialization requirement used, not species restriction
+- [ ] If a new mechanic was created: mechanic-registrar triggered before finalizing
+- [ ] Flavor text is brief, concrete, species-shaped, not a mechanical paraphrase
