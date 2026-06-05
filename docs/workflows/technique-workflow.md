@@ -181,9 +181,12 @@ Outputs:
 Primary lens:
 
 - `system_lens`
+- `continuity_lens`
 
 Questions:
 
+- **Profile space check (mandatory before designing):** What other Techniques share this weapon profile across all species? Map each one: trigger, resolution, output. What gap in that profile's design space does this Technique fill?
+- **Cross-profile overlap check:** Are there Techniques with a different profile that are functionally similar — same trigger pattern, same output pattern? A Technique can repeat an existing one even if the profiles differ. What makes this Technique's output genuinely distinct from all of them?
 - What kind of Technique is it?
 - What roll does it use?
 - What real competency feeds it?
@@ -239,10 +242,19 @@ Primary lens:
 Questions:
 
 - Is the cost aligned with sibling Techniques?
+- Is this being compared against sibling Techniques rather than base actions?
 - How often should the Technique matter?
 - Is its value immediate, setup-based, or persistent?
+- If it is persistent, is the value coming from duration itself or from how
+  broad the persistent effect really is?
+- Is `Attrition` pricing current-combat strain incorrectly when it should be
+  pricing continuity between hostile scenes instead?
+- If this is a posture, is positional anchoring already paying part of the
+  price?
 - How oppressive is it if it lands?
 - What counterplay exists?
+- Does the Technique create a "next action / next roll" memory burden that
+  should be redesigned before cost is finalized?
 
 Outputs:
 

@@ -30,6 +30,31 @@ design before proceeding — it is not a default.
 
 Then use the workflow to ground that fantasy in the system.
 
+## Cost and duration doctrine
+
+When this skill authors or normalizes costs, use these project rules:
+
+- compare costs against sibling Techniques, not against base actions
+- base actions are fallback floor, intentionally inefficient, and are not the
+  optimization benchmark for authored Techniques
+- `Rhythm` prices immediate tactical permission: tempo access, repetition,
+  interruption, denial, and exchange shaping
+- `Attrition` does not constrain the current combat directly; it prices
+  continuity between hostile scenes, unusual strain, and broad persistent
+  pressure that will keep mattering
+- do not surcharge a Technique merely because its effect is `Permanente`
+- charge for coverage, repeat leverage, and how many exchanges the effect can
+  keep altering once active
+- anchored postures should usually stay low in `Rhythm`; their positional lock
+  is already part of the price
+- avoid authoring effects that depend on "the next action", "the next roll",
+  "N rounds", or similar memory burdens
+- prefer effects that are either `Instantáneo` or `Permanente` with clear
+  fictional end conditions
+- hybrid resistance Techniques that are genuinely passive should default to
+  `0/0`, because the body already knows how to do them rather than activating
+  them tactically
+
 The right order is:
 
 1. fantasy
@@ -188,6 +213,17 @@ Minimum families to consider:
 - `question_validation`
 - `publication_consistency`
 
+### Cost review guardrails
+
+When revising an existing Technique:
+
+- update structured cost fields first
+- then update any explanatory cost prose that still states the old values
+- if the Technique's text shape no longer matches the cost doctrine, fix the
+  Technique rather than forcing the cost to defend a bad structure
+- if a Technique's effect relies on a one-use future promise, treat that as a
+  design issue first and a cost issue second
+
 Not every Technique will use every family, but the run should explicitly mark
 which ones were applicable and what their result was.
 
@@ -287,12 +323,15 @@ In many runs, this order works well:
 
 1. read workflow docs and authority sources
 2. inspect knowledge layer and current technique state
-3. resolve dependency and balance framing
-4. edit authority text
-5. edit structured YAML if required
-6. route into simulation or core sync only if needed
-7. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
-8. record acceptance and impact
+3. **cross-species profile check:** map all existing Techniques with the same weapon profile across all species; also check for functional overlap with Techniques of other profiles (same trigger pattern + same output pattern = overlap even if the profile differs); identify the specific gap this Technique fills before designing
+4. resolve dependency and balance framing
+5. confirm design with user (review gate before writing any output)
+6. write core publication entry (`09-techniques/es/`)
+7. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
+8. edit authority YAML (`data/system/techniques.yaml`)
+9. route into simulation or core sync only if needed
+10. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
+11. record acceptance and impact
 
 ## Reference map
 
