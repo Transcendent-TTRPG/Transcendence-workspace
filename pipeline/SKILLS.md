@@ -541,6 +541,14 @@ Work through the `authoring_questions` already codified in `techniques.yaml`. Th
 
   **Cost calibration reference: other techniques, not base actions.** The game is built on competency growth. Techniques are always the most efficient expressions of competency — a character who has learned a relevant technique should never find the base action more attractive for that specific situation. Base actions are intentionally inefficient; they are the fallback for when no technique applies, not the benchmark. When evaluating whether a cost is correct, compare against existing techniques of the same type and tier in `techniques.yaml`, not against what a base action costs.
 
+  **Attrition rule:** Attrition does not mainly price what the Technique does to the user in the current combat turn. It mainly prices how much strain and continuity pressure the Technique creates across hostile scenes and how much broad persistent leverage it buys once active.
+
+  **Persistence rule:** Do not charge extra just because an effect is persistent. In this project, persistence is a normal system surface. Charge for coverage, repeat leverage, and how many important exchanges the effect can keep altering.
+
+  **Posture rule:** Anchored postures should usually stay low in Rhythm unless their coverage or payoff is extreme, because being pinned to a point is already part of their cost.
+
+  **Memory-burden rule:** Avoid authoring Techniques around "the next action", "the next roll", or similar one-use future promises. Prefer effects that resolve immediately or persist with a clear fictional end condition.
+
 ### Mechanic creation rule
 
 If the technique requires a mechanic that does not exist yet:

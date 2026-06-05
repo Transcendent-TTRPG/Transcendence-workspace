@@ -153,6 +153,19 @@ For the **ES stat block fields** specifically, use only canonical ES values:
 
 Key rules: `Alcance del arma` belongs in **Rango** not in **Área**. Área for a single-target weapon technique is `1 Criatura`. Sustained stances and lasting effects are `Permanente` — end conditions go in the effect text, not in Duración.
 
+Do not export play-facing Techniques that depend on:
+
+- "la próxima acción"
+- "la próxima tirada"
+- turn-count bookkeeping
+- ATB-cycle countdown bookkeeping
+
+If the authority still uses a one-use future promise, treat that as a design
+issue to resolve before calling the play surface closed. Prefer either:
+
+- an immediate resolution
+- or a persistent state with a clear fictional end condition
+
 **Duration and Impact pairing for attack techniques.** The pairing follows the technique's primary value:
 
 - If the value is **what the hit leaves behind** — a lasting penalty, condition, or state — the technique normally sacrifices damage for that state: **`Permanente` + `—`**. The lasting effect is the payoff; the damage is traded away for it.
