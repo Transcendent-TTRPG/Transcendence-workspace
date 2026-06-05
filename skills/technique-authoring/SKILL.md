@@ -9,6 +9,33 @@ Use this skill when the task is to create, revise, backfill, normalize, or close
 
 This skill is for Technique work specifically. It does not replace broader authority revision, status-family work, or simulation-port work. Instead, it anchors the technique run to the correct workflow, makes the required checkpoints explicit, and routes outward when the work crosses into other workflows.
 
+## Postura — definition
+
+A technique is a **Postura** if and only if all three of the following hold:
+
+1. **Sustained state** — it has `Permanente` duration and creates an ongoing beneficial effect.
+2. **Player-maintained constraint** — the player actively cedes something to keep it active. The constraint must be something the player controls, not something an external actor can simply negate.
+3. **Player agency in maintenance** — the player can choose to break it voluntarily, and can actively resist being forced out of it (usually via T.R.).
+
+A permanent bonus that expires when an external condition changes (e.g., an enemy closes distance) is **not** a Postura — the player gave up nothing and has no agency in maintaining it.
+
+### Types
+
+| Type | Constraint ceded | Keyword | Cost pattern |
+| --- | --- | --- | --- |
+| **Postura inmóvil** | Movilidad — cannot voluntarily move while active | `Postura` | Ritmo 3 (positional lock is the price) |
+| **Postura móvil** | Something other than mobility (equipment state, etc.) | `Postura` | Desgaste higher — cost paid upfront without positional restriction |
+
+### Exclusivity rule
+
+Only **one Postura** may be active at a time, regardless of type or source (weapon, armor, natural weapon, body). Activating a new Postura ends the previous one automatically.
+
+### Keyword
+
+Every technique of type Postura must carry `Postura` as a keyword in both the corebook entry and the technique card.
+
+---
+
 ## Authoring stance
 
 This skill is **fantasy-first** and **combat-first**.
