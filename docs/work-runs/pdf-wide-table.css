@@ -1,0 +1,78 @@
+@page {
+  size: 14in 8.5in;
+  margin: 0.35in;
+}
+
+html {
+  font-size: 8px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 13px;
+  margin: 14px 0 6px;
+}
+
+h3 {
+  font-size: 11px;
+  margin: 10px 0 4px;
+}
+
+p,
+li {
+  font-size: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 10px 0 16px;
+  page-break-inside: auto;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+th,
+td {
+  border: 1px solid #cfcfcf;
+  padding: 4px 5px;
+  vertical-align: top;
+  font-size: 7px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+th {
+  background: #f4f4f4;
+  font-size: 6.5px;
+  font-weight: 700;
+}
+
+code {
+  font-size: 0.95em;
+  white-space: pre-wrap;
+}
+
+ul,
+ol {
+  padding-left: 18px;
+}
