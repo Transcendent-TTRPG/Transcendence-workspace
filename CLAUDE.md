@@ -137,8 +137,10 @@ Read `docs/work-runs/2026-06-04-technique-cost-stabilization.md` and
 cost doctrine before reviewing or setting Ritmo/Desgaste values.
 
 Short summary:
-- **Ritmo** prices tempo access, repetition, interruption, and exchange shaping.
-- **Desgaste** prices continuity between scenes and sustained persistent pressure — not within-combat restriction.
+
+- **Ritmo = time**: how much ATB position (ficha advancement) the technique costs. Any value ≥ 0. Ritmo 0 when the effect has no external manifestation, movement, or timing requirement — a purely internal cognitive or reactive snap. Ritmo > 0 when execution requires physical action, timing, or occupies attention on the ATB track.
+- **Desgaste = effort**: permanent accumulated strain. Always ≥ 1 for active and reactive techniques — doing anything under simultaneous combat pressure costs something permanently, even when fast or cognitive. Desgaste 0 only for passive hybrid resistance techniques (things the body executes without conscious activation).
+- Key question when setting costs: does this technique take **time** (Ritmo > 0), or only **effort** (Ritmo 0)? How much of each?
 - Base actions are the inefficient floor — don't benchmark techniques against them.
 - Don't surcharge just because a technique has `Permanente` duration.
 

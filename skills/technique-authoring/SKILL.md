@@ -64,15 +64,21 @@ When this skill authors or normalizes costs, use these project rules:
 - compare costs against sibling Techniques, not against base actions
 - base actions are fallback floor, intentionally inefficient, and are not the
   optimization benchmark for authored Techniques
-- `Rhythm` prices immediate tactical permission: tempo access, repetition,
-  interruption, denial, and exchange shaping
-- `Attrition` does not constrain the current combat directly; it prices
-  continuity between hostile scenes, unusual strain, and broad persistent
-  pressure that will keep mattering
-- all active Techniques should carry at least `Attrition` 1 — the lasting
-  compressed cost of executing under combat pressure, even when the effect is
-  purely cognitive or informational; `Attrition` 0 is only appropriate for
-  genuinely passive effects the body executes without activation
+- `Rhythm` = **time**: how much ATB position (ficha advancement) the technique
+  costs. Any value ≥ 0. Use 0 when the technique has no external manifestation,
+  no movement, and no timing requirement — a purely internal cognitive or
+  reactive snap that does not occupy the ATB track. Use higher values when the
+  effect requires physical execution, timing, or attention that shifts the
+  user's position in the exchange.
+- `Attrition` = **effort**: the permanent accumulated strain of executing under
+  combat pressure. All active and reactive Techniques must carry at least
+  `Attrition` 1 — doing anything while simultaneously tracking opponents,
+  reading the field, and managing the body costs something permanently, even
+  when the effect is fast or purely cognitive. `Attrition` 0 is only valid for
+  hybrid resistance Techniques that represent things the body executes passively
+  without conscious activation.
+- when setting costs, ask: does this technique take **time** (Rhythm > 0), or
+  only **effort** (Rhythm 0)? how much of each, and why?
 - do not surcharge a Technique merely because its effect is `Permanente`
 - charge for coverage, repeat leverage, and how many exchanges the effect can
   keep altering once active
