@@ -69,6 +69,10 @@ When this skill authors or normalizes costs, use these project rules:
 - `Attrition` does not constrain the current combat directly; it prices
   continuity between hostile scenes, unusual strain, and broad persistent
   pressure that will keep mattering
+- all active Techniques should carry at least `Attrition` 1 — the lasting
+  compressed cost of executing under combat pressure, even when the effect is
+  purely cognitive or informational; `Attrition` 0 is only appropriate for
+  genuinely passive effects the body executes without activation
 - do not surcharge a Technique merely because its effect is `Permanente`
 - charge for coverage, repeat leverage, and how many exchanges the effect can
   keep altering once active
