@@ -1,12 +1,12 @@
 [submodule "Transcendence-design"]
 	path = Transcendence-design
-	url = https://github.com/Jufegome92/Transcendence-design.git
+	url = https://github.com/Transcendent-TTRPG/Transcendence-design.git
 	branch = main
 [submodule "Transcendence-foundry"]
 	path = Transcendence-foundry
-	url = https://github.com/Jufegome92/Transcendence-foundry.git
+	url = https://github.com/Transcendent-TTRPG/Transcendence-foundry.git
 	branch = main
 [submodule "Transcendence-publications"]
 	path = Transcendence-publications
-	url = https://github.com/Jufegome92/Transcendence-publications.git
+	url = https://github.com/Transcendent-TTRPG/Transcendence-publications.git
 	branch = main
