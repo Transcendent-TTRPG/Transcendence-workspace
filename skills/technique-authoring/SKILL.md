@@ -57,6 +57,25 @@ design before proceeding — it is not a default.
 
 Then use the workflow to ground that fantasy in the system.
 
+## Techniques vs. base specialization rolls
+
+A base specialization roll provides narrative context — it helps the player
+make decisions and know what is possible. A Technique must provide narrative
+context AND a distinct concrete mechanical output on top of that. If a
+Technique's output can be replicated by a good base specialization roll alone,
+the Technique is not adding enough.
+
+Test before finalizing any Technique: **what does this Technique do
+mechanically that a base roll cannot do?** If the answer is only "it gives
+better narrative information," revisit the effect and find a mechanic in the
+existing system to anchor it to — T.A., T.D., T.I., T.E., T.R., T.C.,
+ATB position, conditions, Ruptura, or access permissions.
+
+When the mechanical consequence is implicit (e.g., safe identification without
+physical contact), make it explicit in the effect text.
+
+---
+
 ## Cost and duration doctrine
 
 When this skill authors or normalizes costs, use these project rules:
