@@ -100,6 +100,24 @@ The design document contains facts about the species. The corebook prose contain
 
 **Do not follow the design doc's order.** The design doc is organized for completeness. The corebook prose is organized for narrative momentum. Find the thread that makes the species feel real — that thread is rarely "identity, then body, then culture" in a straight line. The sections are the destination; the route is yours to find.
 
+#### Rhythm and structure — avoiding uniform prose
+
+These are the specific failure patterns that make species prose feel generated rather than written. Check for all of them before considering a draft done.
+
+**Don't announce the paragraph; enter it mid-thought.** The first sentence should be doing the thing, not introducing what you're about to say. "Escribir algo, para un Loxod, no es guardar información. Es terminar de recibirla." arrives inside the idea. "La cultura Loxod se centra en la gestión de resonancia." announces it. The second version kills curiosity before the paragraph begins.
+
+**Vary sentence length dramatically within the same paragraph.** A long sentence followed by two of similar length creates a uniform beat that reads as mechanical. Cut short after a long sentence. Let the next run longer. The rhythm should feel unpredictable even when the prose is controlled.
+
+**Conclusions don't anchor paragraphs.** A clean, quotable final sentence that wraps up what the paragraph was about — "El archivo es tratamiento antes que custodia." — is the most reliable tell that the prose was generated. Either bury the insight in the middle of the paragraph, or leave it unstated and let the reader arrive at it from the specifics. Paragraphs should often end on the fact itself, not on what the fact means.
+
+**Let things be incomplete.** "se gestiona si hay forma de hacerlo" — the conditional is correct. Not everything resolves. Not everything has a point. Some statements end on the observation without telling the reader what to do with it. This is more honest and less uniform than prose that ties off every thread.
+
+**Triple parallels are the AI rhythm tell.** Two parallel phrases can create useful tension. Three in succession — "No a apagarlo — no tiene apagado. A gestionarlo." — reads as a constructed pattern, not as a person writing. Watch for any place where the same grammatical structure repeats three or more times in a row and break it.
+
+**Vary where the insight arrives across sections.** In one section the key idea appears in the first sentence. In the next it's buried in the third paragraph. In a third section it's implied but never stated. If every section has the same shape — setup, then implication, then landing — the entry will feel uniform even if each individual section is correct.
+
+**Section openings shouldn't orient the reader.** The first sentence of a section should not tell the reader what the section is about. It should drop them inside something. The Teología section of the Loxod entry opens with "Lo que los Loxod saben del Tauma lo saben porque lo reciben directamente en sus propios sistemas, en condiciones documentadas, replicables" — it's already making a specific claim, not introducing that you're about to discuss theology.
+
 #### Common failure mode
 
 **Design doc paraphrase:** taking the identity section of the design doc and reformatting it into complete sentences. The result reads like a checklist where each item corresponds to a section heading in the design document, and every paragraph settles into "here is the next thing about this species." The test: read the Drak'kai entry and then read the new entry. If the new one feels like a summary and the Drak'kai one feels like a world, rewrite.
