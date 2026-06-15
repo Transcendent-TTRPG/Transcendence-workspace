@@ -36,13 +36,38 @@ Do not use this skill when:
 Load in this order before writing anything:
 
 1. **Species design doc:** `Transcendence-design/docs/canon/species/<species>.md`
-2. **Style reference:** `Transcendence-publications/core-books/transcendence-corebook/06-species/es/04-drakkai.md`
-3. **Editorial rules:** `Transcendence-publications/CLAUDE.md`
-4. **Chapter intro:** `Transcendence-publications/core-books/transcendence-corebook/06-species/es/00-las-especies.md`
+2. **Species ability design doctrine:** `Transcendence-design/docs/system/species-ability-design.md`
+3. **Style reference:** `Transcendence-publications/core-books/transcendence-corebook/06-species/es/04-drakkai.md`
+4. **Editorial rules:** `Transcendence-publications/CLAUDE.md`
+5. **Chapter intro:** `Transcendence-publications/core-books/transcendence-corebook/06-species/es/00-las-especies.md`
 
 ---
 
 ## Execution pattern
+
+### Phase 0 — Cross-species mechanical comparison
+
+Before reading the design doc or writing anything, read the `## Estadísticas de Especie` section of every confirmed corebook species entry in `Transcendence-publications/core-books/transcendence-corebook/06-species/es/`.
+
+Build a comparison map across all existing species covering four areas:
+
+**Características:** Which attributes each species gets `+1` in. Identify any attribute that is overrepresented or absent across the set.
+
+**Herencia:** The type and magnitude of each biological constraint — penalty value, what rolls it affects, and whether the penalty is conditional or always-on. Identify if any constraint type is overrepresented.
+
+**Legado:** The bonus type (`+1/4NR` vs. flat), what skills or rolls each bonus covers, and how many Legado entries each species has. Identify gaps and overlaps in coverage.
+
+**Armas Naturales:** For each natural weapon across all species: T.A./T.I. stat used, Alcance, Daño die, Durabilidad and Potencia scaling coefficients, effect type (status vs. damage vs. positioning), and profiles. Map the spread so the new species' weapons can be positioned within it.
+
+This comparison serves two purposes:
+
+1. **It establishes the context within which the new species' values must be set.** Values are never designed in isolation. A new Legado that grants `+1/4NR` to T.E. de Percepción is a design decision about the full species set, not just this species.
+
+2. **It surfaces candidates for revision in existing species.** Any existing species' value can be changed if the comparison reveals an imbalance. Surface those candidates to the user — do not silently accept the existing values as fixed.
+
+Produce a short comparison table or summary for the user showing the spread across existing species and identifying where the new species should position itself. Confirm the direction with the user before moving to Phase 1.
+
+---
 
 ### Phase 1 — Design doc audit
 
@@ -125,6 +150,11 @@ These are the specific failure patterns that make species prose feel generated r
 ### Phase 3 — Mechanical stats block
 
 Every field requires a value. Do not leave entries blank.
+
+Before setting any Herencia or Legado values, apply the design checks from
+`docs/system/species-ability-design.md`. Verify: at least one Legado crosses
+two game systems; no more than two Legados are pure S.R. bonuses; each ability
+is grounded in the species' biology or culture, not invented for balance.
 
 #### Datos Generales
 
