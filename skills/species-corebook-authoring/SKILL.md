@@ -47,7 +47,9 @@ Load in this order before writing anything:
 
 ### Phase 0 — Cross-species mechanical comparison
 
-Before reading the design doc or writing anything, read the `## Estadísticas de Especie` section of every confirmed corebook species entry in `Transcendence-publications/core-books/transcendence-corebook/06-species/es/`.
+Before reading the design doc or writing anything, read the **`§Species` section of `Transcendence-design/docs/system/mechanics-overview.md`**.
+
+That section contains the full cross-species comparison in compact form: all confirmed species with their Características bonuses, Herencia constraint, Legado abilities, and natural weapon stat tables (T.A./T.I. stat, Alcance, Daño die, Durabilidad/Potencia scaling, profiles).
 
 Build a comparison map across all existing species covering four areas:
 
@@ -66,6 +68,8 @@ This comparison serves two purposes:
 2. **It surfaces candidates for revision in existing species.** Any existing species' value can be changed if the comparison reveals an imbalance. Surface those candidates to the user — do not silently accept the existing values as fixed.
 
 Produce a short comparison table or summary for the user showing the spread across existing species and identifying where the new species should position itself. Confirm the direction with the user before moving to Phase 1.
+
+> If a discrepancy is found between mechanics-overview §Species and the individual corebook files in `06-species/es/`, the corebook files are authoritative. Update mechanics-overview to match.
 
 ---
 
