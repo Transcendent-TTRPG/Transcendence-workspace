@@ -21,24 +21,29 @@ Three repos live as submodules under this workspace:
 
 ---
 
-## Current state (as of 2026-06-05)
+## Current state (as of 2026-06-19)
 
-Drak'kai novice technique pass is in progress. Techniques written so far:
+Drak'kai novice technique pass — **complete** (#74–85 + armadura pesada + specializations + resistance hybrids).
 
-- #74–80 (Drak'kai bite/claw — complete)
-- #81 El Tránsito Que No Llega (garras · Intercepción)
-- #82 La Costura Que Cede (maza · Ruptura)
-- #83 El Peso Que Planta (maza · Bastión)
+Natural weapon audit — **complete** (all 12 species). Each species now has a distinct effect rooted in its
+animal biological heritage. Summary of final effects:
 
-**Remaining Drak'kai novice techniques to write:**
+| Species | Weapon | Effect |
+| --- | --- | --- |
+| Naghii | Cola | Desorientado (spatial/sensory disruption) |
+| Sauri | Cola | T.D. penalty = rango (angular attack angles, no trigger) |
+| Drak'kai | Mordisco | Aterrorizado sin T.R. on max die (8), scales by rango |
+| Drak'kai | Garras | Forced displacement, scales by rango |
+| Loxod | Colmillos | Aturdido (concussive charge force) |
+| Ursari | Garras | T.D. −1 per rango, Permanente until combat ends |
+| Formix | Mordisco | Confundido (mandible chemistry disrupts friend/foe discrimination) |
+| Chelicer | Garras | Sobrecargado (chelae pressure, weakens resistance for aguijón follow-up) |
+| Panin | Mordisco | Conmocionado (Precisión targets nerve clusters) |
+| Luphran | Mordisco | No reactions until target's next activation (pack-hunter window) |
+| Luphran | Garras | No reactions generated for the target on this attack |
+| Zarnag | Mordisco | +Ritmo on all actions (persistent infection) |
 
-- #84 La Posición Que Se Hunde (escudo · Bastión · Activo)
-- #85 El Margen Que Se Mueve (escudo · Control de Línea · Activo)
-- El Golpe Que Cobra (armadura pesada · Reactivo) — defense #1
-- El Cuerpo Que Se Calibra (armadura pesada · Activo) — defense #2
-- 8 specialization techniques (Orientación, Enfoque, Identificación, Historia,
-  Geografía, Lingüística, Percepción, Rastreo)
-- 2 resistance hybrids (La Carga Que No Acaba, Lo Que Se Conoce No Sorprende)
+**No current pending technique work.** Next area TBD.
 
 ---
 
