@@ -53,6 +53,8 @@ Use these first for the current production loop around Techniques.
   - primary skill for writing or revising description-mode content — species, creatures, equipment, world/faction passages, cosmic horror ambiance
 - [species-pass-audit](./species-pass-audit/SKILL.md)
   - primary skill for species-wide inventory, identity, coverage, and backlog review
+- [species-cosmology-localization](./species-cosmology-localization/SKILL.md)
+  - primary skill for revising chapter-06 species so they speak from species-local cosmology rather than chapter-12 objective metaphysics
 
 ### Base transversal
 
@@ -88,6 +90,13 @@ family and not just one Technique.
 
 Use `infection-authoring` or `poison-authoring` only when the family itself is
 the owning scope.
+
+For species work, the usual order is:
+
+1. `species-design` when the concept itself is still unstable or incomplete
+2. `species-corebook-authoring` when converting a stable design doc into a chapter-06 entry
+3. `species-cosmology-localization` when a chapter-06 entry leaks chapter-12 truth or needs species-local doctrine / ritual vocabulary
+4. `species-pass-audit` when reviewing closure, backlog, or drift across many species
 
 ## Governance rules
 

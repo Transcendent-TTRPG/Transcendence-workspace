@@ -27,6 +27,7 @@ Do not use this skill as the primary owner when:
 - the task is to port one specific Technique to sim
 - the task is to rewrite a status family
 - the task is to revise an upstream rule rather than the species pass
+- the task is to deeply re-localize one species' cosmology away from chapter-12 voice
 
 In those cases, route first through:
 
@@ -34,6 +35,7 @@ In those cases, route first through:
 - `simulation-port-workflow`
 - `status-family-workflow`
 - `authority-revision-workflow`
+- `species-cosmology-localization`
 
 ## Required workflow discipline
 
@@ -118,6 +120,7 @@ Examples:
 - species-wide cost pattern looks off -> route through `balance-review-workflow`
 - repeated blocker depends on unclear subsystem rule -> route through `dependency-review-workflow` or `authority-revision-workflow`
 - publication drift is real -> route to `core-sync-workflow`
+- one species entry sounds like it has read chapter 12 -> route to `species-cosmology-localization`
 
 ### 5. Close with backlog and status, not just observations
 

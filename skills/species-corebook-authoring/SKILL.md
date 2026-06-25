@@ -11,7 +11,7 @@ This skill converts a stable species design document into two outputs:
 1. Narrative prose sections in `Transcendence-publications/core-books/transcendence-corebook/06-species/es/`
 2. A mechanical stats block appended to that entry
 
-It does not design the species, create technique seeds, or author techniques. If the design document is incomplete or has unresolved mechanical values, surface those gaps before writing.
+It does not design the species, create technique seeds, author techniques, or perform a late chapter-12 cosmology-localization pass on an already-authored species entry. If the design document is incomplete or has unresolved mechanical values, surface those gaps before writing.
 
 ---
 
@@ -28,6 +28,8 @@ Do not use this skill when:
 - the species design doc does not exist (create that first)
 - the task is to audit species content across the full pass → use `species-pass-audit`
 - the task is to author techniques for the species → use `technique-authoring`
+- the task is primarily to re-localize an existing species entry away from chapter-12 explanatory voice
+  → use `species-cosmology-localization`
 
 ---
 
@@ -102,6 +104,37 @@ Write the narrative sections in ES following this structure:
 | **Vida Cotidiana** | Life cycle, daily practice, what death means to them |
 | **Relaciones con el Mundo** | How other species see them, specific cross-species relationships |
 | **Como Personaje Jugador** | What the character knows, doesn't know, combat identity, reasons to leave home |
+
+### Phase 2.5 — Cosmology leakage gate
+
+Before considering the chapter-06 draft complete, explicitly check whether
+`## Teología y Cosmología` — and any related passages in `La Cultura`,
+`Relaciones con el Mundo`, and `Como Personaje Jugador` — are speaking from:
+
+- species-local doctrine
+- ritual logic
+- observed pattern
+- institutional fear
+
+or whether they are leaking:
+
+- chapter-12 truth voice
+- objective metaphysical explanation
+- system terms the species should not know
+
+If the draft still sounds like it has "read chapter 12", stop and route through
+`species-cosmology-localization` before closure.
+
+Important:
+
+- not every species needs a one-to-one local term for `vestigios`, `vínculos`,
+  `primordiales`, and `aflicciones`
+- some species need only one or two local categories
+- some species need an umbrella category instead of a four-part taxonomy
+- some species, like unstable or derivative civilizations, may need almost no
+  metaphysical vocabulary of their own
+
+Do not force a complete taxonomy unless the civilization truly needs it.
 
 #### Voice rules — mechanics
 
@@ -242,6 +275,7 @@ The `<nn>` number follows the existing sequence (01 naghii, 02 sauri, 03 zarnag,
 - The civilizational anxiety must be present but never named directly
 - "Como Personaje Jugador" must give a player enough to want to play this species
 - The prose must not mechanically follow the design doc's section order — find the narrative thread
+- If the species clearly encounters chapter-12 phenomena, their interpretation must still sound species-local rather than objective unless the user explicitly wants narrator-facing explanation
 - Final test: read the Drak'kai entry (`04-drakkai.md`), then read this entry. If this one feels like a summary and the Drak'kai one feels like a world, rewrite
 
 ---
@@ -255,3 +289,4 @@ The `<nn>` number follows the existing sequence (01 naghii, 02 sauri, 03 zarnag,
 | Editorial rules | `Transcendence-publications/CLAUDE.md` |
 | Weapon profiles | `Transcendence-design/data/system/weapon-technique-profiles.yaml` |
 | Chapter intro | `Transcendence-publications/core-books/transcendence-corebook/06-species/es/00-las-especies.md` |
+| Cosmology localization | `skills/species-cosmology-localization/SKILL.md` |

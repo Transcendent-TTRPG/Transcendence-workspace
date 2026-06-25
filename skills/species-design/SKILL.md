@@ -30,6 +30,9 @@ Do not use this skill when:
   `docs/canon/species/species-template.md`
 - the task is to convert an existing design doc into a corebook entry
   → use `species-corebook-authoring`
+- the task is to re-localize an already-authored chapter-06 species entry away
+  from chapter-12 explanatory voice
+  → use `species-cosmology-localization`
 
 ---
 
@@ -63,7 +66,7 @@ Critical rules to hold during the entire discussion:
 ### 2. Species concept index
 Read `docs/canon/species/species-concept-index.md` in full.
 
-This document contains: all 19 species (confirmed, in-progress, provisional) with
+This document contains: all 20 species (confirmed, in-progress, provisional) with
 their animal base, cultural anchor, core concept, Tauma relationship, and
 cross-species friction; and the pantheon framework section.
 
@@ -257,6 +260,9 @@ from this skill.
 
 - Writing the species design doc (use the 10-layer template directly)
 - Writing the corebook entry (use `species-corebook-authoring`)
+- Re-localizing an existing chapter-06 species whose cosmology sounds like the
+  player/narrator truth layer instead of species-local belief (use
+  `species-cosmology-localization`)
 - Authoring technique seeds (separate authoring session after design doc exists)
 - Authoring techniques (use `technique-authoring`)
 
@@ -274,3 +280,4 @@ from this skill.
 | Materials | `docs/system/materials-and-fabrication.md` |
 | Species template | `docs/canon/species/species-template.md` |
 | Corebook authoring | `skills/species-corebook-authoring/SKILL.md` |
+| Cosmology localization | `skills/species-cosmology-localization/SKILL.md` |
