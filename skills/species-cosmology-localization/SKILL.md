@@ -26,6 +26,16 @@ The output is:
 4. A revised species entry with objective-metaphysics leakage removed
 5. A closure check on whether the species actually needed a taxonomy at all
 
+If, after the revision pass, you want a separate closure review focused only on
+narrative quality and cosmological integration, use:
+
+- `references/narrative-audit-prompt.md`
+
+This is especially useful as a second-pass audit when the species is already
+close to finished and you want to validate whether it still sounds too clean,
+too explanatory, too taxonomic, or too much like narrator truth instead of a
+living civilization.
+
 Important correction:
 
 - `vestigios` and `vínculos` are both **objects**
@@ -90,6 +100,46 @@ Also remember:
 - a species may encounter the same object-category for generations and still never
   distinguish `vestigio` from `vínculo` as separate concepts
 
+## Civilization baseline note
+
+When reasoning about what a species could plausibly know, do **not** map the
+setting too literally to human historical Bronze Age or antiquity.
+
+The species of this world are often operating at a **B.C.-like** civilizational
+stage, but that is only an analogy of social scale, institutional fragility, and
+limits of formalized knowledge.
+
+It is **not** a literal human Bronze Age baseline.
+
+Important differences:
+
+- Tauma is real and shapes the world even when species do not understand it
+- ruins of older civilizations survive as real cultural pressure, not just myth
+- later-born civilizations may model institutions, symbols, or aspirations after
+  ruins they do not truly understand
+- those ruins are not only fear sources or sacred leftovers; they can also serve
+  as inspiration, aspiration, imitation, or civilizational reference for later
+  species
+- parts of the world's technology are living, biological, or hybrid rather than
+  inert mechanical systems
+- some inherited technologies include living organisms, reactive matter, or
+  half-understood biological functions, so "technology level" cannot be judged
+  by human industrial analogies alone
+- preindustrial does not mean intellectually naive
+- ritual knowledge, long memory, embodied practice, and inherited caution may
+  produce extremely sophisticated interpretations without producing scientific
+  chapter-12 truth
+
+So when asking “would this species know this?”, do not ask:
+
+- “would a human Bronze Age culture know this?”
+
+Ask instead:
+
+- “would this species, with its body, rituals, ruins, inherited technology,
+  environmental exposure, and survival pressures, have built a stable belief
+  about this?”
+
 ---
 
 ## Required context
@@ -138,6 +188,10 @@ Produce a short list of:
 - lines or passages that need rewriting
 - why they sound too close to chapter 12
 
+If the species has already been revised once and the goal is closure rather than
+discovery, you may run the separate prompt in
+`references/narrative-audit-prompt.md` after completing the workflow below.
+
 ### Phase 2 — Phenomenon map
 
 Before inventing vocabulary, decide what the species would actually interpret.
@@ -162,6 +216,63 @@ Important:
 - A species may classify objects by ritual destination, social use, or civilizational function rather than by chapter-12 metaphysical type
 - A species may distinguish two manifestations only after repeated lived use, not by observation alone
 - scarcity matters: vestigios and vínculos are not common-use household objects in most civilizations; they are usually rare enough that many cultures never build stable mass vocabulary around them
+
+After this first map, ask a second layer of questions explicitly:
+
+- Is the Limbo important to this species **as its own concept**, or is it absorbed
+  into a broader idea such as sky, current, hunger, revelation, depth, or the
+  other world?
+- Are marked objects important to this species at all?
+- If marked objects matter, does the species actually distinguish two kinds of
+  object in lived use, ritual handling, or social consequence?
+- If it distinguishes them, is that distinction really about `vestigio` versus
+  `vínculo`, or about something else entirely such as closed/open, personal/common,
+  safe/dangerous, preserving/draining, silent/responding?
+- Are primordial presences important to the species as a separate idea, or do they
+  only appear absorbed into another concept such as gods, navigators, faces,
+  presences, judges, guides, or corrupted places?
+- Are aflicciones important to the species as their own category, or are they only
+  legible as marks, communion, contamination, revelation, fracture, hunger,
+  blessing, or burden?
+
+Important distinction:
+
+- a concept can be **important**
+- and yet not exist as an independent category in the species' cosmology
+
+So always validate both:
+
+- whether the species cares about the phenomenon
+- whether the species isolates it conceptually, or instead folds it into another
+  larger doctrinal frame
+
+Also validate three more things:
+
+- **Importance is not the same as frequency.**
+  A phenomenon may be extremely rare and still shape sovereignty, ritual,
+  authority, taboo, fear, or prestige. A phenomenon may also be common and never
+  become a stable formal category. Do not assume scarcity means low importance,
+  or recurrence means high conceptual clarity.
+
+- **Who inside the species actually knows this?**
+  Do not flatten a whole civilization into one epistemic layer. Ask whether the
+  knowledge belongs to:
+  - common people
+  - a priesthood, scholar caste, or funerary order
+  - rulers, lineages, or ritual specialists
+  - scouts, workers, or field practitioners
+  - rumor, taboo, fragment, or half-understood inheritance
+
+  The answer should shape the prose. A species entry may describe a civilizational
+  belief that most individuals only know in diluted, distorted, or practical form.
+
+- **What is doctrine, and what is merely practice?**
+  A species may have weak theory but strong handling habits. It may know what to
+  fear, seal, carry, burn, preserve, or test without having a clean metaphysical
+  explanation for why. Always separate:
+  - what the species believes
+  - what the species does
+  - what seems to work even when the species does not know why
 
 ### Phase 2.5 — Creature experience map
 
