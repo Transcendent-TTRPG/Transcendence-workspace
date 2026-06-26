@@ -61,6 +61,41 @@ Other skills exist for related work (check `skills/` for the full list).
 
 ---
 
+## Species pipeline — general rule
+
+Species work should **not** be treated as a single-step writing task anymore.
+
+For the current project standard, a species normally moves through these distinct
+phases:
+
+1. **Concept discussion / species design**
+   - anatomy, biological carryovers, cultural anchor, Tauma relationship,
+     cross-species friction, civilizational concept, horror
+2. **Canon species doc formalization**
+   - stable authority doc in `Transcendence-design/docs/canon/species/`
+3. **Chapter-06 corebook authoring**
+   - prose entry + mechanical stats block in
+     `Transcendence-publications/core-books/transcendence-corebook/06-species/es/`
+4. **Cosmology localization pass**
+   - remove chapter-12 truth voice and rewrite the species so its metaphysics
+     speak from species-local belief, ritual, practice, and error
+5. **Optional closure / audit pass**
+   - use when reviewing backlog, drift, or final readiness
+
+Important:
+
+- Do **not** let concept discussion silently stand in for the full species run.
+- Do **not** skip the canon-doc layer just because the prose already "feels clear."
+- Do **not** assume a chapter-06 draft is done if it still sounds like it has
+  read chapter 12 directly.
+- Treat cosmology localization as a normal structural phase for modern species
+  entries, not as a cosmetic rewrite.
+
+If the task is "take this species from notes to a finished entry," use the full
+pipeline rather than improvising from memory.
+
+---
+
 ## Production order for each technique
 
 **Core → Card → YAML. Always in this order.** Never write YAML before the core

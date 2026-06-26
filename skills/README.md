@@ -34,6 +34,8 @@ discipline rather than the artifact work itself.
 
 - [workflow-orchestrator](./workflow-orchestrator/SKILL.md)
   - selects the owning workflow, picks the work card, routes to artifact skills, and enforces closure
+- [species-pipeline-orchestrator](./species-pipeline-orchestrator/SKILL.md)
+  - routes one species from notes or unstable concept through canon formalization, chapter-06 authoring, cosmology localization, and closure
 
 ### Active technique pipeline
 
@@ -93,10 +95,11 @@ the owning scope.
 
 For species work, the usual order is:
 
-1. `species-design` when the concept itself is still unstable or incomplete
-2. `species-corebook-authoring` when converting a stable design doc into a chapter-06 entry
-3. `species-cosmology-localization` when a chapter-06 entry leaks chapter-12 truth or needs species-local doctrine / ritual vocabulary
-4. `species-pass-audit` when reviewing closure, backlog, or drift across many species
+1. `species-pipeline-orchestrator` when the species must be taken through the full current process
+2. `species-design` when only the concept itself is still unstable or incomplete
+3. `species-corebook-authoring` when converting a stable design doc into a chapter-06 entry
+4. `species-cosmology-localization` when a chapter-06 entry leaks chapter-12 truth or needs species-local doctrine / ritual vocabulary
+5. `species-pass-audit` when reviewing closure, backlog, or drift across many species
 
 ## Governance rules
 

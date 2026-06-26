@@ -36,6 +36,9 @@ Examples:
 - `technique-authoring`
 - `technique-porting-to-sim`
 - `corebook-sync`
+- `species-design`
+- `species-corebook-authoring`
+- `species-cosmology-localization`
 - `species-pass-audit`
 - future family skills such as `infection-authoring` or `poison-authoring`
 
@@ -95,6 +98,30 @@ Primary homes:
 - [Simulation Port Workflow](./workflows/simulation-port-workflow.md)
 - [Core Sync Workflow](./workflows/core-sync-workflow.md)
 - [Species Audit Workflow](./workflows/species-audit-workflow.md)
+
+## Species pipeline note
+
+Species production now spans multiple artifact phases and should not be treated
+as one undifferentiated writing task.
+
+The normal sequence is:
+
+1. concept design
+2. canon species doc formalization
+3. chapter-06 corebook authoring
+4. cosmology-localization pass
+5. optional closure / audit
+
+This means:
+
+- `species-design` is the concept phase, not the whole pipeline
+- chapter-06 prose should usually be written from a stable canon species doc
+- a chapter-06 species entry is not fully aligned if it still speaks in
+  chapter-12 objective metaphysics instead of species-local cosmology
+
+When the real task is "take one species all the way through this process," use a
+pipeline-oriented approach rather than selecting only one species skill and
+assuming the rest implicitly.
 
 ## Current work card templates
 

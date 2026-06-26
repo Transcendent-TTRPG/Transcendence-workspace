@@ -1,0 +1,7 @@
+interface:
+  display_name: "Species Pipeline Orchestrator"
+  short_description: "Full pipeline orchestration for one species"
+  default_prompt: "Use $species-pipeline-orchestrator to take a species from notes or unstable concept through design, canon formalization, chapter-06 authoring, cosmology localization, and closure without skipping handoffs."
+
+policy:
+  allow_implicit_invocation: true
