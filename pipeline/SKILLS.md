@@ -597,5 +597,65 @@ Follow `technique-play-surface.md` exactly. The play-facing fields in order:
 - [ ] Play-surface Duración is only Instantáneo or Permanente
 - [ ] Requirements are real game mechanisms, not implied physical logic
 - [ ] Profile/specialization requirement used, not species restriction
-- [ ] If a new mechanic was created: mechanic-registrar triggered before finalizing
-- [ ] Flavor text is brief, concrete, species-shaped, not a mechanical paraphrase
+- [ ] Si se creó una mecánica nueva: se ejecutó `mechanic-registrar` antes de finalizar
+- [ ] El texto de ambientación es breve, concreto, moldeado por la especie, no una paráfrasis mecánica
+
+---
+
+## bestiary-author
+
+**Purpose:** Diseñar adversarios y fauna para Transcendence siguiendo estrictamente las reglas anatómicas y mecánicas del sistema.
+**When to use:** Siempre que se requiera crear una nueva criatura o NPC para el bestiario o un escenario.
+
+### Mandatory context (load before starting)
+
+1. `Transcendence-design/docs/system/mechanics-overview.md` — **Fuente Primaria de Verdad**. NUNCA asumas mecánicas. Si tienes dudas sobre un concepto, búscalo aquí primero.
+2. `Transcendence-publications/core-books/transcendence-corebook/` — Busca aquí SOLO si el concepto no existe en `mechanics-overview.md`.
+3. `Transcendence-publications/core-books/transcendence-corebook/14-adversaries-and-bestiary/es/06-bestiario.md` — Para referencia de formato y entradas previas.
+
+### Creation Workflow (En orden obligatorio)
+
+1. **Intención y Descripción:** Antes de tocar números, define qué es la criatura. ¿Qué propósito narrativo y ecológico cumple? Describe su aspecto físico y su instinto primario.
+2. **NR (Nivel de Referencia):** Asigna un NR. Este valor ancla a la criatura en el ecosistema. Define la dificultad de interactuar con ella y qué Nivel de Referencia mínimo deben tener los jugadores para que sea un encuentro viable.
+3. **Rol de Combate:** Selecciona el Rol (Golpeador, Protector, Soporte, Lanzador). El rol dictamina su comportamiento base y multiplicadores matemáticos posteriores.
+4. **Anatomía y Zonas:** Divide la criatura en sus Zonas Anatómicas lógicas. 
+   - **Regla Fundamental:** TODA zona tiene un propósito puntual en la criatura. Las zonas no son solo "blancos para golpear"; cada una aloja capacidades (defensivas, sensoriales, de movilidad u ofensivas) que se desarrollarán.
+   - Al menos una zona debe ser definida como el **Núcleo** (el fallo sistémico de la bestia).
+5. **Rasgos (Caracter y Ventaja Evolutiva):** Define los Rasgos. Los rasgos no son habilidades mágicas, son aspectos del "carácter" del NPC (instinto predatorio, respuesta al miedo, adaptación).
+   - Este carácter forja su **Ventaja Evolutiva** (Ventaja de Ejecución).
+   - Debe atarse a una condición de activación narrativa y orgánica.
+   - El efecto otorga Ventaja de Ejecución a las tiradas válidas del sistema (ver restricciones abajo).
+6. **Matemáticas de Zonas (PV y Bloqueo):** Calcula la salud y defensa de cada zona basado estrictamente en el NR, Rol, Naturaleza y Cobertura (según `02-zonas.md`).
+   - **PV Base:** Zona normal = NR × 10. Núcleo = NR × 15.
+   - **PV Final:** Multiplica el PV Base por el multiplicador del Rol (Golpeador ×2, Protector ×3, etc).
+   - **Bloqueo Base:** NR × 2. Multiplicado por la Naturaleza (Mortal ×1, Anomalía ×1.5).
+   - **Bloqueo Final:** Multiplica el Bloqueo Base por el modificador de cobertura de esa zona específica (Tejido blando ×0.5, Piel ×1, Cuero/Escamas ×1.5, Placas óseas ×2).
+
+7. **Durabilidad de Zonas:** Calcula qué tan difícil es romper la zona con un Impacto Crítico usando el catálogo de materiales (`08-catalogo-de-materiales.md`).
+   - **Fórmula:** `Durabilidad = D Base del Material × NR × Factor de Naturaleza`
+   - **Factor de Naturaleza:** Mortal = 1, Anomalía = 2, Primordial = Inmune al daño físico.
+8. **Potencia de Armas Naturales:** Si la zona actúa como un arma natural (garras, colmillos, cuernos), calcula su capacidad de destrucción (usada para romper blindajes en impactos críticos).
+   - **Fórmula:** `Potencia = P Base del Material Ofensivo × NR × Factor de Naturaleza`
+9. **Bloque de Tiradas:** Calcula los modificadores de tirada del monstruo basándote en su NR y Rol (según `01-doctrina.md`).
+   - **Modificador Base:** `NR + Rango` (Rango 1 para NR 1-2, Rango 2 para NR 3-4, etc).
+   - Todas las tiradas (T.A, T.D, T.I, T.C, T.R, T.E) reciben el Modificador Base. No hay penalizadores.
+   - El **Rol** añade el Modificador Base *de nuevo* (es decir, lo duplica) a las tiradas fuertes de la criatura:
+     - *Golpeador:* +Base a T.A y T.I (daño fijo).
+     - *Protector:* +Base a T.D y T.R.
+     - *Soporte:* +Base a T.E y T.C.
+     - *Lanzador:* +Base a T.A (distancia) y T.E.
+   - **T.I (Daño de Monstruo):** Se calcula como `(Rango)d(Dado del arma) + (NR × Grado) + Modificador`. Para armas naturales, Grado = Rango.
+10. **Habilidades y Acciones:** Toda zona de combate (ofensiva/defensiva) debe tener una habilidad atada a ella. Si la zona se rompe, la habilidad se pierde.
+    - Las habilidades de los NPC se estructuran sin **Desgaste**.
+    - **Formato de Salida (Plantilla Maestra):** Debes formatear TODO el bloque de la criatura (Estadísticas, Zonas, Rasgos y Técnicas) siguiendo EXACTAMENTE la misma maquetación, clases HTML (`.monster-block`) y estructura de tablas Markdown que la primera entrada (Carroñero Abisal) en el archivo `14-adversaries-and-bestiary/es/06-bestiario.md`. No inventes otros formatos; usa el Carroñero como tu plantilla inquebrantable.
+
+### Mechanical Constraints (Reglas Inquebrantables)
+
+- **Sin "PV abstractos":** Las criaturas se dividen en Zonas. El colapso del Núcleo significa la muerte o cambio de fase. El colapso de una Zona normal neutraliza la habilidad o rasgo atado a ella.
+- **PV vs Durabilidad:** PV es la salud de la zona. Durabilidad es la dureza del material (escamas, hueso). La Durabilidad sirve **exclusivamente** para evaluar si un impacto Crítico destruye la zona de un golpe (Potencia vs Durabilidad).
+- **Prohibido el uso de PA (Puntos de Acción):** La economía de acciones usa el sistema de **Ritmo** (Ataque estándar, Ataque pesado, Reacción, etc).
+- **Límites de la Ventaja de Ejecución:** Los Rasgos SOLO pueden otorgar Ventaja de Ejecución a estas tres tiradas:
+  - **T.A. (Tirada de Ataque):** Gobierna conectar un golpe, quebrar blindaje y superar reflejos.
+  - **T.D. (Tirada de Defensa):** Gobierna el instinto de preservar la vida, esquivar, bloquear o desviar.
+  - **T.E. (Tirada de Especialización):** Gobierna habilidades entrenadas (trepar, rastrear, acrobacias, etc).
+- **Tiradas Prohibidas:** NUNCA otorgues ventaja a T.I. (Impacto/Daño), T.C. (Característica), o T.R. (Resistencia).
