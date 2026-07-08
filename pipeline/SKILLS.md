@@ -636,18 +636,21 @@ Follow `technique-play-surface.md` exactly. The play-facing fields in order:
    - **Factor de Naturaleza:** Mortal = 1, Anomalía = 2, Primordial = Inmune al daño físico.
 8. **Potencia de Armas Naturales:** Si la zona actúa como un arma natural (garras, colmillos, cuernos), calcula su capacidad de destrucción (usada para romper blindajes en impactos críticos).
    - **Fórmula:** `Potencia = P Base del Material Ofensivo × NR × Factor de Naturaleza`
-9. **Bloque de Tiradas:** Calcula los modificadores de tirada del monstruo basándote en su NR y Rol (según `01-doctrina.md`).
-   - **Modificador Base:** `NR + Rango` (Rango 1 para NR 1-2, Rango 2 para NR 3-4, etc).
-   - Todas las tiradas (T.A, T.D, T.I, T.C, T.R, T.E) reciben el Modificador Base. No hay penalizadores.
-   - El **Rol** añade el Modificador Base *de nuevo* (es decir, lo duplica) a las tiradas fuertes de la criatura:
-     - *Golpeador:* +Base a T.A y T.I (daño fijo).
-     - *Protector:* +Base a T.D y T.R.
-     - *Soporte:* +Base a T.E y T.C.
-     - *Lanzador:* +Base a T.A (distancia) y T.E.
-   - **T.I (Daño de Monstruo):** Se calcula como `(Rango)d(Dado del arma) + (NR × Grado) + Modificador`. Para armas naturales, Grado = Rango.
-10. **Habilidades y Acciones:** Toda zona de combate (ofensiva/defensiva) debe tener una habilidad atada a ella. Si la zona se rompe, la habilidad se pierde.
-    - Las habilidades de los NPC se estructuran sin **Desgaste**.
-    - **Formato de Salida (Plantilla Maestra):** Debes formatear TODO el bloque de la criatura (Estadísticas, Zonas, Rasgos y Técnicas) siguiendo EXACTAMENTE la misma maquetación, clases HTML (`.monster-block`) y estructura de tablas Markdown que la primera entrada (Carroñero Abisal) en el archivo `14-adversaries-and-bestiary/es/06-bestiario.md`. No inventes otros formatos; usa el Carroñero como tu plantilla inquebrantable.
+9. **Características y Estadísticas Base:** Toda criatura posee las 9 características (FUE, AGI, TEN, AST, INT, SAB, AUR, PRE, COM). 
+   - **Asignación:** Asigna a la bestia valores entre -2 y +6 en cada característica según su biología y concepto.
+   - **Atributos Derivados:** 
+     - *Preparación:* `(AGI + AST + COM) / 3` (redondeado hacia arriba, añade +1 o +2 si es depredador de emboscada rápido).
+     - *Resiliencia:* `(TEN + SAB + COM) / 3` (redondeado hacia arriba).
+10. **Bloque de Tiradas de Combate:** Las criaturas NO reciben bonificadores a sus tiradas dependiendo de su Rol. Su Rol solo multiplica sus PV. Para las tiradas usan su **Nivel Base**:
+   - **Nivel Base:** `NR + Rango` (Rango 1 para NR 1-2, Rango 2 para NR 3-4, etc).
+   - **T.A:** `Característica (FUE o AGI según el arma) + Nivel Base`
+   - **T.D:** `AGI + Nivel Base`
+   - **T.R:** `TEN + Nivel Base`
+   - **T.C:** `COM + Nivel Base`
+   - **T.I (Daño Fijo):** `(Rango)d(Dado del arma) + (NR × Grado) + Característica` asociada al ataque. Se anota como número (ej. `1d8 + 4`).
+11. **Especializaciones (T.E):** No existe un stat global de T.E. Elige entre 2 y 4 especializaciones puras del catálogo oficial (ej. *Agarre, Percepción, Rastreo, Supervivencia, Acrobacias*) que tengan sentido biológico, y asígnales un modificador equivalente a `Característica + Nivel Base` (o un nivel adaptado).
+12. **Habilidades y Acciones:** Toda zona de combate (ofensiva/defensiva) debe tener una habilidad atada a ella. Si la zona se rompe, la habilidad se pierde. Las habilidades de NPC van sin **Desgaste**.
+    - **Formato de Salida (Plantilla Maestra):** Debes formatear TODO el bloque de la criatura siguiendo EXACTAMENTE la misma maquetación, clases HTML (`.monster-characteristics`, `.monster-stats-grid`, etc) y estructura Markdown que la entrada del **Carroñero Abisal** en `14-adversaries-and-bestiary/es/06-bestiario.md`. Usa esa ficha como plantilla inquebrantable.
 
 ### Mechanical Constraints (Reglas Inquebrantables)
 
