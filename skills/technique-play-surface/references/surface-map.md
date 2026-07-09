@@ -29,7 +29,7 @@ Use this file as the first routing layer for final play-surface work.
 
 ## Surface targets
 
-- `Transcendence-publications/core-books/transcendence-corebook/09-techniques/`
+- `Transcendence-publications/core-books/transcendence-techniques/es/`
 - `Transcendence-publications/technique-cards/transcendence-technique-cards/`
 
 ## Common routing patterns

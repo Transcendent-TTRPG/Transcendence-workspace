@@ -68,7 +68,7 @@ Every play-surface pass should rely on:
 Key references:
 
 - `Transcendence-design/docs/system/technique-play-surface.md`
-- `Transcendence-publications/core-books/transcendence-corebook/09-techniques/`
+- `Transcendence-publications/core-books/transcendence-techniques/es/`
 - `Transcendence-publications/technique-cards/transcendence-technique-cards/`
 
 ## Core lenses

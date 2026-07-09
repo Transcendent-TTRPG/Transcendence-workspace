@@ -172,8 +172,8 @@ Transcendence-design/docs/canon/species/
 
 ## Cost doctrine
 
-Read `docs/work-runs/2026-06-04-technique-cost-stabilization.md` and
-`docs/work-runs/2026-06-04-technique-cost-master-table.md` for the current
+Read `docs/workflows/technique-cost-stabilization.md` and
+`docs/workflows/technique-cost-master-table.md` for the current
 cost doctrine before reviewing or setting Ritmo/Desgaste values.
 
 Short summary:

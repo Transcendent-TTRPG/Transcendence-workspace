@@ -57,6 +57,24 @@ design before proceeding — it is not a default.
 
 Then use the workflow to ground that fantasy in the system.
 
+## Species framing discipline
+
+Every new Technique run starts from the **corebook species entry**, not from design seeds or internal notes. Seeds drift; the corebook entry is what the player reads and what defines the species identity the game has committed to.
+
+Before designing, read the corebook entry and identify two distinct layers:
+
+**Biological layer** — what the body does by nature: anatomy, senses, metabolic traits, natural weapons, physical limits. This is what makes the Technique *possible*.
+
+**Doctrinal layer** — what the species concluded from having that body: culture, philosophy, combat doctrine, theological reading of force. This is what makes the Technique specifically *theirs*.
+
+A Technique that expresses only the biological layer is mechanically valid but species-generic. A Technique that expresses both layers is irreducible to another species. Techniques don't have to express both simultaneously — but the set as a whole must have both layers represented.
+
+**Herencia principle:** when designing for a species vulnerability (herencia penalty), do not build a direct counter. The species' response is almost always lateral — they developed other capabilities that make the vulnerability matter less in practice. A vulnerability with a direct counter tells the player the species is afraid of itself. A vulnerability that is worked around tells the player the species has lived with it long enough to build a different path.
+
+**Uniqueness rule:** for each species set, there is 1 Technique that should be indefensible outside that species — it requires the species' specific biology, lifespan, cultural history, or exclusive knowledge to be coherent. These anchor the set and distinguish it from generic profile work.
+
+**Primary design question:** *¿Qué sabe esta especie que otras no pueden saber?* Not what the body can do physically — what knowledge, experience, or biological sense is unavailable to any other species, and how does that become a concrete action with a real combat moment?
+
 ## Techniques vs. base specialization rolls
 
 A base specialization roll provides narrative context — it helps the player
@@ -77,6 +95,11 @@ physical contact), make it explicit in the effect text.
 ---
 
 ## Cost and duration doctrine
+
+**Required reading before setting any cost:** Read both of these docs first — they are the canonical cost reference, not memory or intuition:
+
+- `docs/workflows/technique-cost-stabilization.md` — doctrine, bands, arbitration rules, and Ritmo/Desgaste definitions
+- `docs/workflows/technique-cost-master-table.md` — the full validated table of all existing techniques with their accepted costs and comparison notes
 
 When this skill authors or normalizes costs, use these project rules:
 
@@ -382,7 +405,7 @@ In many runs, this order works well:
 3. **cross-species profile check:** map all existing Techniques with the same weapon profile across all species; also check for functional overlap with Techniques of other profiles (same trigger pattern + same output pattern = overlap even if the profile differs); identify the specific gap this Technique fills before designing
 4. resolve dependency and balance framing
 5. confirm design with user (review gate before writing any output)
-6. write core publication entry (`09-techniques/es/`)
+6. write core publication entry (`transcendence-techniques/es/`)
 7. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
 8. edit authority YAML (`data/system/techniques.yaml`)
 9. route into simulation or core sync only if needed

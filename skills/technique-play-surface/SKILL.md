@@ -58,7 +58,7 @@ Then open only the additional docs the run actually needs:
 
 Read actual surfaces directly:
 
-- `Transcendence-publications/core-books/transcendence-corebook/09-techniques/`
+- `Transcendence-publications/core-books/transcendence-techniques/es/`
 - `Transcendence-publications/technique-cards/transcendence-technique-cards/`
 
 ## Execution pattern

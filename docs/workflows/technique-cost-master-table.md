@@ -1,17 +1,21 @@
 # Tabla Maestra — Costos de Técnicas
 
-`2026-06-04` · estado: `clean run en curso`
+`2026-06-04` · actualizado `2026-07-09` · estado: `cerrado — 02–117 revalidadas`
 
 ## Propósito
 
-Registrar la revisión limpia de costos de las 79 técnicas sin arrastrar
-conclusiones provisionales de pasadas anteriores.
+Registro de referencia de los costos validados para las técnicas 02–117.
+Cada fila representa un veredicto cerrado bajo la doctrina vigente.
 
-## Estado de trabajo
+Para la doctrina completa, bandas de referencia, y preguntas de arbitraje, ver:
+`docs/workflows/technique-cost-stabilization.md`
 
-- las filas aquí son material de revisión, no veredictos cerrados
-- `Actual` solo documenta el costo publicado
-- `Propuesta` se llena únicamente cuando la técnica ya fue revalidada en esta pasada
+## Marco de costos
+
+- **`Ritmo`** = tiempo: cuánto avanza la ficha del usuario en el track ATB al ejecutar la técnica. Ritmo 0 cuando la técnica no tiene manifestación externa, movimiento, ni requisito de timing — un snap cognitivo o reactivo puramente interno. Ritmo > 0 cuando la ejecución requiere acción física, timing, o atención que desplaza la posición del usuario en el intercambio.
+- **`Desgaste`** = esfuerzo: acumulación permanente de desgaste entre escenas. `Desgaste 0` solo para técnicas pasivas que el cuerpo ejecuta sin activación consciente. `Desgaste 1` = una superficie principal bien definida. `Desgaste 2` = dos ejes relevantes independientes. `Desgaste 3+` = sobreextensión real.
+- Las acciones base son el piso ineficiente, no el benchmark de optimización.
+- `Permanente` no es recargo por sí mismo — se cobra la cobertura efectiva y los intercambios alterados.
 
 ## Etiquetas
 
@@ -49,11 +53,11 @@ nota: `bloque pasivo, cierre doctrinal esperado en 0/0`
 | 11 | Tocar y Ceder | `5/1` | competencia compatible con el perfil | combate por perfil | hostigamiento con ida y salida | `Hostigamiento` | origen compatible con el perfil | 56, 03, 04 | revalidada | `5/1` | ataque con entrada y salida breve atadas al acierto; muy expresiva, pero todavía de una sola superficie fuerte |
 | 12 | Trabar el Gesto | `5/1` | competencia compatible con el perfil | combate por perfil | reemplazo defensivo por interrupción | `Interrupción` | origen compatible con el perfil | 59, 80, 74 | revalidada | `6/2` | reemplaza defensa, niega ataque, hace daño y puede fijar condición permanente; paquete demasiado ancho para `5/1` |
 | 13 | Plantar la Guardia | `3/1` | competencia compatible con el perfil | combate por perfil | postura de guardia | `Guarda` | origen compatible con el perfil | 26, 29 | revalidada | `3/2` | `Ritmo 3` se sostiene, pero cobrar `Ritmo` extra igual al rango sobre cada acción enemiga en zona altera demasiados intercambios para `Desgaste 1` |
-| 14 | Leer el Calor del Paso | `3/1` | especialización | Percepción | lectura sensorial integrada | lectura / setup | 16, 17, 18 | revalidada | `3/1` | lectura inmediata útil y estrecha; no crea ventaja mecánica amplia por sí sola |
-| 15 | Pesar el Umbral | `4/1` | especialización | Sigilo | setup oculto que fuerza terror | setup / presión | 69, 68 | revalidada | `4/1` | compuerta fuerte de ocultamiento válido más estado en fallo de resistencia; buen costo de presión especializada |
-| 16 | Leer la Línea Ausente | `3/1` | especialización | Interpretación | lectura de ausencia estructural | lectura | 14, 17, 18 | revalidada | `3/1` | información estructural muy útil pero sin conversión táctica dura inmediata |
-| 17 | Medir el Ciclo | `3/1` | especialización | Astronomía | lectura de ritmo ATB | lectura / setup | 14, 16, 18 | revalidada | `4/1` | no solo informa: además entrega bonificador a varias salvaciones futuras de un mismo ciclo; demasiado ancho para seguir en `3` |
-| 18 | Leer el Propósito | `4/1` | especialización | Arquitectura | lectura de punto vital | lectura / setup ofensivo | 24, 66 | revalidada | `4/1` | setup ofensivo persistente, pero con compuerta fuerte y beneficio personal, no compartido |
+| 14 | Leer el Calor del Paso | `3/1` | especialización | Percepción | lectura sensorial integrada | lectura / setup | — | 16, 17, 18 | revalidada | `3/1` | lectura inmediata útil y estrecha; no crea ventaja mecánica amplia por sí sola |
+| 15 | Pesar el Umbral | `4/1` | especialización | Sigilo | setup oculto que fuerza terror | setup / presión | — | 69, 68 | revalidada | `4/1` | compuerta fuerte de ocultamiento válido más estado en fallo de resistencia; buen costo de presión especializada |
+| 16 | Leer la Línea Ausente | `3/1` | especialización | Interpretación | lectura de ausencia estructural | lectura | — | 14, 17, 18 | revalidada | `3/1` | información estructural muy útil pero sin conversión táctica dura inmediata |
+| 17 | Medir el Ciclo | `3/1` | especialización | Astronomía | lectura de ritmo ATB | lectura / setup | — | 14, 16, 18 | revalidada | `4/1` | no solo informa: además entrega bonificador a varias salvaciones futuras de un mismo ciclo; demasiado ancho para seguir en `3` |
+| 18 | Leer el Propósito | `4/1` | especialización | Arquitectura | lectura de punto vital | lectura / setup ofensivo | — | 24, 66 | revalidada | `4/1` | setup ofensivo persistente, pero con compuerta fuerte y beneficio personal, no compartido |
 | 19 | Cruzar la Punta | `3/1` | competencia defensiva | evasión | respuesta a ataque de objetivo único | `Evasión` | — | 20, 57 | revalidada | `3/1` | defensa estrecha con avance corto hacia el atacante; muy encapsulada y dependiente del éxito defensivo |
 | 20 | Vaciar el Blanco | `3/1` | competencia defensiva | evasión | vaciado de línea personal | `Evasión` | — | 19, 57 | revalidada | `3/2` | además de evitar el golpe, deja un bono amplio a la próxima tirada relevante contra ese enemigo; su valor diferido es demasiado bueno para `Desgaste 1` |
 | 21 | Templar el Veneno | `0/0` | resistencia + especialización | híbrida de resistencia | venenos | `Tolerancia + Resistencia al Veneno` | — | 50, 51 | revalidada | `0/0` | pasiva por doctrina; expresa una capacidad ya internalizada, no una activación táctica |
@@ -159,3 +163,26 @@ doctrinal o porque el cambio propuesto es relativamente fuerte.
 - `77 El Cierre Que No Se Negocia` → `5/1`
   baja en `Desgaste`; conviene mirar una vez más si ignorar `Bloqueo` se siente
   tan puntual en mesa como en la lectura doctrinal
+
+---
+
+## Audit 81–117 — pasada de costos `2026-07-09`
+
+Técnicas 81–117 (Drak'kai novatas, especializaciones Drak'kai, set de herencias).
+31 técnicas validadas sin cambios. 6 outliers corregidos y aplicados.
+
+| ID | Técnica | Anterior | Nuevo | Razón del cambio |
+| --- | --- | --- | --- | --- |
+| 86 | El Golpe Que Cobra | `3/1` | `0/1` | Dispara cuando ya fallaste T.D. — no hay acción del usuario, es consecuencia automática del golpe en armadura funcional. Ritmo 0 como otras técnicas de trigger-on-hit. |
+| 92 | El Cuello Que Todo Lo Atraviesa | `3/2` | `3/1` | Sustitución de habilidad espacial + bono = un solo output compuesto. Desgaste 2 exige dos ejes independientes. |
+| 93 | El Margen Que Quedó Abierto | `3/2` | `3/1` | Mismo patrón que #92 para habilidades sociales. Un output. |
+| 107 | Adaptabilidad | `3/2` | `3/1` | Swap de especializaciones = un output. Cantidad de habilidades consolidadas no determina el Desgaste; lo determina el ancho de los outputs. |
+| 108 | La Presa del Oso | `4/1` | `4/2` | T.I. + Atrapado = dos superficies relevantes. El costo por activación de mantenimiento no reduce el ancho del paquete base. |
+| 117 | Saturación | `2/3` | `2/1` | Cleanse condicional de una Alteración con tirada que puede fallar = un output con compuerta real. Desgaste 3 no se sostiene para una sola superficie. |
+
+**Casos borderline — mantenidos sin cambio:**
+
+- `89 La Línea Que No Se Rompe` `0/2` — preservar una Postura activa bajo golpe es un output de alto impacto en el estado de juego. Desgaste 2 defensible.
+- `99 Protección Natural` `0/2` — trigger amplio (cualquier herida no crítica), un output fuerte (negación completa de heridas Leve). Ritmo 0 correcto porque dispara en la ventana de reacción sin acción del usuario.
+- `101 Magnetorrecepción` `3/2` — tres outputs en la misma familia sensorial (posición, sorpresa, ocultamiento). No cambiado; los tres pertenecen al mismo sentido magnético y la compuerta de T.C. es real.
+- `113 Aceleración del Caos` `0/2` — movimiento físico con Ritmo 0. Defensible: reflejo biológico involuntario al recibir herida — el trigger no es una elección táctica sino una respuesta corporal automática.

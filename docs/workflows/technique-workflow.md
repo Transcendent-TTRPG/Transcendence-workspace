@@ -158,6 +158,8 @@ Primary lens:
 
 - `species_lens`
 
+**Source:** Read the corebook species entry (`06-species/es/`) — not design seeds or internal notes. Seeds drift; the corebook entry is the identity the game has committed to.
+
 Questions:
 
 - Does this genuinely belong to the species?
@@ -166,6 +168,9 @@ Questions:
 - What are its primary and secondary interaction surfaces?
 - What is the irreducible fantasy of the Technique before mechanical trimming?
 - Is this Technique useful in ATB combat? If not, is that a deliberate, explicitly justified design choice — or has combat utility been overlooked?
+- **Biological layer:** what does the body do by nature that makes this Technique *possible*?
+- **Doctrinal layer:** what did the species conclude from having that body — what doctrine, philosophy, or theology makes this Technique specifically *theirs*?
+- **Primary design question:** what does this species know that other species cannot know? What exclusive knowledge, sense, or experience becomes the combat action?
 
 Outputs:
 
@@ -174,6 +179,8 @@ Outputs:
 - why-not-base-action
 - interaction surfaces
 - irreducible fantasy statement
+- biological justification (body as substrate)
+- doctrinal justification (species interpretation of that body) — may be brief if the Technique is primarily biological
 - combat utility statement: explicit note on whether and how the Technique applies in ATB, and if it does not, a documented justification
 
 ## Phase 2. Mechanical Framing
