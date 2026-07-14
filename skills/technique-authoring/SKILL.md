@@ -36,6 +36,97 @@ Every technique of type Postura must carry `Postura` as a keyword in both the co
 
 ---
 
+## Keyword — Hereda Efectos / No Hereda Efectos
+
+Every species has natural weapons. Each natural weapon has an **Efecto** that fires under a specific trigger condition (margin ≥ 3, critical hit, second consecutive hit, any hit, etc.). This Efecto is an intrinsic part of the weapon — not the technique.
+
+The `Hereda Efectos` / `No Hereda Efectos` keyword controls whether the natural weapon's Efecto is eligible to trigger during a technique's execution.
+
+### What these keywords mean
+
+**`Hereda Efectos`** — The technique resolves as a full weapon hit with T.I. The natural weapon's Efecto can trigger alongside the technique's own effect if its trigger condition is met.
+
+**`No Hereda Efectos`** — The technique does not produce a full weapon hit with T.I., or uses the weapon contact for control/positioning without a full hit. The natural weapon's Efecto is suppressed regardless of the weapon's trigger condition.
+
+### Mandatory prerequisite: the Impacto check
+
+A technique can only carry `Hereda Efectos` if its stat block shows **Impacto: T.I.** — meaning the technique resolves a full hit with damage. If Impacto is `—`, the keyword must be `No Hereda Efectos`. This is a hard gate, not a default.
+
+| Impacto | Technique type | Keyword |
+| --- | --- | --- |
+| `T.I.` | Activo - Ataque or Reactivo with full hit | proceed to cross-species check below |
+| `—` | any attack or reactive with no damage | `No Hereda Efectos` |
+| any | Activo - Utilidad | omit keyword entirely |
+| any | Pasivo - Resistencia | omit keyword entirely |
+
+### Cross-species balance check (required when Impacto = T.I.)
+
+Techniques are open to any character with the right weapon profile — not just the species they originate from. The keyword decision is therefore a statement about **all natural weapons that share the technique's profile**, not just the design species.
+
+Before assigning `Hereda Efectos` to a technique with T.I., map every natural weapon with that profile and ask: does [technique effect] + [this weapon's Efecto] produce an acceptable combination?
+
+**What to look for:**
+
+- **Lower-threshold triggers** — most natural weapon effects require margin ≥ 3. Some fire on any hit (Bufoni Lengua, Yacani Bilis) or on critical only (Drak'kai Mordisco). Lower-threshold triggers create more reliable stacking.
+- **Guaranteed effects** — some natural weapon effects bypass T.R. entirely (Drak'kai Mordisco: Aterrorizado on critical). Combined with a technique that also produces conditions, this can create two-condition hits.
+- **Same condition** — if the natural weapon and the technique both produce the same Alteration (e.g., Loxod Trompa + a technique that causes Desequilibrado), they don't stack — strongest applies. Effectively neutral.
+- **Stat reduction + condition stack** — veneno effects that reduce stats (reduce Tenacidad, reduce Agilidad) compound with conditions that restrict actions. Check whether the combination under the worst-case species pairing is still within acceptable power range.
+
+**When to use `No Hereda Efectos` despite T.I.:**
+
+If any specific species + technique combination produces a reliably broken output — meaning a player can trigger two independent conditions on most hits without exceptional luck — the technique should use `No Hereda Efectos`. The technique's own effect is the primary output; the natural weapon is suppressed by design.
+
+**When `Hereda Efectos` is correct despite stacking potential:**
+
+If all combinations require both a non-trivial trigger condition (margin ≥ 3 or critical) AND a T.R. failure to produce the combined effect, the stacking is acceptable. The design relies on two independent conditional gates rather than one.
+
+### Application rule
+
+- Every **Activo - Ataque** and **Reactivo** technique must specify the keyword. Never leave it implicit.
+- **Utilidad** and **Pasivo** techniques: omit the keyword entirely — no weapon contact involved.
+- The keyword goes in `## Keywords` in the corebook entry and as a `<span>` in the HTML card tag-bar.
+
+### Where to find natural weapon data
+
+All natural weapon stat blocks, profiles, and Efecto text live in:
+
+```
+Transcendence-publications/core-books/transcendence-corebook/06-species/es/
+  01-naghii.md … 20-yacani.md
+```
+
+Each file has a `### Armas Naturales` section. Read the **Perfiles** line of every weapon block to find which species can use the technique's profile with a natural weapon, then read the **Efecto** block to understand the trigger condition and output.
+
+---
+
+## Non-overlap analysis — mandatory before designing
+
+Before proposing any design, run this analysis. It has two parts. Do not skip either.
+
+### Part 1 — same-profile technique map
+
+Search `Transcendence-design/data/system/techniques.yaml` for every existing technique that uses the same weapon profile, regardless of species. For each one, record:
+
+- its trigger (what condition fires the technique)
+- its output (what the technique produces mechanically)
+- its species origin
+
+Map what the existing set covers, then identify the specific gap the new technique fills. If no gap exists, the design is a duplicate and must be revised before proceeding.
+
+### Part 2 — cross-profile functional overlap
+
+A technique can be a duplicate of an existing one even if the profiles differ. Two techniques that share the same trigger pattern **and** the same output pattern are functionally overlapping regardless of their profile.
+
+Example: a technique that fires when an enemy moves and stops that movement overlaps with any other technique — on any profile — that also fires on enemy movement and stops it. The profile does not make them distinct.
+
+Check the full technique set, not only same-profile entries, for this pattern.
+
+### Gate
+
+Only after both parts are complete should a design be proposed to the user. The non-overlap analysis is the basis for the design, not a box to check after it.
+
+---
+
 ## Authoring stance
 
 This skill is **fantasy-first** and **combat-first**.
@@ -73,6 +164,8 @@ A Technique that expresses only the biological layer is mechanically valid but s
 
 **Uniqueness rule:** for each species set, there is 1 Technique that should be indefensible outside that species — it requires the species' specific biology, lifespan, cultural history, or exclusive knowledge to be coherent. These anchor the set and distinguish it from generic profile work.
 
+**Open access rule:** Techniques are born from species identity but are mechanically open to any character with the required weapon profile. A Technique must not depend on herencias, legados, or species-specific mechanics as mechanical requirements or outputs. A Technique must not depend on natural weapon effects (such as a specific bite effect, sting condition, or claw bonus) as its primary mechanical engine — the technique must function for a character using a crafted weapon with the same profile. Natural weapons may inform the fantasy of the technique, but the mechanic must stand on its own without them. Only 1–2 techniques in a full game set depend on natural weapons exclusively; the rest are profile-gated, not anatomy-gated.
+
 **Primary design question:** *¿Qué sabe esta especie que otras no pueden saber?* Not what the body can do physically — what knowledge, experience, or biological sense is unavailable to any other species, and how does that become a concrete action with a real combat moment?
 
 ## Techniques vs. base specialization rolls
@@ -91,6 +184,77 @@ ATB position, conditions, Ruptura, or access permissions.
 
 When the mechanical consequence is implicit (e.g., safe identification without
 physical contact), make it explicit in the effect text.
+
+## Specialization domains
+
+A specialization roll is the direct application of the skill in its literal
+context. A Technique sourced from a specialization domain is not a better
+version of that roll — it is an extension of the **underlying knowledge** the
+specialization represents, applied to a context that is not the literal skill.
+
+The correct question is not "how does this help with swimming?" but "what does
+a swimmer know that a non-swimmer does not, and how does that apply inside
+combat?"
+
+**Full domain definitions — required reading before designing any
+specialization-origin Technique:**
+
+- `Transcendence-design/docs/system/specialization-technique-domains.md` —
+  prose definitions for all 54 specializations: `fantasy_core`,
+  `transferable_capabilities`, valid derived techniques, and invalid patterns
+- `Transcendence-design/data/system/specialization-technique-domains.yaml` —
+  structured authority version of the same data
+
+### Domain extraction test
+
+Before finalizing a domain-sourced Technique, confirm all three:
+
+1. **What does this skill teach?** Not what it does, but what knowledge and
+   principles it builds in the practitioner.
+2. **What non-literal problem does that knowledge solve?** The Technique's
+   mechanical output should answer this question.
+3. **Does the Technique require that knowledge to be coherent?** If a
+   character without the domain could use the same logic, the Technique is
+   not domain-grounded — it is a generic mechanic wearing a specialization
+   label.
+
+### Activation roll requirement
+
+Every specialization-origin Technique **must** include a `T.E.` of the relevant
+specialization as its activation roll. This is not optional. It serves two
+simultaneous functions:
+
+- **Failure gate** — the Technique can be attempted and fail. Cost (Ritmo and
+  Desgaste) is paid regardless; the effect does not occur on failure.
+- **Progression trigger** — specialization competency can only advance through
+  successful `T.E.` rolls. If a Technique has no activation roll, the only way
+  to progress the specialization is through literal out-of-combat use, which is
+  prohibitively slow.
+
+**What the T.E. is testing:** Having the specialization means the character
+already possesses the knowledge. The roll does not test "do you know X?" — it
+tests "can you successfully apply that knowledge to *this specific target* under
+combat pressure?" That distinction makes the roll valid even when the knowledge
+itself is unambiguous.
+
+**Standard difficulty scale — techniques targeting a creature:**
+
+| Naturaleza | Dificultad |
+| --- | --- |
+| Mortal | Desafiante |
+| Anomalía | Rigurosa |
+| Primordial | Exigente |
+
+Do not write the numeric value (8 + NR, 11 + NR, etc.) in the corebook entry
+or card. Write only the tier name.
+
+**Exception — reactive techniques with Ritmo 0 and scaling Desgaste:** For
+techniques that fire as an internal resistance response (e.g., pushing through
+a physical state, maintaining concentration under interruption), the difficulty
+is contextual rather than Nature-based. Use Alteration severity
+(Leve → Fundamental, Moderada → Desafiante, Grave → Rigurosa) or a Narrator-
+set difficulty based on the severity of the triggering event. State this
+clearly in the effect text.
 
 ---
 
@@ -402,9 +566,11 @@ In many runs, this order works well:
 
 1. read workflow docs and authority sources
 2. inspect knowledge layer and current technique state
-3. **cross-species profile check:** map all existing Techniques with the same weapon profile across all species; also check for functional overlap with Techniques of other profiles (same trigger pattern + same output pattern = overlap even if the profile differs); identify the specific gap this Technique fills before designing
+3. **non-overlap analysis + Hereda Efectos pre-check** — run both mandatory pre-design steps:
+   - Follow the **Non-overlap analysis** procedure (same-profile map + cross-profile functional overlap check)
+   - For the technique's profile, list all natural weapons that share it (from `06-species/es/`); note trigger thresholds and output types — this becomes the **Hereda Efectos cross-species check** that runs after the design is drafted
 4. resolve dependency and balance framing
-5. confirm design with user (review gate before writing any output)
+5. confirm design with user (review gate before writing any output); at this point also resolve the **Hereda Efectos** keyword using the cross-species check against the drafted technique's own effect
 6. write core publication entry (`transcendence-techniques/es/`)
 7. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
 8. edit authority YAML (`data/system/techniques.yaml`)
