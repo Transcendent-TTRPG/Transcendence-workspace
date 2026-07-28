@@ -10,3 +10,6 @@
 	path = Transcendence-publications
 	url = https://github.com/Transcendent-TTRPG/Transcendence-publications.git
 	branch = main
+[submodule "Transcendence-compendium"]
+	path = Transcendence-compendium
+	url = git@github.com:juangomezfulcrumapp/Transcendence-compendium.git
