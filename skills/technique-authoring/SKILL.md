@@ -101,29 +101,59 @@ Each file has a `### Armas Naturales` section. Read the **Perfiles** line of eve
 
 ## Non-overlap analysis — mandatory before designing
 
-Before proposing any design, run this analysis. It has two parts. Do not skip either.
+Before proposing any design, run this analysis. It has three parts. Do not skip any.
 
-### Part 1 — same-profile technique map
+**Source of truth:** `Transcendence-publications/core-books/transcendence-techniques/es/`  
+The YAML is outdated. Read the corebook files directly, or use  
+`Transcendence-design/docs/system/technique-surface-catalog.md` as a quick reference.
 
-Search `Transcendence-design/data/system/techniques.yaml` for every existing technique that uses the same weapon profile, regardless of species. For each one, record:
+### Step 0 — identify the technique type
 
+First determine which mechanical surface the new technique belongs to:
+
+| Type | Gated by | Compare against |
+| --- | --- | --- |
+| **Weapon profile** | Weapon competency + profile | All techniques sharing the same profile |
+| **Armor** | Armor competency tier (Ligera / Intermedia / Pesada / Evasión) | All techniques of the same tier (note: a technique can span multiple tiers) |
+| **Specialization** | A named specialization | All techniques that gate on the same specialization |
+| **Resistance hybrid** | Resistance type + specialization (passive) | All hybrids targeting the same resistance type |
+| **Innate** | Species biology only | All innate techniques (ensure biological uniqueness) |
+
+Each type has its own comparison pool. A technique in one type is not automatically clear of overlap with others — run Part 2 regardless.
+
+### Part 1 — same-surface technique map
+
+For the technique's type, read every existing technique that shares the same surface:
+
+**Weapon profile:** every technique with the same profile tag, regardless of species.  
+**Armor:** every technique that requires the same armor tier (Ligera, Intermedia, Pesada, or Evasión). Note that a technique requiring "Intermedia o Pesada" appears in both pools.  
+**Specialization:** every technique that gates on the same specialization.  
+**Resistance hybrid:** every hybrid that targets the same resistance type (Veneno, Infección, Aflicción, Calor, Taumática).
+
+For each existing technique in the pool, record:
 - its trigger (what condition fires the technique)
-- its output (what the technique produces mechanically)
-- its species origin
+- its output (what it produces mechanically)
+- its species of origin (lore only — not a constraint)
 
-Map what the existing set covers, then identify the specific gap the new technique fills. If no gap exists, the design is a duplicate and must be revised before proceeding.
+Map what the existing set covers. Identify the specific gap the new technique fills. If no gap exists, the design is a duplicate and must be revised before proceeding.
 
-### Part 2 — cross-profile functional overlap
+### Part 2 — cross-surface functional overlap
 
-A technique can be a duplicate of an existing one even if the profiles differ. Two techniques that share the same trigger pattern **and** the same output pattern are functionally overlapping regardless of their profile.
+A technique can duplicate an existing one even if they belong to different types or surfaces. Two techniques that share the same **trigger pattern** and the same **output pattern** are functionally overlapping regardless of surface.
 
-Example: a technique that fires when an enemy moves and stops that movement overlaps with any other technique — on any profile — that also fires on enemy movement and stops it. The profile does not make them distinct.
+Example: a technique that fires when an enemy moves and stops that movement overlaps with any other technique — regardless of profile or armor tier — that also fires on enemy movement and stops it.
 
-Check the full technique set, not only same-profile entries, for this pattern.
+Check the full published set, not only same-surface entries, for this pattern.
+
+### Part 3 — Hereda Efectos pre-check (weapon techniques only)
+
+Skip this part for armor, specialization, resistance hybrid, and innate techniques.
+
+For weapon profile techniques: before finalizing the design, list every natural weapon that shares the technique's profile (from `06-species/es/`). Note each weapon's trigger threshold and output type. This data feeds the Hereda Efectos keyword decision after the design is drafted (see the Hereda Efectos section above).
 
 ### Gate
 
-Only after both parts are complete should a design be proposed to the user. The non-overlap analysis is the basis for the design, not a box to check after it.
+Only after all applicable parts are complete should a design be proposed to the user. The non-overlap analysis is the basis for the design, not a box to check after it.
 
 ---
 
@@ -565,18 +595,19 @@ Do not invent softer labels like "almost simulable" when one of the formal categ
 In many runs, this order works well:
 
 1. read workflow docs and authority sources
-2. inspect knowledge layer and current technique state
+2. inspect `Transcendence-design/docs/system/technique-surface-catalog.md` — find the technique's surface section and read every existing entry in that pool before designing anything
 3. **non-overlap analysis + Hereda Efectos pre-check** — run both mandatory pre-design steps:
-   - Follow the **Non-overlap analysis** procedure (same-profile map + cross-profile functional overlap check)
-   - For the technique's profile, list all natural weapons that share it (from `06-species/es/`); note trigger thresholds and output types — this becomes the **Hereda Efectos cross-species check** that runs after the design is drafted
+   - Follow the **Non-overlap analysis** procedure (same-surface map + cross-surface functional overlap check)
+   - For weapon techniques: list all natural weapons that share the profile (from `06-species/es/`); note trigger thresholds and output types — this becomes the **Hereda Efectos cross-species check** that runs after the design is drafted
 4. resolve dependency and balance framing
 5. confirm design with user (review gate before writing any output); at this point also resolve the **Hereda Efectos** keyword using the cross-species check against the drafted technique's own effect
 6. write core publication entry (`transcendence-techniques/es/`)
 7. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
-8. edit authority YAML (`data/system/techniques.yaml`)
-9. route into simulation or core sync only if needed
-10. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
-11. record acceptance and impact
+8. edit authority YAML (`data/system/techniques.yaml`) if maintained
+9. **update `technique-surface-catalog.md`** — add a row to the technique's surface table (profile / armor tier / specialization / resistance) with: technique number, title, type, and key mechanical output in 4–6 words
+10. route into simulation or core sync only if needed
+11. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
+12. record acceptance and impact
 
 ## Reference map
 
