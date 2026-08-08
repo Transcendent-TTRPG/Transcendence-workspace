@@ -99,6 +99,36 @@ Each file has a `### Armas Naturales` section. Read the **Perfiles** line of eve
 
 ---
 
+## Species technique access profile — mandatory when starting a new species pass
+
+Before designing any technique for a species that has not been worked before (or when restarting after a long gap), build a one-time access profile that maps what mechanical surfaces the species has available. This is not repeated per technique — it is done once at the start of the pass and kept as shared context for the entire run.
+
+### What to extract
+
+**1. Weapon profiles** — from the species' natural weapons in `06-species/es/<nn>-<species>.md`, `### Armas Naturales` section. Read the `Perfiles:` line of every natural weapon. These are the profiles the species has native access to via biology. Crafted weapons can add others, but start from biology.
+
+**2. Armor tier** — from the species design doc (`Transcendence-design/docs/canon/species/<species>.md`) or the chapter-06 entry. Look for cultural combat doctrine, habitat, body type. The tier (Ligera / Intermedia / Pesada / Evasión) determines which armor techniques are relevant to design.
+
+**3. Specializations** — from the species design doc's cultural anchor, doctrinal layer, and any confirmed specialization lists. Which specializations define how this species thinks and fights? These become candidates for specialization-origin techniques.
+
+**4. Resistances** — from the species chapter-06 stats block, `Resistencias:` field. The five player resistance types are: **Veneno, Infección, Aflicción, Alteración, Maldiciones**. Which does this species have trained? Those are candidates for resistance hybrid techniques.
+
+### Output format
+
+A short block, kept in conversation context for the run:
+
+```
+[Species] — Technique Access Profile
+Weapon profiles: [list]
+Armor tier: [tier]
+Specializations (cultural candidates): [list]
+Resistances: [list]
+```
+
+This profile determines *which technique types* are in scope for the pass. A technique type not in the profile is either a stretch design (requires explicit justification) or out of scope.
+
+---
+
 ## Non-overlap analysis — mandatory before designing
 
 Before proposing any design, run this analysis. It has three parts. Do not skip any.
@@ -128,7 +158,7 @@ For the technique's type, read every existing technique that shares the same sur
 **Weapon profile:** every technique with the same profile tag, regardless of species.  
 **Armor:** every technique that requires the same armor tier (Ligera, Intermedia, Pesada, or Evasión). Note that a technique requiring "Intermedia o Pesada" appears in both pools.  
 **Specialization:** every technique that gates on the same specialization.  
-**Resistance hybrid:** every hybrid that targets the same resistance type (Veneno, Infección, Aflicción, Calor, Taumática).
+**Resistance hybrid:** every hybrid that targets the same resistance type (Veneno, Infección, Aflicción, Alteración, Maldiciones).
 
 For each existing technique in the pool, record:
 - its trigger (what condition fires the technique)
@@ -595,19 +625,20 @@ Do not invent softer labels like "almost simulable" when one of the formal categ
 In many runs, this order works well:
 
 1. read workflow docs and authority sources
-2. inspect `Transcendence-design/docs/system/technique-surface-catalog.md` — find the technique's surface section and read every existing entry in that pool before designing anything
-3. **non-overlap analysis + Hereda Efectos pre-check** — run both mandatory pre-design steps:
+2. **if starting a new species pass:** build the **Species Technique Access Profile** (weapon profiles, armor tier, specializations, resistances) from the species chapter-06 entry and design doc — do this once and keep it as shared context for the whole pass
+3. inspect `Transcendence-design/docs/system/technique-surface-catalog.md` — find the technique's surface section and read every existing entry in that pool before designing anything
+4. **non-overlap analysis + Hereda Efectos pre-check** — run both mandatory pre-design steps:
    - Follow the **Non-overlap analysis** procedure (same-surface map + cross-surface functional overlap check)
    - For weapon techniques: list all natural weapons that share the profile (from `06-species/es/`); note trigger thresholds and output types — this becomes the **Hereda Efectos cross-species check** that runs after the design is drafted
-4. resolve dependency and balance framing
-5. confirm design with user (review gate before writing any output); at this point also resolve the **Hereda Efectos** keyword using the cross-species check against the drafted technique's own effect
-6. write core publication entry (`transcendence-techniques/es/`)
-7. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
-8. edit authority YAML (`data/system/techniques.yaml`) if maintained
-9. **update `technique-surface-catalog.md`** — add a row to the technique's surface table (profile / armor tier / specialization / resistance) with: technique number, title, type, and key mechanical output in 4–6 words
-10. route into simulation or core sync only if needed
-11. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
-12. record acceptance and impact
+5. resolve dependency and balance framing
+6. confirm design with user (review gate before writing any output); at this point also resolve the **Hereda Efectos** keyword using the cross-species check against the drafted technique's own effect
+7. write core publication entry (`transcendence-techniques/es/`)
+8. write technique card (HTML, `technique-cards/.../cards/es/<species>/`)
+9. edit authority YAML (`data/system/techniques.yaml`) if maintained
+10. **update `technique-surface-catalog.md`** — add a row to the technique's surface table (profile / armor tier / specialization / resistance) with: technique number, title, type, and key mechanical output in 4–6 words
+11. route into simulation or core sync only if needed
+12. validate (run `python3 pipeline/scripts/validate_techniques.py` and ensure zero errors)
+13. record acceptance and impact
 
 ## Reference map
 

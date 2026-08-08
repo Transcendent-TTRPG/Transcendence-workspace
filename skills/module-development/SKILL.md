@@ -1,3 +1,8 @@
+---
+name: "module-development"
+description: "Use when designing or developing a campaign module — locations, scenes, encounters, NPCs, lore, pacing, or validating ideas against established system and setting rules."
+---
+
 # Skill: Module Development
 
 Use this skill when working on any campaign module for Transcendence — designing locations, scenes, encounters, NPCs, lore entries, pacing, or validating ideas against the established system and setting.
