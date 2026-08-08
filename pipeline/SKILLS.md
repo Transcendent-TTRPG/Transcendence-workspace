@@ -583,7 +583,13 @@ Follow `technique-play-surface.md` exactly. The play-facing fields in order:
 12. `Desgaste`
 13. `Requisitos` — real game mechanisms only (profile, equipment, tracked state, formal condition); no implied common-sense physical logic
 14. `Palabras Clave`
-15. `Efecto` — the full mechanical effect including end conditions for Permanente effects
+15. `Efecto` — the full mechanical effect including end conditions for Permanente effects.
+
+**Efecto Formatting & Prose Constraints (V2 Standard):**
+- **Conciseness:** 1 to 3 short paragraphs maximum. Prose must be direct and imperative ("Realiza una `T.A.`...").
+- **No Redundancy:** Do not explain *why* an attack fails or succeeds in the fiction inside the mechanical block. Just state the mechanical outcome ("Si fallas, la técnica termina sin efecto.").
+- **Formatting:** Do NOT use bolding (`**`) for dice rolls or competencies. Use inline code/backticks for all mechanics (e.g., `T.A.`, `T.D.`, `Ritmo`, `Desgaste`, `Evasión`, `Identificación`).
+- **Cleanliness:** Avoid excessive bolding or emphasis that distracts from reading the mechanics. Use small markdown tables (`<table class="mini-table">`) ONLY when absolutely necessary (e.g., scaling effects by rank).
 
 ### Audit checklist
 
@@ -599,6 +605,8 @@ Follow `technique-play-surface.md` exactly. The play-facing fields in order:
 - [ ] Profile/specialization requirement used, not species restriction
 - [ ] Si se creó una mecánica nueva: se ejecutó `mechanic-registrar` antes de finalizar
 - [ ] El texto de ambientación es breve, concreto, moldeado por la especie, no una paráfrasis mecánica
+- [ ] **Efecto está escrito en formato V2 (conciso, sin redundancia narrativa)**
+- [ ] **Mecánicas en el Efecto usan backticks (ej. `T.A.`, `Ritmo`), no negritas**
 
 ---
 
