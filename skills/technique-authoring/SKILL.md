@@ -54,9 +54,10 @@ A technique can only carry `Hereda Efectos` if its stat block shows **Impacto: T
 
 | Impacto | Technique type | Keyword |
 | --- | --- | --- |
-| `T.I.` | Activo - Ataque or Reactivo with full hit | proceed to cross-species check below |
-| `—` | any attack or reactive with no damage | `No Hereda Efectos` |
+| `T.I.` | Activo - Ataque or Reactivo - Ataque with full hit | proceed to cross-species check below |
+| `—` | Activo - Ataque or Reactivo - Ataque with no damage | `No Hereda Efectos` |
 | any | Activo - Utilidad | omit keyword entirely |
+| any | Reactivo - Utilidad | omit keyword entirely |
 | any | Pasivo - Resistencia | omit keyword entirely |
 
 ### Cross-species balance check (required when Impacto = T.I.)
