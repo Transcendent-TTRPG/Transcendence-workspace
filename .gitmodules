@@ -13,3 +13,6 @@
 [submodule "Transcendence-compendium"]
 	path = Transcendence-compendium
 	url = git@github.com:juangomezfulcrumapp/Transcendence-compendium.git
+[submodule "warcraft-port"]
+	path = warcraft-port
+	url = git@github-personal:Transcendent-TTRPG/warcraft-port.git
